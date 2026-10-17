@@ -1,0 +1,63 @@
+{
+  "scope": "Specification artifact checks only; target runtime/UI behavior is not implemented or tested by this script",
+  "referenceSchemaChecks": "Every validation keyword used in the delivered schema is checked by this utility; this is not a general-purpose JSON Schema implementation",
+  "validCountryReferences": [
+    "FR",
+    "GB"
+  ],
+  "negativeCasesRejected": [
+    "country mismatch",
+    "unknown category",
+    "duplicate ID",
+    "unknown field",
+    "negative mean",
+    "currency precision",
+    "unknown region"
+  ],
+  "targetConfigurations": [
+    "lea",
+    "michel",
+    "nicolas",
+    "sarah"
+  ],
+  "referenceHashes": true,
+  "englishRegistryCoverage": true,
+  "contrastChecks": [
+    {
+      "foreground": "contentPrimary",
+      "background": "canvas",
+      "ratio": 19.67,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "contentSecondary",
+      "background": "surface",
+      "ratio": 10.51,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "contentMuted",
+      "background": "surfaceRaised",
+      "ratio": 6.33,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "actionContent",
+      "background": "actionFill",
+      "ratio": 19.67,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "error",
+      "background": "surface",
+      "ratio": 7.76,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "controlBorder",
+      "background": "surface",
+      "ratio": 3.77,
+      "minimum": 3
+    }
+  ]
+}

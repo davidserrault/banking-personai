@@ -1,0 +1,34 @@
+[
+  {
+    "id": "everyday",
+    "label": "Commerce courant"
+  },
+  {
+    "id": "discount",
+    "label": "Discount & seconde main"
+  },
+  {
+    "id": "premium",
+    "label": "Premium"
+  },
+  {
+    "id": "luxury",
+    "label": "Luxe & créateurs"
+  },
+  {
+    "id": "healthcare",
+    "label": "Soins & équipement santé"
+  },
+  {
+    "id": "children",
+    "label": "Activités des enfants"
+  },
+  {
+    "id": "student",
+    "label": "Vie étudiante"
+  },
+  {
+    "id": "vtc",
+    "label": "VTC & chauffeurs"
+  }
+]

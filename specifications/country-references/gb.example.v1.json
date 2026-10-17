@@ -1,0 +1,54 @@
+{
+  "format": "personia.merchant-reference",
+  "version": 1,
+  "id": "gb.example.v1",
+  "name": "Illustrative United Kingdom reference",
+  "countryCode": "GB",
+  "currency": "GBP",
+  "currencyDigits": 2,
+  "locale": "en-GB",
+  "timeZone": "Europe/London",
+  "dataStatus": "scenario-assumptions",
+  "regions": [],
+  "merchants": [
+    {
+      "id": 1,
+      "name": "Example neighbourhood grocery",
+      "category": "groceries",
+      "mean": 32,
+      "regions": [
+        "*"
+      ],
+      "segment": "everyday",
+      "monthlyFrequencyByProfile": {
+        "family": 8
+      }
+    },
+    {
+      "id": 2,
+      "name": "Example discount store",
+      "category": "shopping",
+      "mean": 18,
+      "regions": [
+        "*"
+      ],
+      "segment": "discount"
+    },
+    {
+      "id": 3,
+      "name": "Example family activity centre",
+      "category": "childrenActivities",
+      "mean": 25,
+      "regions": [
+        "*"
+      ],
+      "segment": "children"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Illustrative developer fixture",
+      "note": "Fictional merchant names and amounts. Demonstrates file structure only; no observed UK consumption or banking calibration is claimed."
+    }
+  ]
+}

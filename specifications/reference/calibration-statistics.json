@@ -1,0 +1,461 @@
+{
+  "version": "references.v1",
+  "fileCount": 13,
+  "totalTransactions": 11139,
+  "retailTransactions": 8624,
+  "retailFiles": 9,
+  "files": [
+    {
+      "sample": "BP1-PART",
+      "kind": "retail",
+      "count": 1000,
+      "from": "2025-04-03",
+      "to": "2026-03-20",
+      "monthlyFrequency": 86.47,
+      "medianDebit": 14.75,
+      "truncated": true
+    },
+    {
+      "sample": "BP2-PART-JOINT",
+      "kind": "retail",
+      "count": 1000,
+      "from": "2025-07-04",
+      "to": "2026-03-20",
+      "monthlyFrequency": 117.07,
+      "medianDebit": 32.3,
+      "truncated": true
+    },
+    {
+      "sample": "BP3-PRO",
+      "kind": "professional",
+      "count": 1000,
+      "from": "2025-10-07",
+      "to": "2026-03-20",
+      "monthlyFrequency": 184.47,
+      "medianDebit": 69.32,
+      "truncated": true
+    },
+    {
+      "sample": "BP4-PART-JOINT",
+      "kind": "retail",
+      "count": 1000,
+      "from": "2025-04-15",
+      "to": "2026-03-19",
+      "monthlyFrequency": 89.79,
+      "medianDebit": 33.2,
+      "truncated": true
+    },
+    {
+      "sample": "BP5-PRO",
+      "kind": "professional",
+      "count": 889,
+      "from": "2024-02-01",
+      "to": "2026-03-20",
+      "monthlyFrequency": 34.74,
+      "medianDebit": 45.95,
+      "truncated": false
+    },
+    {
+      "sample": "BP6-PART-JOINT",
+      "kind": "retail",
+      "count": 1000,
+      "from": "2024-07-29",
+      "to": "2026-03-20",
+      "monthlyFrequency": 50.73,
+      "medianDebit": 47.64,
+      "truncated": true
+    },
+    {
+      "sample": "BP7-PART-avecTrxEnUSD",
+      "kind": "retail",
+      "count": 961,
+      "from": "2023-05-02",
+      "to": "2025-06-04",
+      "monthlyFrequency": 38.24,
+      "medianDebit": 39.85,
+      "truncated": false
+    },
+    {
+      "sample": "BP8-PART-CARTEDD",
+      "kind": "deferred-card",
+      "count": 242,
+      "from": "2024-01-26",
+      "to": "2026-01-17",
+      "monthlyFrequency": 10.19,
+      "medianDebit": 22.2,
+      "truncated": false
+    },
+    {
+      "sample": "CE1-PART",
+      "kind": "retail",
+      "count": 1000,
+      "from": "2024-07-18",
+      "to": "2026-03-21",
+      "monthlyFrequency": 49.73,
+      "medianDebit": 31.98,
+      "truncated": true
+    },
+    {
+      "sample": "CE2-PART-JOINT",
+      "kind": "retail",
+      "count": 663,
+      "from": "2024-01-02",
+      "to": "2026-03-20",
+      "monthlyFrequency": 24.94,
+      "medianDebit": 56.86,
+      "truncated": false
+    },
+    {
+      "sample": "CE4-PART",
+      "kind": "retail",
+      "count": 1000,
+      "from": "2024-06-03",
+      "to": "2026-03-21",
+      "monthlyFrequency": 46.33,
+      "medianDebit": 15.82,
+      "truncated": true
+    },
+    {
+      "sample": "CE6-PART-JOINT",
+      "kind": "retail",
+      "count": 1000,
+      "from": "2024-11-21",
+      "to": "2026-03-20",
+      "monthlyFrequency": 62.76,
+      "medianDebit": 28.2,
+      "truncated": true
+    },
+    {
+      "sample": "CE7-PART-CARTEDD",
+      "kind": "deferred-card",
+      "count": 384,
+      "from": "2024-01-01",
+      "to": "2026-03-22",
+      "monthlyFrequency": 14.39,
+      "medianDebit": 22,
+      "truncated": false
+    }
+  ],
+  "categories": {
+    "5": {
+      "count": 77,
+      "median": 30,
+      "mean": 36.08,
+      "p10": 0.7,
+      "p90": 80.5
+    },
+    "14": {
+      "count": 1015,
+      "median": 25.15,
+      "mean": 44.29,
+      "p10": 3.58,
+      "p90": 116.98
+    },
+    "18": {
+      "count": 300,
+      "median": 28.98,
+      "mean": 37.06,
+      "p10": 9.99,
+      "p90": 64.05
+    },
+    "23": {
+      "count": 105,
+      "median": 35.94,
+      "mean": 104.45,
+      "p10": 8.4,
+      "p90": 114.1
+    },
+    "29": {
+      "count": 129,
+      "median": 28.4,
+      "mean": 71.47,
+      "p10": 7.49,
+      "p90": 119.4
+    },
+    "36": {
+      "count": 256,
+      "median": 51.39,
+      "mean": 53.84,
+      "p10": 18.38,
+      "p90": 86.28
+    },
+    "37": {
+      "count": 63,
+      "median": 70,
+      "mean": 110.13,
+      "p10": 10,
+      "p90": 266.42
+    },
+    "49": {
+      "count": 169,
+      "median": 13.08,
+      "mean": 16.63,
+      "p10": 5.5,
+      "p90": 29.71
+    },
+    "50": {
+      "count": 85,
+      "median": 41.01,
+      "mean": 95.29,
+      "p10": 16.23,
+      "p90": 233.85
+    },
+    "51": {
+      "count": 104,
+      "median": 41.64,
+      "mean": 54.7,
+      "p10": 9,
+      "p90": 116.25
+    },
+    "54": {
+      "count": 590,
+      "median": 63.15,
+      "mean": 191.3,
+      "p10": 3,
+      "p90": 504.54
+    },
+    "59": {
+      "count": 276,
+      "median": 6.4,
+      "mean": 6.97,
+      "p10": 0.67,
+      "p90": 16.8
+    },
+    "64": {
+      "count": 811,
+      "median": 25,
+      "mean": 38.23,
+      "p10": 6.4,
+      "p90": 86.21
+    },
+    "65": {
+      "count": 115,
+      "median": 54.3,
+      "mean": 74.02,
+      "p10": 15.98,
+      "p90": 150
+    },
+    "67": {
+      "count": 76,
+      "median": 36,
+      "mean": 46.57,
+      "p10": 20,
+      "p90": 92
+    },
+    "70": {
+      "count": 39,
+      "median": 29.99,
+      "mean": 70.03,
+      "p10": 10,
+      "p90": 144.51
+    },
+    "71": {
+      "count": 132,
+      "median": 17.55,
+      "mean": 23.93,
+      "p10": 4.6,
+      "p90": 49.7
+    },
+    "75": {
+      "count": 29,
+      "median": 15,
+      "mean": 21.28,
+      "p10": 5,
+      "p90": 45
+    },
+    "76": {
+      "count": 88,
+      "median": 42.22,
+      "mean": 90.71,
+      "p10": 8.98,
+      "p90": 298
+    },
+    "78": {
+      "count": 69,
+      "median": 23.8,
+      "mean": 23.15,
+      "p10": 2.5,
+      "p90": 42.8
+    },
+    "79": {
+      "count": 220,
+      "median": 14.7,
+      "mean": 18.2,
+      "p10": 4.5,
+      "p90": 33.2
+    },
+    "82": {
+      "count": 238,
+      "median": 25,
+      "mean": 25.31,
+      "p10": 7.2,
+      "p90": 43
+    },
+    "83": {
+      "count": 36,
+      "median": 49.96,
+      "mean": 73.51,
+      "p10": 10.49,
+      "p90": 124.77
+    },
+    "84": {
+      "count": 244,
+      "median": 27.95,
+      "mean": 40.82,
+      "p10": 8.6,
+      "p90": 91.3
+    },
+    "91": {
+      "count": 38,
+      "median": 17.15,
+      "mean": 24.51,
+      "p10": 2.5,
+      "p90": 47.25
+    },
+    "98": {
+      "count": 53,
+      "median": 43.7,
+      "mean": 124.98,
+      "p10": 4.88,
+      "p90": 206.18
+    },
+    "105": {
+      "count": 17,
+      "median": 80.39,
+      "mean": 90.56,
+      "p10": 23.35,
+      "p90": 207.25
+    },
+    "113": {
+      "count": 41,
+      "median": 20.49,
+      "mean": 58.42,
+      "p10": 4,
+      "p90": 78.01
+    },
+    "115": {
+      "count": 157,
+      "median": 5.2,
+      "mean": 9.88,
+      "p10": 0.8,
+      "p90": 27.3
+    },
+    "116": {
+      "count": 446,
+      "median": 12.79,
+      "mean": 19.15,
+      "p10": 4.65,
+      "p90": 37.78
+    },
+    "133": {
+      "count": 27,
+      "median": 3.78,
+      "mean": 6.31,
+      "p10": 1.89,
+      "p90": 8.95
+    },
+    "212": {
+      "count": 140,
+      "median": 466.26,
+      "mean": 1262.9,
+      "p10": 50,
+      "p90": 3488.01
+    },
+    "216": {
+      "count": 116,
+      "median": 100,
+      "mean": 172.07,
+      "p10": 30,
+      "p90": 300
+    },
+    "288": {
+      "count": 14,
+      "median": 17.09,
+      "mean": 49.23,
+      "p10": 15.2,
+      "p90": 40
+    },
+    "328": {
+      "count": 204,
+      "median": 87.6,
+      "mean": 133.31,
+      "p10": 29.33,
+      "p90": 234.96
+    },
+    "339": {
+      "count": 12,
+      "median": 21.5,
+      "mean": 81.61,
+      "p10": 10,
+      "p90": 100
+    },
+    "800": {
+      "count": 20,
+      "median": 800.22,
+      "mean": 800.22,
+      "p10": 800.22,
+      "p90": 800.22
+    },
+    "827": {
+      "count": 65,
+      "median": 12.6,
+      "mean": 34.68,
+      "p10": 0.99,
+      "p90": 131.88
+    },
+    "837": {
+      "count": 133,
+      "median": 143,
+      "mean": 171.01,
+      "p10": 55,
+      "p90": 326
+    },
+    "838": {
+      "count": 23,
+      "median": 219.3,
+      "mean": 225.89,
+      "p10": 33.82,
+      "p90": 468
+    },
+    "849": {
+      "count": 280,
+      "median": 100,
+      "mean": 611.66,
+      "p10": 25,
+      "p90": 650.02
+    },
+    "852": {
+      "count": 269,
+      "median": 100,
+      "mean": 326.85,
+      "p10": 22,
+      "p90": 706.74
+    },
+    "854": {
+      "count": 49,
+      "median": 176.94,
+      "mean": 314.9,
+      "p10": 30.9,
+      "p90": 763.23
+    },
+    "863": {
+      "count": 32,
+      "median": 34.5,
+      "mean": 41.2,
+      "p10": 34.5,
+      "p90": 54.68
+    }
+  },
+  "cardShare": 0.5782,
+  "medianCardDebit": 24.74,
+  "monthlyFrequencyRange": [
+    24.94,
+    117.07
+  ],
+  "limitations": [
+    "Échantillon de convenance, non représentatif de la population française.",
+    "Les pages de 1 000 opérations peuvent être tronquées.",
+    "Les identifiants de catégories sont conservés ; leurs libellés fonctionnels sont inférés.",
+    "Aucune identité, adresse détaillée ou opération source n’est embarquée."
+  ]
+}

@@ -1,0 +1,190 @@
+[
+  {
+    "id": "student",
+    "name": "Étudiant",
+    "factor": 0.65,
+    "description": "Petits paniers, discount, seconde main et repas universitaires. Sorties et achats plus contenus.",
+    "budgets": {
+      "groceries": 0.75,
+      "bakery": 0.7,
+      "health": 0.9,
+      "transport": 1.1,
+      "fuel": 0.6,
+      "restaurants": 0.6,
+      "coffee": 0.8,
+      "shopping": 0.5,
+      "leisure": 0.7,
+      "home": 0.4,
+      "digital": 1,
+      "travel": 0.4,
+      "ridehailing": 0.15,
+      "childrenActivities": 0.65,
+      "luxury": 0
+    },
+    "basket": 0.75,
+    "basketOverrides": {
+      "health": 0.9,
+      "fuel": 0.9
+    },
+    "affinity": {
+      "everyday": 1,
+      "discount": 6,
+      "premium": 0.08,
+      "luxury": 0,
+      "healthcare": 1,
+      "children": 1,
+      "student": 7,
+      "vtc": 0.3
+    }
+  },
+  {
+    "id": "modest",
+    "name": "Budget mesuré",
+    "factor": 0.7,
+    "description": "Priorité aux dépenses essentielles, enseignes discount et achats d’occasion. Loisirs et restauration réduits.",
+    "budgets": {
+      "groceries": 0.7956521739130434,
+      "bakery": 0.7956521739130434,
+      "transport": 0.5804878048780489,
+      "fuel": 0.5804878048780489,
+      "leisure": 0.5361702127659574,
+      "restaurants": 0.5055555555555555,
+      "coffee": 0.5055555555555555,
+      "hotels": 0.5055555555555555,
+      "travel": 0.5055555555555555,
+      "home": 0.49122807017543857,
+      "shopping": 0.7699999999999999,
+      "digital": 0.985185185185185,
+      "health": 1,
+      "ridehailing": 0.2,
+      "childrenActivities": 0.8,
+      "luxury": 0
+    },
+    "basket": 0.88,
+    "basketOverrides": {
+      "health": 1,
+      "fuel": 0.95
+    },
+    "affinity": {
+      "everyday": 1,
+      "discount": 5,
+      "premium": 0.15,
+      "luxury": 0,
+      "healthcare": 1,
+      "children": 1,
+      "student": 0,
+      "vtc": 0.5
+    }
+  },
+  {
+    "id": "family",
+    "name": "Famille",
+    "factor": 1,
+    "description": "Alimentation et équipements du foyer renforcés. Une enveloppe spécifique finance les activités des enfants.",
+    "budgets": {
+      "groceries": 1.18,
+      "bakery": 1.1,
+      "health": 1,
+      "shopping": 1.2,
+      "leisure": 1.25,
+      "home": 1.25,
+      "ridehailing": 0.5,
+      "childrenActivities": 1.3,
+      "luxury": 0
+    },
+    "basket": 1,
+    "basketOverrides": {
+      "groceries": 1.08,
+      "shopping": 1.08
+    },
+    "affinity": {
+      "everyday": 1.5,
+      "discount": 2,
+      "premium": 0.5,
+      "luxury": 0,
+      "healthcare": 1.2,
+      "children": 4,
+      "student": 0,
+      "vtc": 1
+    }
+  },
+  {
+    "id": "comfort",
+    "name": "Confort",
+    "factor": 1.82,
+    "description": "Plus de loisirs, restauration, services VTC et achats premium. Une réserve permet des achats de luxe occasionnels.",
+    "budgets": {
+      "groceries": 1.6052173913043477,
+      "bakery": 1.6052173913043477,
+      "transport": 1.9531707317073175,
+      "fuel": 1.9531707317073175,
+      "leisure": 2.1878723404255322,
+      "restaurants": 2.3761111111111113,
+      "coffee": 2.3761111111111113,
+      "hotels": 2.3761111111111113,
+      "travel": 2.3761111111111113,
+      "home": 2.330877192982456,
+      "shopping": 1.8928,
+      "digital": 1.4155555555555557,
+      "health": 1.2,
+      "ridehailing": 6,
+      "childrenActivities": 2.2,
+      "luxury": 4
+    },
+    "basket": 1.4,
+    "basketOverrides": {
+      "groceries": 1.28,
+      "fuel": 1.1,
+      "health": 1.05,
+      "luxury": 1
+    },
+    "affinity": {
+      "everyday": 1,
+      "discount": 0.25,
+      "premium": 5,
+      "luxury": 1,
+      "healthcare": 1.3,
+      "children": 2,
+      "student": 0,
+      "vtc": 4
+    }
+  },
+  {
+    "id": "retired",
+    "name": "Retraité",
+    "factor": 0.85,
+    "description": "Plus de soins et d’équipements de santé, commerces de proximité, loisirs culturels et moins de déplacements.",
+    "budgets": {
+      "groceries": 1.05,
+      "bakery": 1.15,
+      "health": 2.150485436893204,
+      "fuel": 0.7,
+      "transport": 0.65,
+      "restaurants": 0.8,
+      "coffee": 0.8,
+      "shopping": 0.75,
+      "leisure": 1.2,
+      "home": 1.1,
+      "digital": 0.55,
+      "travel": 0.9,
+      "ridehailing": 0.7,
+      "childrenActivities": 1,
+      "luxury": 0
+    },
+    "basket": 1,
+    "basketOverrides": {
+      "health": 1.1,
+      "groceries": 1.05
+    },
+    "affinity": {
+      "everyday": 2,
+      "discount": 1.5,
+      "premium": 0.8,
+      "luxury": 0,
+      "healthcare": 5,
+      "children": 1,
+      "student": 0,
+      "vtc": 1
+    }
+  }
+]

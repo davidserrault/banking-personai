@@ -1,0 +1,35 @@
+[
+  {
+    "id": 859,
+    "label": "Revenus"
+  },
+  {
+    "id": 54,
+    "label": "Assurances"
+  },
+  {
+    "id": 328,
+    "label": "Énergie"
+  },
+  {
+    "id": 800,
+    "label": "Crédit / logement"
+  },
+  {
+    "id": 212,
+    "label": "Transferts internes"
+  },
+  {
+    "id": 9000,
+    "label": "Déblocage de crédit"
+  },
+  {
+    "id": 9002,
+    "label": "Charge récurrente",
+    "meaning": "Vehicle purchase; current engine falls back to this generic label."
+  },
+  {
+    "id": 9004,
+    "label": "Enfance & garde"
+  }
+]

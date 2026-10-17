@@ -1,0 +1,1041 @@
+[
+  {
+    "id": 800000,
+    "name": "Carrefour City",
+    "category": "groceries",
+    "mean": 28,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800001,
+    "name": "Monoprix",
+    "category": "groceries",
+    "mean": 38,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "premium"
+  },
+  {
+    "id": 800002,
+    "name": "Franprix",
+    "category": "groceries",
+    "mean": 25,
+    "regions": [
+      "idf"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800003,
+    "name": "E.Leclerc",
+    "category": "groceries",
+    "mean": 52,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800004,
+    "name": "Intermarché",
+    "category": "groceries",
+    "mean": 43,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800005,
+    "name": "Super U",
+    "category": "groceries",
+    "mean": 48,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800006,
+    "name": "Lidl",
+    "category": "groceries",
+    "mean": 33,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800007,
+    "name": "Auchan",
+    "category": "groceries",
+    "mean": 51,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800008,
+    "name": "Biocoop",
+    "category": "groceries",
+    "mean": 32,
+    "regions": [
+      "*"
+    ],
+    "segment": "premium"
+  },
+  {
+    "id": 800009,
+    "name": "Marché local",
+    "category": "groceries",
+    "mean": 23,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800010,
+    "name": "Boulangerie du quartier",
+    "category": "bakery",
+    "mean": 7.5,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800011,
+    "name": "Boulangerie de la place",
+    "category": "bakery",
+    "mean": 9,
+    "regions": [
+      "centre",
+      "pays-loire",
+      "bretagne"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800012,
+    "name": "Marie Blachère",
+    "category": "bakery",
+    "mean": 8.5,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800013,
+    "name": "TotalEnergies",
+    "category": "fuel",
+    "mean": 58,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800014,
+    "name": "Station E.Leclerc",
+    "category": "fuel",
+    "mean": 52,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800015,
+    "name": "Station U",
+    "category": "fuel",
+    "mean": 50,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800016,
+    "name": "Péage autoroutier",
+    "category": "transport",
+    "mean": 8,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800017,
+    "name": "Réseau urbain · Tours",
+    "category": "transport",
+    "mean": 3.5,
+    "regions": [
+      "centre"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800018,
+    "name": "Réseau urbain · Paris",
+    "category": "transport",
+    "mean": 5,
+    "regions": [
+      "idf"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800019,
+    "name": "Réseau urbain · Nantes",
+    "category": "transport",
+    "mean": 3.8,
+    "regions": [
+      "pays-loire"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800020,
+    "name": "Réseau urbain · Lille",
+    "category": "transport",
+    "mean": 3.6,
+    "regions": [
+      "hauts-france"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800021,
+    "name": "Réseau urbain local",
+    "category": "transport",
+    "mean": 3.5,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800022,
+    "name": "Pharmacie du centre",
+    "category": "health",
+    "mean": 17,
+    "regions": [
+      "*"
+    ],
+    "segment": "healthcare"
+  },
+  {
+    "id": 800023,
+    "name": "Cabinet médical fictif",
+    "category": "health",
+    "mean": 30,
+    "regions": [
+      "*"
+    ],
+    "segment": "healthcare"
+  },
+  {
+    "id": 800024,
+    "name": "Big Fernand",
+    "category": "restaurants",
+    "mean": 23,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800025,
+    "name": "Deliveroo",
+    "category": "restaurants",
+    "mean": 29,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800026,
+    "name": "Restaurant de quartier",
+    "category": "restaurants",
+    "mean": 32,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800027,
+    "name": "Crêperie de quartier",
+    "category": "restaurants",
+    "mean": 25,
+    "regions": [
+      "bretagne",
+      "pays-loire"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800028,
+    "name": "Bouchon de quartier",
+    "category": "restaurants",
+    "mean": 31,
+    "regions": [
+      "aura"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800029,
+    "name": "Estaminet de quartier",
+    "category": "restaurants",
+    "mean": 28,
+    "regions": [
+      "hauts-france"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800030,
+    "name": "Brasserie du centre",
+    "category": "restaurants",
+    "mean": 29,
+    "regions": [
+      "centre",
+      "grand-est",
+      "normandie"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800031,
+    "name": "Restaurant du littoral",
+    "category": "restaurants",
+    "mean": 34,
+    "regions": [
+      "paca",
+      "corse",
+      "occitanie",
+      "nouvelle-aquitaine"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800032,
+    "name": "Café du quartier",
+    "category": "coffee",
+    "mean": 5.5,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800033,
+    "name": "Columbus Café",
+    "category": "coffee",
+    "mean": 7,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800034,
+    "name": "Pret",
+    "category": "coffee",
+    "mean": 11,
+    "regions": [
+      "idf"
+    ],
+    "urbanOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800035,
+    "name": "Caffè Nero",
+    "category": "coffee",
+    "mean": 7,
+    "regions": [
+      "international"
+    ],
+    "urbanOnly": false,
+    "travelOnly": true,
+    "segment": "everyday"
+  },
+  {
+    "id": 800036,
+    "name": "Amazon",
+    "category": "shopping",
+    "mean": 33,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800037,
+    "name": "Decathlon",
+    "category": "shopping",
+    "mean": 42,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800038,
+    "name": "Kiabi",
+    "category": "shopping",
+    "mean": 35,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800039,
+    "name": "H&M",
+    "category": "shopping",
+    "mean": 39,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800040,
+    "name": "Librairie du centre",
+    "category": "shopping",
+    "mean": 21,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800041,
+    "name": "Cinéma local",
+    "category": "leisure",
+    "mean": 23,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800042,
+    "name": "Piscine municipale",
+    "category": "leisure",
+    "mean": 12,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800043,
+    "name": "Activité de loisirs",
+    "category": "leisure",
+    "mean": 28,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800044,
+    "name": "Leroy Merlin",
+    "category": "home",
+    "mean": 57,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800045,
+    "name": "Castorama",
+    "category": "home",
+    "mean": 52,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800046,
+    "name": "Bricomarché",
+    "category": "home",
+    "mean": 38,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800047,
+    "name": "IKEA",
+    "category": "home",
+    "mean": 79,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800048,
+    "name": "Weldom",
+    "category": "home",
+    "mean": 34,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800049,
+    "name": "Boulanger",
+    "category": "home",
+    "mean": 130,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800050,
+    "name": "Darty",
+    "category": "home",
+    "mean": 145,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800051,
+    "name": "App Store",
+    "category": "digital",
+    "mean": 3.99,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800052,
+    "name": "Google Play",
+    "category": "digital",
+    "mean": 3.49,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800053,
+    "name": "SNCF Connect",
+    "category": "travel",
+    "mean": 68,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800054,
+    "name": "Hôtel fictif",
+    "category": "travel",
+    "mean": 95,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800055,
+    "name": "Hébergement de vacances fictif",
+    "category": "travel",
+    "mean": 175,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800056,
+    "name": "Hôtel du séjour fictif",
+    "category": "hotels",
+    "mean": 95,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800057,
+    "name": "Restaurant rapide fictif",
+    "category": "fastfood",
+    "mean": 16,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800058,
+    "name": "Bar du quartier fictif",
+    "category": "bars",
+    "mean": 22,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800059,
+    "name": "Caviste fictif",
+    "category": "alcohol",
+    "mean": 28,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800060,
+    "name": "Atelier vélo fictif",
+    "category": "cycling",
+    "mean": 35,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800061,
+    "name": "Impôts · scénario",
+    "category": "taxes",
+    "mean": 120,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800062,
+    "name": "Frais bancaires · scénario",
+    "category": "bankfees",
+    "mean": 6.4,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800063,
+    "name": "Frais d’incident · scénario",
+    "category": "incidentfees",
+    "mean": 8,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800064,
+    "name": "ALDI",
+    "category": "groceries",
+    "mean": 29,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800065,
+    "name": "Netto",
+    "category": "groceries",
+    "mean": 30,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800066,
+    "name": "Épicerie fine fictive",
+    "category": "groceries",
+    "mean": 58,
+    "regions": [
+      "*"
+    ],
+    "segment": "premium"
+  },
+  {
+    "id": 800067,
+    "name": "La Grande Épicerie de Paris",
+    "category": "groceries",
+    "mean": 72,
+    "regions": [
+      "idf"
+    ],
+    "urbanOnly": true,
+    "segment": "premium"
+  },
+  {
+    "id": 800068,
+    "name": "Action",
+    "category": "home",
+    "mean": 23,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800069,
+    "name": "NOZ",
+    "category": "shopping",
+    "mean": 21,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800070,
+    "name": "Vinted",
+    "category": "shopping",
+    "mean": 19,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800071,
+    "name": "Ressourcerie locale fictive",
+    "category": "home",
+    "mean": 25,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800072,
+    "name": "Friperie de quartier fictive",
+    "category": "shopping",
+    "mean": 22,
+    "regions": [
+      "*"
+    ],
+    "segment": "discount"
+  },
+  {
+    "id": 800073,
+    "name": "Galeries Lafayette",
+    "category": "shopping",
+    "mean": 115,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "premium"
+  },
+  {
+    "id": 800074,
+    "name": "Printemps",
+    "category": "shopping",
+    "mean": 145,
+    "regions": [
+      "idf",
+      "aura",
+      "paca",
+      "hauts-france"
+    ],
+    "urbanOnly": true,
+    "segment": "premium"
+  },
+  {
+    "id": 800075,
+    "name": "Boutique premium fictive",
+    "category": "shopping",
+    "mean": 130,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "premium"
+  },
+  {
+    "id": 800076,
+    "name": "Boutique de créateurs fictive",
+    "category": "luxury",
+    "mean": 320,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "luxury"
+  },
+  {
+    "id": 800077,
+    "name": "Maroquinerie de luxe fictive",
+    "category": "luxury",
+    "mean": 650,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "luxury"
+  },
+  {
+    "id": 800078,
+    "name": "Joaillerie de luxe fictive",
+    "category": "luxury",
+    "mean": 850,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "luxury"
+  },
+  {
+    "id": 800079,
+    "name": "Restaurant gastronomique fictif",
+    "category": "restaurants",
+    "mean": 110,
+    "regions": [
+      "*"
+    ],
+    "segment": "premium"
+  },
+  {
+    "id": 800080,
+    "name": "Traiteur premium fictif",
+    "category": "restaurants",
+    "mean": 65,
+    "regions": [
+      "*"
+    ],
+    "segment": "premium"
+  },
+  {
+    "id": 800081,
+    "name": "Restaurant universitaire fictif",
+    "category": "restaurants",
+    "mean": 3.3,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "student"
+  },
+  {
+    "id": 800082,
+    "name": "Cafétéria universitaire fictive",
+    "category": "coffee",
+    "mean": 3,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "student"
+  },
+  {
+    "id": 800083,
+    "name": "Uber",
+    "category": "ridehailing",
+    "mean": 24,
+    "regions": [
+      "idf",
+      "aura",
+      "paca",
+      "hauts-france",
+      "pays-loire",
+      "nouvelle-aquitaine",
+      "occitanie",
+      "bretagne",
+      "grand-est",
+      "normandie"
+    ],
+    "urbanOnly": true,
+    "segment": "vtc"
+  },
+  {
+    "id": 800084,
+    "name": "Bolt",
+    "category": "ridehailing",
+    "mean": 21,
+    "regions": [
+      "idf",
+      "aura",
+      "paca"
+    ],
+    "urbanOnly": true,
+    "segment": "vtc"
+  },
+  {
+    "id": 800085,
+    "name": "Chauffeur VTC local fictif",
+    "category": "ridehailing",
+    "mean": 29,
+    "regions": [
+      "*"
+    ],
+    "urbanOnly": true,
+    "segment": "vtc"
+  },
+  {
+    "id": 800086,
+    "name": "Chauffeur premium fictif",
+    "category": "ridehailing",
+    "mean": 58,
+    "regions": [
+      "idf",
+      "aura",
+      "paca"
+    ],
+    "urbanOnly": true,
+    "segment": "premium"
+  },
+  {
+    "id": 800087,
+    "name": "Opticien fictif · reste à charge",
+    "category": "health",
+    "mean": 95,
+    "regions": [
+      "*"
+    ],
+    "segment": "healthcare"
+  },
+  {
+    "id": 800088,
+    "name": "Cabinet dentaire fictif · reste à charge",
+    "category": "health",
+    "mean": 65,
+    "regions": [
+      "*"
+    ],
+    "segment": "healthcare"
+  },
+  {
+    "id": 800089,
+    "name": "Pédicure-podologue fictif",
+    "category": "health",
+    "mean": 32,
+    "regions": [
+      "*"
+    ],
+    "segment": "healthcare"
+  },
+  {
+    "id": 800090,
+    "name": "Audioprothésiste fictif · reste à charge",
+    "category": "health",
+    "mean": 180,
+    "regions": [
+      "*"
+    ],
+    "segment": "healthcare"
+  },
+  {
+    "id": 800091,
+    "name": "Matériel médical fictif",
+    "category": "health",
+    "mean": 42,
+    "regions": [
+      "*"
+    ],
+    "segment": "healthcare"
+  },
+  {
+    "id": 800092,
+    "name": "Club sportif enfants fictif",
+    "category": "childrenActivities",
+    "mean": 32,
+    "regions": [
+      "*"
+    ],
+    "segment": "children"
+  },
+  {
+    "id": 800093,
+    "name": "École de musique associative fictive",
+    "category": "childrenActivities",
+    "mean": 48,
+    "regions": [
+      "*"
+    ],
+    "segment": "children"
+  },
+  {
+    "id": 800094,
+    "name": "Atelier arts et danse enfants fictif",
+    "category": "childrenActivities",
+    "mean": 35,
+    "regions": [
+      "*"
+    ],
+    "segment": "children"
+  },
+  {
+    "id": 800095,
+    "name": "Stage sportif enfants fictif",
+    "category": "childrenActivities",
+    "mean": 85,
+    "regions": [
+      "*"
+    ],
+    "segment": "children"
+  },
+  {
+    "id": 800096,
+    "name": "Musée local fictif",
+    "category": "leisure",
+    "mean": 14,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800097,
+    "name": "Association culturelle fictive",
+    "category": "leisure",
+    "mean": 24,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  },
+  {
+    "id": 800098,
+    "name": "Jardinerie de quartier fictive",
+    "category": "home",
+    "mean": 38,
+    "regions": [
+      "*"
+    ],
+    "segment": "everyday"
+  }
+]

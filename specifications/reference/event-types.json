@@ -1,0 +1,34 @@
+[
+  {
+    "id": "travel-domestic",
+    "label": "Domestic trip"
+  },
+  {
+    "id": "travel-abroad",
+    "label": "Voyage à l’étranger"
+  },
+  {
+    "id": "inheritance",
+    "label": "Héritage"
+  },
+  {
+    "id": "income-gap",
+    "label": "Période sans revenus"
+  },
+  {
+    "id": "exceptional",
+    "label": "Dépense exceptionnelle"
+  },
+  {
+    "id": "property",
+    "label": "Achat immobilier"
+  },
+  {
+    "id": "car",
+    "label": "Achat automobile"
+  },
+  {
+    "id": "durable-change",
+    "label": "Changement durable"
+  }
+]

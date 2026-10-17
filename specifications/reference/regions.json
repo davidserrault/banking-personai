@@ -1,0 +1,67 @@
+[
+  {
+    "id": "centre",
+    "name": "Centre-Val de Loire",
+    "factor": 1
+  },
+  {
+    "id": "idf",
+    "name": "Île-de-France",
+    "factor": 1.16
+  },
+  {
+    "id": "bretagne",
+    "name": "Bretagne",
+    "factor": 0.98
+  },
+  {
+    "id": "pays-loire",
+    "name": "Pays de la Loire",
+    "factor": 0.98
+  },
+  {
+    "id": "hauts-france",
+    "name": "Hauts-de-France",
+    "factor": 0.96
+  },
+  {
+    "id": "normandie",
+    "name": "Normandie",
+    "factor": 0.98
+  },
+  {
+    "id": "grand-est",
+    "name": "Grand Est",
+    "factor": 0.98
+  },
+  {
+    "id": "bourgogne",
+    "name": "Bourgogne-Franche-Comté",
+    "factor": 0.97
+  },
+  {
+    "id": "aura",
+    "name": "Auvergne-Rhône-Alpes",
+    "factor": 1.05
+  },
+  {
+    "id": "nouvelle-aquitaine",
+    "name": "Nouvelle-Aquitaine",
+    "factor": 1.01
+  },
+  {
+    "id": "occitanie",
+    "name": "Occitanie",
+    "factor": 1
+  },
+  {
+    "id": "paca",
+    "name": "Provence-Alpes-Côte d’Azur",
+    "factor": 1.08
+  },
+  {
+    "id": "corse",
+    "name": "Corse",
+    "factor": 1.1
+  }
+]

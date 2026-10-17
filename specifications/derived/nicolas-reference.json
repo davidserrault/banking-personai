@@ -1,0 +1,743 @@
+{
+  "modelId": "nicolas",
+  "region": "centre",
+  "style": "family",
+  "monthlyIncomeEquivalentEUR": 2000,
+  "fixedMonthlyChargesExcludingFeesEUR": 1113.98,
+  "fixedMonthlyChargesIncludingFeesEUR": 1120.38,
+  "envelopes": [
+    {
+      "category": "groceries",
+      "categoryId": 14,
+      "monthlyBudgetEUR": 507.4
+    },
+    {
+      "category": "bakery",
+      "categoryId": 116,
+      "monthlyBudgetEUR": 44
+    },
+    {
+      "category": "fuel",
+      "categoryId": 36,
+      "monthlyBudgetEUR": 110
+    },
+    {
+      "category": "transport",
+      "categoryId": 115,
+      "monthlyBudgetEUR": 25
+    },
+    {
+      "category": "health",
+      "categoryId": 49,
+      "monthlyBudgetEUR": 25
+    },
+    {
+      "category": "restaurants",
+      "categoryId": 84,
+      "monthlyBudgetEUR": 65
+    },
+    {
+      "category": "coffee",
+      "categoryId": 79,
+      "monthlyBudgetEUR": 15
+    },
+    {
+      "category": "shopping",
+      "categoryId": 64,
+      "monthlyBudgetEUR": 66
+    },
+    {
+      "category": "leisure",
+      "categoryId": 75,
+      "monthlyBudgetEUR": 37.5
+    },
+    {
+      "category": "home",
+      "categoryId": 29,
+      "monthlyBudgetEUR": 43.75
+    },
+    {
+      "category": "digital",
+      "categoryId": 18,
+      "monthlyBudgetEUR": 8
+    },
+    {
+      "category": "travel",
+      "categoryId": 339,
+      "monthlyBudgetEUR": 35
+    },
+    {
+      "category": "hotels",
+      "categoryId": 98,
+      "monthlyBudgetEUR": 0
+    },
+    {
+      "category": "fastfood",
+      "categoryId": 71,
+      "monthlyBudgetEUR": 0
+    },
+    {
+      "category": "bars",
+      "categoryId": 9010,
+      "monthlyBudgetEUR": 0
+    },
+    {
+      "category": "alcohol",
+      "categoryId": 9011,
+      "monthlyBudgetEUR": 0
+    },
+    {
+      "category": "cycling",
+      "categoryId": 9012,
+      "monthlyBudgetEUR": 0
+    },
+    {
+      "category": "taxes",
+      "categoryId": 837,
+      "monthlyBudgetEUR": 0
+    },
+    {
+      "category": "bankfees",
+      "categoryId": 59,
+      "monthlyBudgetEUR": 0
+    },
+    {
+      "category": "incidentfees",
+      "categoryId": 9013,
+      "monthlyBudgetEUR": 0
+    },
+    {
+      "category": "ridehailing",
+      "categoryId": 9014,
+      "monthlyBudgetEUR": 10
+    },
+    {
+      "category": "childrenActivities",
+      "categoryId": 9015,
+      "monthlyBudgetEUR": 65
+    },
+    {
+      "category": "luxury",
+      "categoryId": 9016,
+      "monthlyBudgetEUR": 0
+    }
+  ],
+  "merchants": [
+    {
+      "id": 800000,
+      "category": "groceries",
+      "meanForProfileEUR": 30.24,
+      "monthlyFrequency": 2.7209352209352207,
+      "automaticMonthlyFrequency": 2.7209352209352207,
+      "selectionWeight": 3
+    },
+    {
+      "id": 800001,
+      "category": "groceries",
+      "meanForProfileEUR": 41.04,
+      "monthlyFrequency": 0.6682998788261946,
+      "automaticMonthlyFrequency": 0.6682998788261946,
+      "selectionWeight": 1
+    },
+    {
+      "id": 800003,
+      "category": "groceries",
+      "meanForProfileEUR": 56.16,
+      "monthlyFrequency": 0.7325594825594824,
+      "automaticMonthlyFrequency": 0.7325594825594824,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800004,
+      "category": "groceries",
+      "meanForProfileEUR": 46.44,
+      "monthlyFrequency": 0.8858858858858858,
+      "automaticMonthlyFrequency": 0.8858858858858858,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800005,
+      "category": "groceries",
+      "meanForProfileEUR": 51.84,
+      "monthlyFrequency": 0.7936061061061059,
+      "automaticMonthlyFrequency": 0.7936061061061059,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800006,
+      "category": "groceries",
+      "meanForProfileEUR": 35.64,
+      "monthlyFrequency": 1.5391148724482058,
+      "automaticMonthlyFrequency": 1.5391148724482058,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800007,
+      "category": "groceries",
+      "meanForProfileEUR": 55.08,
+      "monthlyFrequency": 0.7469233939822174,
+      "automaticMonthlyFrequency": 0.7469233939822174,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800008,
+      "category": "groceries",
+      "meanForProfileEUR": 34.56,
+      "monthlyFrequency": 0.396803053053053,
+      "automaticMonthlyFrequency": 0.396803053053053,
+      "selectionWeight": 0.5
+    },
+    {
+      "id": 800009,
+      "category": "groceries",
+      "meanForProfileEUR": 24.84,
+      "monthlyFrequency": 1.6562214388301342,
+      "automaticMonthlyFrequency": 1.6562214388301342,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800064,
+      "category": "groceries",
+      "meanForProfileEUR": 31.32,
+      "monthlyFrequency": 1.751406578992786,
+      "automaticMonthlyFrequency": 1.751406578992786,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800065,
+      "category": "groceries",
+      "meanForProfileEUR": 32.4,
+      "monthlyFrequency": 1.6930263596930264,
+      "automaticMonthlyFrequency": 1.6930263596930264,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800066,
+      "category": "groceries",
+      "meanForProfileEUR": 62.64,
+      "monthlyFrequency": 0.21892582237409824,
+      "automaticMonthlyFrequency": 0.21892582237409824,
+      "selectionWeight": 0.5
+    },
+    {
+      "id": 800010,
+      "category": "bakery",
+      "meanForProfileEUR": 7.5,
+      "monthlyFrequency": 1.9555555555555555,
+      "automaticMonthlyFrequency": 1.9555555555555555,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800011,
+      "category": "bakery",
+      "meanForProfileEUR": 9,
+      "monthlyFrequency": 1.6296296296296295,
+      "automaticMonthlyFrequency": 1.6296296296296295,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800012,
+      "category": "bakery",
+      "meanForProfileEUR": 8.5,
+      "monthlyFrequency": 1.7254901960784312,
+      "automaticMonthlyFrequency": 1.7254901960784312,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800013,
+      "category": "fuel",
+      "meanForProfileEUR": 58,
+      "monthlyFrequency": 0.5172413793103449,
+      "automaticMonthlyFrequency": 0.5172413793103449,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800014,
+      "category": "fuel",
+      "meanForProfileEUR": 52,
+      "monthlyFrequency": 0.7692307692307693,
+      "automaticMonthlyFrequency": 0.7692307692307693,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800015,
+      "category": "fuel",
+      "meanForProfileEUR": 50,
+      "monthlyFrequency": 0.8,
+      "automaticMonthlyFrequency": 0.8,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800016,
+      "category": "transport",
+      "meanForProfileEUR": 8,
+      "monthlyFrequency": 3.125,
+      "automaticMonthlyFrequency": 3.125,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800022,
+      "category": "health",
+      "meanForProfileEUR": 17,
+      "monthlyFrequency": 0.21008403361344535,
+      "automaticMonthlyFrequency": 0.21008403361344535,
+      "selectionWeight": 1.2
+    },
+    {
+      "id": 800023,
+      "category": "health",
+      "meanForProfileEUR": 30,
+      "monthlyFrequency": 0.11904761904761904,
+      "automaticMonthlyFrequency": 0.11904761904761904,
+      "selectionWeight": 1.2
+    },
+    {
+      "id": 800087,
+      "category": "health",
+      "meanForProfileEUR": 95,
+      "monthlyFrequency": 0.03759398496240601,
+      "automaticMonthlyFrequency": 0.03759398496240601,
+      "selectionWeight": 1.2
+    },
+    {
+      "id": 800088,
+      "category": "health",
+      "meanForProfileEUR": 65,
+      "monthlyFrequency": 0.054945054945054944,
+      "automaticMonthlyFrequency": 0.054945054945054944,
+      "selectionWeight": 1.2
+    },
+    {
+      "id": 800089,
+      "category": "health",
+      "meanForProfileEUR": 32,
+      "monthlyFrequency": 0.11160714285714285,
+      "automaticMonthlyFrequency": 0.11160714285714285,
+      "selectionWeight": 1.2
+    },
+    {
+      "id": 800090,
+      "category": "health",
+      "meanForProfileEUR": 180,
+      "monthlyFrequency": 0.01984126984126984,
+      "automaticMonthlyFrequency": 0.01984126984126984,
+      "selectionWeight": 1.2
+    },
+    {
+      "id": 800091,
+      "category": "health",
+      "meanForProfileEUR": 42,
+      "monthlyFrequency": 0.08503401360544217,
+      "automaticMonthlyFrequency": 0.08503401360544217,
+      "selectionWeight": 1.2
+    },
+    {
+      "id": 800024,
+      "category": "restaurants",
+      "meanForProfileEUR": 23,
+      "monthlyFrequency": 0.8478260869565217,
+      "automaticMonthlyFrequency": 0.8478260869565217,
+      "selectionWeight": 3
+    },
+    {
+      "id": 800025,
+      "category": "restaurants",
+      "meanForProfileEUR": 29,
+      "monthlyFrequency": 0.6724137931034483,
+      "automaticMonthlyFrequency": 0.6724137931034483,
+      "selectionWeight": 3
+    },
+    {
+      "id": 800026,
+      "category": "restaurants",
+      "meanForProfileEUR": 32,
+      "monthlyFrequency": 0.3046875,
+      "automaticMonthlyFrequency": 0.3046875,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800030,
+      "category": "restaurants",
+      "meanForProfileEUR": 29,
+      "monthlyFrequency": 0.33620689655172414,
+      "automaticMonthlyFrequency": 0.33620689655172414,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800079,
+      "category": "restaurants",
+      "meanForProfileEUR": 110,
+      "monthlyFrequency": 0.029545454545454545,
+      "automaticMonthlyFrequency": 0.029545454545454545,
+      "selectionWeight": 0.5
+    },
+    {
+      "id": 800080,
+      "category": "restaurants",
+      "meanForProfileEUR": 65,
+      "monthlyFrequency": 0.05,
+      "automaticMonthlyFrequency": 0.05,
+      "selectionWeight": 0.5
+    },
+    {
+      "id": 800032,
+      "category": "coffee",
+      "meanForProfileEUR": 5.5,
+      "monthlyFrequency": 1.3636363636363635,
+      "automaticMonthlyFrequency": 1.3636363636363635,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800033,
+      "category": "coffee",
+      "meanForProfileEUR": 7,
+      "monthlyFrequency": 1.0714285714285714,
+      "automaticMonthlyFrequency": 1.0714285714285714,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800036,
+      "category": "shopping",
+      "meanForProfileEUR": 35.64,
+      "monthlyFrequency": 0.3367003367003367,
+      "automaticMonthlyFrequency": 0.3367003367003367,
+      "selectionWeight": 3
+    },
+    {
+      "id": 800037,
+      "category": "shopping",
+      "meanForProfileEUR": 45.36,
+      "monthlyFrequency": 0.13227513227513227,
+      "automaticMonthlyFrequency": 0.13227513227513227,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800038,
+      "category": "shopping",
+      "meanForProfileEUR": 37.8,
+      "monthlyFrequency": 0.21164021164021166,
+      "automaticMonthlyFrequency": 0.21164021164021166,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800039,
+      "category": "shopping",
+      "meanForProfileEUR": 42.12,
+      "monthlyFrequency": 0.14245014245014245,
+      "automaticMonthlyFrequency": 0.14245014245014245,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800040,
+      "category": "shopping",
+      "meanForProfileEUR": 22.68,
+      "monthlyFrequency": 0.26455026455026454,
+      "automaticMonthlyFrequency": 0.26455026455026454,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800069,
+      "category": "shopping",
+      "meanForProfileEUR": 22.68,
+      "monthlyFrequency": 0.3527336860670194,
+      "automaticMonthlyFrequency": 0.3527336860670194,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800070,
+      "category": "shopping",
+      "meanForProfileEUR": 20.52,
+      "monthlyFrequency": 0.38986354775828463,
+      "automaticMonthlyFrequency": 0.38986354775828463,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800072,
+      "category": "shopping",
+      "meanForProfileEUR": 23.76,
+      "monthlyFrequency": 0.33670033670033667,
+      "automaticMonthlyFrequency": 0.33670033670033667,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800073,
+      "category": "shopping",
+      "meanForProfileEUR": 124.2,
+      "monthlyFrequency": 0.01610305958132045,
+      "automaticMonthlyFrequency": 0.01610305958132045,
+      "selectionWeight": 0.5
+    },
+    {
+      "id": 800075,
+      "category": "shopping",
+      "meanForProfileEUR": 140.4,
+      "monthlyFrequency": 0.014245014245014245,
+      "automaticMonthlyFrequency": 0.014245014245014245,
+      "selectionWeight": 0.5
+    },
+    {
+      "id": 800041,
+      "category": "leisure",
+      "meanForProfileEUR": 23,
+      "monthlyFrequency": 0.32608695652173914,
+      "automaticMonthlyFrequency": 0.32608695652173914,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800042,
+      "category": "leisure",
+      "meanForProfileEUR": 12,
+      "monthlyFrequency": 0.625,
+      "automaticMonthlyFrequency": 0.625,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800043,
+      "category": "leisure",
+      "meanForProfileEUR": 28,
+      "monthlyFrequency": 0.26785714285714285,
+      "automaticMonthlyFrequency": 0.26785714285714285,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800096,
+      "category": "leisure",
+      "meanForProfileEUR": 14,
+      "monthlyFrequency": 0.5357142857142857,
+      "automaticMonthlyFrequency": 0.5357142857142857,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800097,
+      "category": "leisure",
+      "meanForProfileEUR": 24,
+      "monthlyFrequency": 0.3125,
+      "automaticMonthlyFrequency": 0.3125,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800044,
+      "category": "home",
+      "meanForProfileEUR": 57,
+      "monthlyFrequency": 0.13157894736842105,
+      "automaticMonthlyFrequency": 0.13157894736842105,
+      "selectionWeight": 3
+    },
+    {
+      "id": 800045,
+      "category": "home",
+      "meanForProfileEUR": 52,
+      "monthlyFrequency": 0.07211538461538461,
+      "automaticMonthlyFrequency": 0.07211538461538461,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800046,
+      "category": "home",
+      "meanForProfileEUR": 38,
+      "monthlyFrequency": 0.09868421052631579,
+      "automaticMonthlyFrequency": 0.09868421052631579,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800047,
+      "category": "home",
+      "meanForProfileEUR": 79,
+      "monthlyFrequency": 0.04746835443037975,
+      "automaticMonthlyFrequency": 0.04746835443037975,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800048,
+      "category": "home",
+      "meanForProfileEUR": 34,
+      "monthlyFrequency": 0.11029411764705882,
+      "automaticMonthlyFrequency": 0.11029411764705882,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800049,
+      "category": "home",
+      "meanForProfileEUR": 130,
+      "monthlyFrequency": 0.028846153846153848,
+      "automaticMonthlyFrequency": 0.028846153846153848,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800050,
+      "category": "home",
+      "meanForProfileEUR": 145,
+      "monthlyFrequency": 0.02586206896551724,
+      "automaticMonthlyFrequency": 0.02586206896551724,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800068,
+      "category": "home",
+      "meanForProfileEUR": 23,
+      "monthlyFrequency": 0.21739130434782608,
+      "automaticMonthlyFrequency": 0.21739130434782608,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800071,
+      "category": "home",
+      "meanForProfileEUR": 25,
+      "monthlyFrequency": 0.2,
+      "automaticMonthlyFrequency": 0.2,
+      "selectionWeight": 2
+    },
+    {
+      "id": 800098,
+      "category": "home",
+      "meanForProfileEUR": 38,
+      "monthlyFrequency": 0.09868421052631579,
+      "automaticMonthlyFrequency": 0.09868421052631579,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800051,
+      "category": "digital",
+      "meanForProfileEUR": 3.99,
+      "monthlyFrequency": 1.0025062656641603,
+      "automaticMonthlyFrequency": 1.0025062656641603,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800052,
+      "category": "digital",
+      "meanForProfileEUR": 3.49,
+      "monthlyFrequency": 1.146131805157593,
+      "automaticMonthlyFrequency": 1.146131805157593,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800053,
+      "category": "travel",
+      "meanForProfileEUR": 68,
+      "monthlyFrequency": 0.1715686274509804,
+      "automaticMonthlyFrequency": 0.1715686274509804,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800054,
+      "category": "travel",
+      "meanForProfileEUR": 95,
+      "monthlyFrequency": 0.12280701754385964,
+      "automaticMonthlyFrequency": 0.12280701754385964,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800055,
+      "category": "travel",
+      "meanForProfileEUR": 175,
+      "monthlyFrequency": 0.06666666666666667,
+      "automaticMonthlyFrequency": 0.06666666666666667,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800056,
+      "category": "hotels",
+      "meanForProfileEUR": 95,
+      "monthlyFrequency": 0,
+      "automaticMonthlyFrequency": 0,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800057,
+      "category": "fastfood",
+      "meanForProfileEUR": 16,
+      "monthlyFrequency": 0,
+      "automaticMonthlyFrequency": 0,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800058,
+      "category": "bars",
+      "meanForProfileEUR": 22,
+      "monthlyFrequency": 0,
+      "automaticMonthlyFrequency": 0,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800059,
+      "category": "alcohol",
+      "meanForProfileEUR": 28,
+      "monthlyFrequency": 0,
+      "automaticMonthlyFrequency": 0,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800060,
+      "category": "cycling",
+      "meanForProfileEUR": 35,
+      "monthlyFrequency": 0,
+      "automaticMonthlyFrequency": 0,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800061,
+      "category": "taxes",
+      "meanForProfileEUR": 120,
+      "monthlyFrequency": 0,
+      "automaticMonthlyFrequency": 0,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800062,
+      "category": "bankfees",
+      "meanForProfileEUR": 6.4,
+      "monthlyFrequency": 0,
+      "automaticMonthlyFrequency": 0,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800063,
+      "category": "incidentfees",
+      "meanForProfileEUR": 8,
+      "monthlyFrequency": 0,
+      "automaticMonthlyFrequency": 0,
+      "selectionWeight": 1.5
+    },
+    {
+      "id": 800085,
+      "category": "ridehailing",
+      "meanForProfileEUR": 29,
+      "monthlyFrequency": 0.3448275862068966,
+      "automaticMonthlyFrequency": 0.3448275862068966,
+      "selectionWeight": 1
+    },
+    {
+      "id": 800092,
+      "category": "childrenActivities",
+      "meanForProfileEUR": 32,
+      "monthlyFrequency": 0.5078125,
+      "automaticMonthlyFrequency": 0.5078125,
+      "selectionWeight": 4
+    },
+    {
+      "id": 800093,
+      "category": "childrenActivities",
+      "meanForProfileEUR": 48,
+      "monthlyFrequency": 0.3385416666666667,
+      "automaticMonthlyFrequency": 0.3385416666666667,
+      "selectionWeight": 4
+    },
+    {
+      "id": 800094,
+      "category": "childrenActivities",
+      "meanForProfileEUR": 35,
+      "monthlyFrequency": 0.4642857142857143,
+      "automaticMonthlyFrequency": 0.4642857142857143,
+      "selectionWeight": 4
+    },
+    {
+      "id": 800095,
+      "category": "childrenActivities",
+      "meanForProfileEUR": 85,
+      "monthlyFrequency": 0.19117647058823528,
+      "automaticMonthlyFrequency": 0.19117647058823528,
+      "selectionWeight": 4
+    }
+  ]
+}

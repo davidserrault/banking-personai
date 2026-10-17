@@ -1,0 +1,2660 @@
+{
+  "format": "personia.configuration",
+  "version": 2,
+  "specificationVersion": "2",
+  "uiLocale": "en-GB",
+  "modelId": "michel",
+  "configuration": {
+    "id": "fr.michel.retired",
+    "name": "Michel",
+    "seed": "590706",
+    "locale": "fr-FR",
+    "currency": "EUR",
+    "age": 67,
+    "household": 2,
+    "children": 0,
+    "employment": "retired",
+    "bankFees": {
+      "enabled": true,
+      "authorizedRate": 9.07,
+      "minimumQuarterly": 4,
+      "unauthorizedRate": 19.16,
+      "commission": 8,
+      "monthlyCap": 80,
+      "protection": "standard"
+    },
+    "region": "bretagne",
+    "urbanity": "city",
+    "housing": "owner",
+    "car": true,
+    "family": "couple",
+    "autonomy": "independent",
+    "style": "retired",
+    "accounts": [
+      {
+        "key": "checking_michel",
+        "name": "Primary current account",
+        "bank": "Caisse d’Épargne",
+        "type": "checking",
+        "openingBalance": 600
+      },
+      {
+        "key": "saving_michel",
+        "name": "Livret A",
+        "product": "livret-a",
+        "annualRate": 1.7,
+        "ceiling": 20000,
+        "withdrawalRank": 2,
+        "depositRank": 2,
+        "interestMode": "fortnight",
+        "bank": "Caisse d’Épargne",
+        "type": "savings",
+        "openingBalance": 2500
+      },
+      {
+        "key": "projects_michel",
+        "name": "Savings account",
+        "product": "csl",
+        "annualRate": 1,
+        "ceiling": null,
+        "withdrawalRank": 1,
+        "depositRank": 1,
+        "interestMode": "fortnight",
+        "bank": "Caisse d’Épargne",
+        "type": "savings",
+        "openingBalance": 700
+      },
+      {
+        "key": "investment_michel",
+        "name": "Life insurance",
+        "product": "life-euro",
+        "annualRate": 2.5,
+        "ceiling": null,
+        "withdrawalRank": 0,
+        "depositRank": 3,
+        "interestMode": "daily",
+        "bank": "Caisse d’Épargne",
+        "type": "investment",
+        "openingBalance": 2000
+      }
+    ],
+    "charges": [
+      {
+        "id": "housing",
+        "name": "Mortgage payment",
+        "amount": 0,
+        "day": 5,
+        "categoryId": 800,
+        "enabled": false
+      },
+      {
+        "id": "borrower",
+        "name": "Borrower insurance",
+        "amount": 42,
+        "day": 5,
+        "categoryId": 54,
+        "enabled": false
+      },
+      {
+        "id": "insurance",
+        "name": "Home insurance",
+        "amount": 33,
+        "day": 8,
+        "categoryId": 54,
+        "enabled": true
+      },
+      {
+        "id": "energy",
+        "name": "Electricity · EDF",
+        "amount": 92,
+        "day": 10,
+        "categoryId": 328,
+        "enabled": true
+      },
+      {
+        "id": "internet",
+        "name": "Broadband",
+        "amount": 41.99,
+        "day": 12,
+        "categoryId": 18,
+        "enabled": true
+      },
+      {
+        "id": "mobile",
+        "name": "Mobile plan",
+        "amount": 24.99,
+        "day": 15,
+        "categoryId": 18,
+        "enabled": true
+      },
+      {
+        "id": "fees",
+        "name": "Bank account fee",
+        "amount": 6.4,
+        "day": 2,
+        "categoryId": 59,
+        "enabled": true
+      }
+    ],
+    "discretionary": 1,
+    "savingAggression": 0.55,
+    "lowBalance": "rare",
+    "buffer": 500,
+    "overdraft": true,
+    "overdraftLimit": 500,
+    "autoSavings": true,
+    "autoTopup": false,
+    "topupThreshold": 0,
+    "topupAmount": 300,
+    "preferredMerchants": [
+      "Marché local",
+      "Pharmacie du centre",
+      "Opticien fictif · reste à charge",
+      "Jardinerie de quartier fictive"
+    ],
+    "budgets": {
+      "groceries": 430,
+      "bakery": 40,
+      "fuel": 110,
+      "transport": 25,
+      "health": 25,
+      "restaurants": 65,
+      "coffee": 15,
+      "shopping": 55,
+      "leisure": 30,
+      "home": 35,
+      "digital": 8,
+      "travel": 35,
+      "hotels": 0,
+      "fastfood": 0,
+      "bars": 0,
+      "alcohol": 0,
+      "cycling": 0,
+      "taxes": 0,
+      "bankfees": 0,
+      "incidentfees": 0,
+      "ridehailing": 20,
+      "childrenActivities": 50,
+      "luxury": 40
+    },
+    "events": {
+      "appstore": true,
+      "school": false,
+      "schoolTrip": false,
+      "birthday": true,
+      "appliance": true,
+      "gifts": true,
+      "equipment": true,
+      "homeRepair": true,
+      "travel": true
+    },
+    "travelCities": [
+      "Nantes",
+      "Lille",
+      "Paris"
+    ],
+    "startDate": "2025-09-15",
+    "years": 1,
+    "seasonality": {
+      "enabled": true,
+      "volumeStrength": 1,
+      "amountStrength": 0
+    },
+    "financing": {
+      "consumerEnabled": false,
+      "cardEnabled": false,
+      "priority": "consumer",
+      "scope": "events",
+      "consumerInsurance": 0,
+      "cardInsurance": 0,
+      "consumerRate": 6,
+      "consumerMonths": 36,
+      "consumerLimit": 25000,
+      "cardRate": 16,
+      "cardMonths": 12,
+      "cardLimit": 3000
+    },
+    "plannedEvents": [],
+    "incomes": [
+      {
+        "id": "income_main",
+        "label": "Retirement pension",
+        "amount": 2150,
+        "frequency": "monthly",
+        "day": 9,
+        "month": 1,
+        "amountVariation": 0,
+        "frequencyVariation": 0,
+        "annualGrowth": 0,
+        "main": true,
+        "enabled": true
+      }
+    ],
+    "countryCode": "FR",
+    "currencyDigits": 2,
+    "timeZone": "Europe/Paris",
+    "referenceId": "fr.merchants.v1",
+    "merchantOverrides": {}
+  },
+  "reference": {
+    "format": "personia.merchant-reference",
+    "version": 1,
+    "id": "fr.merchants.v1",
+    "name": "France merchant reference",
+    "countryCode": "FR",
+    "currency": "EUR",
+    "currencyDigits": 2,
+    "locale": "fr-FR",
+    "timeZone": "Europe/Paris",
+    "dataStatus": "scenario-assumptions",
+    "regions": [
+      {
+        "id": "centre",
+        "name": "Centre-Val de Loire",
+        "factor": 1
+      },
+      {
+        "id": "idf",
+        "name": "Île-de-France",
+        "factor": 1.16
+      },
+      {
+        "id": "bretagne",
+        "name": "Bretagne",
+        "factor": 0.98
+      },
+      {
+        "id": "pays-loire",
+        "name": "Pays de la Loire",
+        "factor": 0.98
+      },
+      {
+        "id": "hauts-france",
+        "name": "Hauts-de-France",
+        "factor": 0.96
+      },
+      {
+        "id": "normandie",
+        "name": "Normandie",
+        "factor": 0.98
+      },
+      {
+        "id": "grand-est",
+        "name": "Grand Est",
+        "factor": 0.98
+      },
+      {
+        "id": "bourgogne",
+        "name": "Bourgogne-Franche-Comté",
+        "factor": 0.97
+      },
+      {
+        "id": "aura",
+        "name": "Auvergne-Rhône-Alpes",
+        "factor": 1.05
+      },
+      {
+        "id": "nouvelle-aquitaine",
+        "name": "Nouvelle-Aquitaine",
+        "factor": 1.01
+      },
+      {
+        "id": "occitanie",
+        "name": "Occitanie",
+        "factor": 1
+      },
+      {
+        "id": "paca",
+        "name": "Provence-Alpes-Côte d’Azur",
+        "factor": 1.08
+      },
+      {
+        "id": "corse",
+        "name": "Corse",
+        "factor": 1.1
+      }
+    ],
+    "merchants": [
+      {
+        "id": 800000,
+        "name": "Carrefour City",
+        "category": "groceries",
+        "mean": 28,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800001,
+        "name": "Monoprix",
+        "category": "groceries",
+        "mean": 38,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "premium"
+      },
+      {
+        "id": 800002,
+        "name": "Franprix",
+        "category": "groceries",
+        "mean": 25,
+        "regions": [
+          "idf"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800003,
+        "name": "E.Leclerc",
+        "category": "groceries",
+        "mean": 52,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800004,
+        "name": "Intermarché",
+        "category": "groceries",
+        "mean": 43,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800005,
+        "name": "Super U",
+        "category": "groceries",
+        "mean": 48,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800006,
+        "name": "Lidl",
+        "category": "groceries",
+        "mean": 33,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800007,
+        "name": "Auchan",
+        "category": "groceries",
+        "mean": 51,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800008,
+        "name": "Biocoop",
+        "category": "groceries",
+        "mean": 32,
+        "regions": [
+          "*"
+        ],
+        "segment": "premium"
+      },
+      {
+        "id": 800009,
+        "name": "Marché local",
+        "category": "groceries",
+        "mean": 23,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800010,
+        "name": "Boulangerie du quartier",
+        "category": "bakery",
+        "mean": 7.5,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800011,
+        "name": "Boulangerie de la place",
+        "category": "bakery",
+        "mean": 9,
+        "regions": [
+          "centre",
+          "pays-loire",
+          "bretagne"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800012,
+        "name": "Marie Blachère",
+        "category": "bakery",
+        "mean": 8.5,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800013,
+        "name": "TotalEnergies",
+        "category": "fuel",
+        "mean": 58,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800014,
+        "name": "Station E.Leclerc",
+        "category": "fuel",
+        "mean": 52,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800015,
+        "name": "Station U",
+        "category": "fuel",
+        "mean": 50,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800016,
+        "name": "Péage autoroutier",
+        "category": "transport",
+        "mean": 8,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800017,
+        "name": "Réseau urbain · Tours",
+        "category": "transport",
+        "mean": 3.5,
+        "regions": [
+          "centre"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800018,
+        "name": "Réseau urbain · Paris",
+        "category": "transport",
+        "mean": 5,
+        "regions": [
+          "idf"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800019,
+        "name": "Réseau urbain · Nantes",
+        "category": "transport",
+        "mean": 3.8,
+        "regions": [
+          "pays-loire"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800020,
+        "name": "Réseau urbain · Lille",
+        "category": "transport",
+        "mean": 3.6,
+        "regions": [
+          "hauts-france"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800021,
+        "name": "Réseau urbain local",
+        "category": "transport",
+        "mean": 3.5,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800022,
+        "name": "Pharmacie du centre",
+        "category": "health",
+        "mean": 17,
+        "regions": [
+          "*"
+        ],
+        "segment": "healthcare"
+      },
+      {
+        "id": 800023,
+        "name": "Cabinet médical fictif",
+        "category": "health",
+        "mean": 30,
+        "regions": [
+          "*"
+        ],
+        "segment": "healthcare"
+      },
+      {
+        "id": 800024,
+        "name": "Big Fernand",
+        "category": "restaurants",
+        "mean": 23,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800025,
+        "name": "Deliveroo",
+        "category": "restaurants",
+        "mean": 29,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800026,
+        "name": "Restaurant de quartier",
+        "category": "restaurants",
+        "mean": 32,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800027,
+        "name": "Crêperie de quartier",
+        "category": "restaurants",
+        "mean": 25,
+        "regions": [
+          "bretagne",
+          "pays-loire"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800028,
+        "name": "Bouchon de quartier",
+        "category": "restaurants",
+        "mean": 31,
+        "regions": [
+          "aura"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800029,
+        "name": "Estaminet de quartier",
+        "category": "restaurants",
+        "mean": 28,
+        "regions": [
+          "hauts-france"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800030,
+        "name": "Brasserie du centre",
+        "category": "restaurants",
+        "mean": 29,
+        "regions": [
+          "centre",
+          "grand-est",
+          "normandie"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800031,
+        "name": "Restaurant du littoral",
+        "category": "restaurants",
+        "mean": 34,
+        "regions": [
+          "paca",
+          "corse",
+          "occitanie",
+          "nouvelle-aquitaine"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800032,
+        "name": "Café du quartier",
+        "category": "coffee",
+        "mean": 5.5,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800033,
+        "name": "Columbus Café",
+        "category": "coffee",
+        "mean": 7,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800034,
+        "name": "Pret",
+        "category": "coffee",
+        "mean": 11,
+        "regions": [
+          "idf"
+        ],
+        "urbanOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800035,
+        "name": "Caffè Nero",
+        "category": "coffee",
+        "mean": 7,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": false,
+        "travelOnly": true,
+        "segment": "everyday"
+      },
+      {
+        "id": 800036,
+        "name": "Amazon",
+        "category": "shopping",
+        "mean": 33,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800037,
+        "name": "Decathlon",
+        "category": "shopping",
+        "mean": 42,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800038,
+        "name": "Kiabi",
+        "category": "shopping",
+        "mean": 35,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800039,
+        "name": "H&M",
+        "category": "shopping",
+        "mean": 39,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800040,
+        "name": "Librairie du centre",
+        "category": "shopping",
+        "mean": 21,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800041,
+        "name": "Cinéma local",
+        "category": "leisure",
+        "mean": 23,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800042,
+        "name": "Piscine municipale",
+        "category": "leisure",
+        "mean": 12,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800043,
+        "name": "Activité de loisirs",
+        "category": "leisure",
+        "mean": 28,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800044,
+        "name": "Leroy Merlin",
+        "category": "home",
+        "mean": 57,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800045,
+        "name": "Castorama",
+        "category": "home",
+        "mean": 52,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800046,
+        "name": "Bricomarché",
+        "category": "home",
+        "mean": 38,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800047,
+        "name": "IKEA",
+        "category": "home",
+        "mean": 79,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800048,
+        "name": "Weldom",
+        "category": "home",
+        "mean": 34,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800049,
+        "name": "Boulanger",
+        "category": "home",
+        "mean": 130,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800050,
+        "name": "Darty",
+        "category": "home",
+        "mean": 145,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800051,
+        "name": "App Store",
+        "category": "digital",
+        "mean": 3.99,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800052,
+        "name": "Google Play",
+        "category": "digital",
+        "mean": 3.49,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800053,
+        "name": "SNCF Connect",
+        "category": "travel",
+        "mean": 68,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800054,
+        "name": "Hôtel fictif",
+        "category": "travel",
+        "mean": 95,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800055,
+        "name": "Hébergement de vacances fictif",
+        "category": "travel",
+        "mean": 175,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800056,
+        "name": "Hôtel du séjour fictif",
+        "category": "hotels",
+        "mean": 95,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800057,
+        "name": "Restaurant rapide fictif",
+        "category": "fastfood",
+        "mean": 16,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800058,
+        "name": "Bar du quartier fictif",
+        "category": "bars",
+        "mean": 22,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800059,
+        "name": "Caviste fictif",
+        "category": "alcohol",
+        "mean": 28,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800060,
+        "name": "Atelier vélo fictif",
+        "category": "cycling",
+        "mean": 35,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800061,
+        "name": "Impôts · scénario",
+        "category": "taxes",
+        "mean": 120,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800062,
+        "name": "Frais bancaires · scénario",
+        "category": "bankfees",
+        "mean": 6.4,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800063,
+        "name": "Frais d’incident · scénario",
+        "category": "incidentfees",
+        "mean": 8,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800064,
+        "name": "ALDI",
+        "category": "groceries",
+        "mean": 29,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800065,
+        "name": "Netto",
+        "category": "groceries",
+        "mean": 30,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800066,
+        "name": "Épicerie fine fictive",
+        "category": "groceries",
+        "mean": 58,
+        "regions": [
+          "*"
+        ],
+        "segment": "premium"
+      },
+      {
+        "id": 800067,
+        "name": "La Grande Épicerie de Paris",
+        "category": "groceries",
+        "mean": 72,
+        "regions": [
+          "idf"
+        ],
+        "urbanOnly": true,
+        "segment": "premium"
+      },
+      {
+        "id": 800068,
+        "name": "Action",
+        "category": "home",
+        "mean": 23,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800069,
+        "name": "NOZ",
+        "category": "shopping",
+        "mean": 21,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800070,
+        "name": "Vinted",
+        "category": "shopping",
+        "mean": 19,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800071,
+        "name": "Ressourcerie locale fictive",
+        "category": "home",
+        "mean": 25,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800072,
+        "name": "Friperie de quartier fictive",
+        "category": "shopping",
+        "mean": 22,
+        "regions": [
+          "*"
+        ],
+        "segment": "discount"
+      },
+      {
+        "id": 800073,
+        "name": "Galeries Lafayette",
+        "category": "shopping",
+        "mean": 115,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "premium"
+      },
+      {
+        "id": 800074,
+        "name": "Printemps",
+        "category": "shopping",
+        "mean": 145,
+        "regions": [
+          "idf",
+          "aura",
+          "paca",
+          "hauts-france"
+        ],
+        "urbanOnly": true,
+        "segment": "premium"
+      },
+      {
+        "id": 800075,
+        "name": "Boutique premium fictive",
+        "category": "shopping",
+        "mean": 130,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "premium"
+      },
+      {
+        "id": 800076,
+        "name": "Boutique de créateurs fictive",
+        "category": "luxury",
+        "mean": 320,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "luxury"
+      },
+      {
+        "id": 800077,
+        "name": "Maroquinerie de luxe fictive",
+        "category": "luxury",
+        "mean": 650,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "luxury"
+      },
+      {
+        "id": 800078,
+        "name": "Joaillerie de luxe fictive",
+        "category": "luxury",
+        "mean": 850,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "luxury"
+      },
+      {
+        "id": 800079,
+        "name": "Restaurant gastronomique fictif",
+        "category": "restaurants",
+        "mean": 110,
+        "regions": [
+          "*"
+        ],
+        "segment": "premium"
+      },
+      {
+        "id": 800080,
+        "name": "Traiteur premium fictif",
+        "category": "restaurants",
+        "mean": 65,
+        "regions": [
+          "*"
+        ],
+        "segment": "premium"
+      },
+      {
+        "id": 800081,
+        "name": "Restaurant universitaire fictif",
+        "category": "restaurants",
+        "mean": 3.3,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "student"
+      },
+      {
+        "id": 800082,
+        "name": "Cafétéria universitaire fictive",
+        "category": "coffee",
+        "mean": 3,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "student"
+      },
+      {
+        "id": 800083,
+        "name": "Uber",
+        "category": "ridehailing",
+        "mean": 24,
+        "regions": [
+          "idf",
+          "aura",
+          "paca",
+          "hauts-france",
+          "pays-loire",
+          "nouvelle-aquitaine",
+          "occitanie",
+          "bretagne",
+          "grand-est",
+          "normandie"
+        ],
+        "urbanOnly": true,
+        "segment": "vtc"
+      },
+      {
+        "id": 800084,
+        "name": "Bolt",
+        "category": "ridehailing",
+        "mean": 21,
+        "regions": [
+          "idf",
+          "aura",
+          "paca"
+        ],
+        "urbanOnly": true,
+        "segment": "vtc"
+      },
+      {
+        "id": 800085,
+        "name": "Chauffeur VTC local fictif",
+        "category": "ridehailing",
+        "mean": 29,
+        "regions": [
+          "*"
+        ],
+        "urbanOnly": true,
+        "segment": "vtc"
+      },
+      {
+        "id": 800086,
+        "name": "Chauffeur premium fictif",
+        "category": "ridehailing",
+        "mean": 58,
+        "regions": [
+          "idf",
+          "aura",
+          "paca"
+        ],
+        "urbanOnly": true,
+        "segment": "premium"
+      },
+      {
+        "id": 800087,
+        "name": "Opticien fictif · reste à charge",
+        "category": "health",
+        "mean": 95,
+        "regions": [
+          "*"
+        ],
+        "segment": "healthcare"
+      },
+      {
+        "id": 800088,
+        "name": "Cabinet dentaire fictif · reste à charge",
+        "category": "health",
+        "mean": 65,
+        "regions": [
+          "*"
+        ],
+        "segment": "healthcare"
+      },
+      {
+        "id": 800089,
+        "name": "Pédicure-podologue fictif",
+        "category": "health",
+        "mean": 32,
+        "regions": [
+          "*"
+        ],
+        "segment": "healthcare"
+      },
+      {
+        "id": 800090,
+        "name": "Audioprothésiste fictif · reste à charge",
+        "category": "health",
+        "mean": 180,
+        "regions": [
+          "*"
+        ],
+        "segment": "healthcare"
+      },
+      {
+        "id": 800091,
+        "name": "Matériel médical fictif",
+        "category": "health",
+        "mean": 42,
+        "regions": [
+          "*"
+        ],
+        "segment": "healthcare"
+      },
+      {
+        "id": 800092,
+        "name": "Club sportif enfants fictif",
+        "category": "childrenActivities",
+        "mean": 32,
+        "regions": [
+          "*"
+        ],
+        "segment": "children"
+      },
+      {
+        "id": 800093,
+        "name": "École de musique associative fictive",
+        "category": "childrenActivities",
+        "mean": 48,
+        "regions": [
+          "*"
+        ],
+        "segment": "children"
+      },
+      {
+        "id": 800094,
+        "name": "Atelier arts et danse enfants fictif",
+        "category": "childrenActivities",
+        "mean": 35,
+        "regions": [
+          "*"
+        ],
+        "segment": "children"
+      },
+      {
+        "id": 800095,
+        "name": "Stage sportif enfants fictif",
+        "category": "childrenActivities",
+        "mean": 85,
+        "regions": [
+          "*"
+        ],
+        "segment": "children"
+      },
+      {
+        "id": 800096,
+        "name": "Musée local fictif",
+        "category": "leisure",
+        "mean": 14,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800097,
+        "name": "Association culturelle fictive",
+        "category": "leisure",
+        "mean": 24,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      },
+      {
+        "id": 800098,
+        "name": "Jardinerie de quartier fictive",
+        "category": "home",
+        "mean": 38,
+        "regions": [
+          "*"
+        ],
+        "segment": "everyday"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Person’IA France scenario catalog",
+        "note": "Merchant baskets and affinities are modeling assumptions. Source-backed consumption notes are listed separately. Travel-only placeholder rows are excluded from domestic generation."
+      },
+      {
+        "title": "Insee · Budget de famille 2017",
+        "url": "https://www.insee.fr/fr/statistiques/4764315",
+        "note": "Household budget structure varies with income and household size."
+      },
+      {
+        "title": "Insee · Comportements de consommation",
+        "url": "https://www.insee.fr/fr/statistiques/4127596",
+        "note": "Spending levels differ across income groups."
+      },
+      {
+        "title": "Insee · Lieux d’achat et revenus",
+        "url": "https://www.insee.fr/fr/statistiques/fichier/1373172/fporsoc07c.pdf",
+        "note": "Historical evidence informs discount-shopping preferences."
+      },
+      {
+        "title": "DREES · La complémentaire santé",
+        "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2024-07/CS2024EMB.pdf#page=14",
+        "note": "Out-of-pocket healthcare expenditure varies with age."
+      },
+      {
+        "title": "INJEP–DEPP · Petites vacances des collégiens",
+        "url": "https://injep.fr/wp-content/uploads/2023/12/IAS73_vacances-collegiens_web.pdf",
+        "note": "Organized activities inform family spending scenarios."
+      },
+      {
+        "title": "OVE · Conditions de vie étudiantes 2023",
+        "url": "https://www.ove-national.education.fr/publication/ove-infos-n48-la-crise-dans-le-retroviseur/",
+        "note": "Student budgets and food constraints inform the student scenario."
+      }
+    ]
+  },
+  "assumptions": {
+    "bankingCountry": "FR",
+    "consumptionCountry": "FR",
+    "seasonalityCountry": "FR",
+    "sources": [
+      {
+        "id": "insee-budget",
+        "title": "Insee · Budget de famille 2017",
+        "url": "https://www.insee.fr/fr/statistiques/4764315",
+        "date": "Enquête 2017 · publication 2020",
+        "finding": "Loisirs et culture : 7,2 % du budget des ménages modestes, 11,3 % chez les aisés ; restauration et hôtels : 5,2 % contre 9,4 %. Les familles dépensent davantage en alimentation en euros que les personnes seules.",
+        "use": "Répartition différente des enveloppes par catégorie et prise en compte de la taille du foyer."
+      },
+      {
+        "id": "insee-level",
+        "title": "Insee · Comportements de consommation",
+        "url": "https://www.insee.fr/fr/statistiques/4127596",
+        "date": "Enquête 2017 · publication 2019",
+        "finding": "Les 20 % de ménages les plus aisés consomment au total 2,6 fois plus que les 20 % les plus modestes.",
+        "use": "Écart de niveau entre les scénarios « Budget mesuré » et « Confort », avant adaptation au foyer."
+      },
+      {
+        "id": "insee-shops",
+        "title": "Insee · Lieux d’achat et revenus",
+        "url": "https://www.insee.fr/fr/statistiques/fichier/1373172/fporsoc07c.pdf",
+        "date": "Enquête 2006 · publication 2007, p. 106",
+        "finding": "La part de l’alimentation achetée en maxi-discount atteint 17,8 % dans le premier décile de niveau de vie, contre 5,4 % dans le dernier.",
+        "use": "Préférence accrue pour le discount. Ce repère historique ne décrit pas les parts de marché actuelles."
+      },
+      {
+        "id": "drees-health",
+        "title": "DREES · La complémentaire santé",
+        "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2024-07/CS2024EMB.pdf#page=14",
+        "date": "Données 2019 · édition 2024, p. 13",
+        "finding": "Reste à charge annuel après assurances obligatoire et complémentaire : 206 € pour les ménages de moins de 40 ans, 443 € à 60–69 ans, 590 € à 70 ans ou plus (âge du membre le plus âgé).",
+        "use": "Santé renforcée avec l’âge et dans le profil retraité. Seuls des paiements nets simulés sont générés, hors cotisations de mutuelle."
+      },
+      {
+        "id": "injep-children",
+        "title": "INJEP–DEPP · Petites vacances des collégiens",
+        "url": "https://injep.fr/wp-content/uploads/2023/12/IAS73_vacances-collegiens_web.pdf",
+        "date": "Enquête 2019 · publication 2023",
+        "finding": "Un peu plus d’un collégien sur cinq participe à un stage ou séjour collectif pendant les petites vacances ; près des deux tiers de ces séjours sont sportifs.",
+        "use": "Clubs sportifs, ateliers, musique et stages pour les foyers avec enfants. Les coûts mensuels sont des hypothèses."
+      },
+      {
+        "id": "ove-students",
+        "title": "OVE · Conditions de vie étudiantes 2023",
+        "url": "https://www.ove-national.education.fr/publication/ove-infos-n48-la-crise-dans-le-retroviseur/",
+        "date": "Enquête 2023 · publication 2024",
+        "finding": "L’enquête documente les contraintes budgétaires et alimentaires étudiantes, ainsi que leur diversité.",
+        "use": "Un scénario étudiant privilégiant les petits paniers, la seconde main et la restauration universitaire ; il reste entièrement ajustable."
+      }
+    ],
+    "consumption": {
+      "version": "fr.consumption.v2",
+      "profiles": [
+        {
+          "id": "student",
+          "name": "Étudiant",
+          "factor": 0.65,
+          "description": "Petits paniers, discount, seconde main et repas universitaires. Sorties et achats plus contenus.",
+          "budgets": {
+            "groceries": 0.75,
+            "bakery": 0.7,
+            "health": 0.9,
+            "transport": 1.1,
+            "fuel": 0.6,
+            "restaurants": 0.6,
+            "coffee": 0.8,
+            "shopping": 0.5,
+            "leisure": 0.7,
+            "home": 0.4,
+            "digital": 1,
+            "travel": 0.4,
+            "ridehailing": 0.15,
+            "childrenActivities": 0.65,
+            "luxury": 0
+          },
+          "basket": 0.75,
+          "basketOverrides": {
+            "health": 0.9,
+            "fuel": 0.9
+          },
+          "affinity": {
+            "everyday": 1,
+            "discount": 6,
+            "premium": 0.08,
+            "luxury": 0,
+            "healthcare": 1,
+            "children": 1,
+            "student": 7,
+            "vtc": 0.3
+          }
+        },
+        {
+          "id": "modest",
+          "name": "Budget mesuré",
+          "factor": 0.7,
+          "description": "Priorité aux dépenses essentielles, enseignes discount et achats d’occasion. Loisirs et restauration réduits.",
+          "budgets": {
+            "groceries": 0.7956521739130434,
+            "bakery": 0.7956521739130434,
+            "transport": 0.5804878048780489,
+            "fuel": 0.5804878048780489,
+            "leisure": 0.5361702127659574,
+            "restaurants": 0.5055555555555555,
+            "coffee": 0.5055555555555555,
+            "hotels": 0.5055555555555555,
+            "travel": 0.5055555555555555,
+            "home": 0.49122807017543857,
+            "shopping": 0.7699999999999999,
+            "digital": 0.985185185185185,
+            "health": 1,
+            "ridehailing": 0.2,
+            "childrenActivities": 0.8,
+            "luxury": 0
+          },
+          "basket": 0.88,
+          "basketOverrides": {
+            "health": 1,
+            "fuel": 0.95
+          },
+          "affinity": {
+            "everyday": 1,
+            "discount": 5,
+            "premium": 0.15,
+            "luxury": 0,
+            "healthcare": 1,
+            "children": 1,
+            "student": 0,
+            "vtc": 0.5
+          }
+        },
+        {
+          "id": "family",
+          "name": "Famille",
+          "factor": 1,
+          "description": "Alimentation et équipements du foyer renforcés. Une enveloppe spécifique finance les activités des enfants.",
+          "budgets": {
+            "groceries": 1.18,
+            "bakery": 1.1,
+            "health": 1,
+            "shopping": 1.2,
+            "leisure": 1.25,
+            "home": 1.25,
+            "ridehailing": 0.5,
+            "childrenActivities": 1.3,
+            "luxury": 0
+          },
+          "basket": 1,
+          "basketOverrides": {
+            "groceries": 1.08,
+            "shopping": 1.08
+          },
+          "affinity": {
+            "everyday": 1.5,
+            "discount": 2,
+            "premium": 0.5,
+            "luxury": 0,
+            "healthcare": 1.2,
+            "children": 4,
+            "student": 0,
+            "vtc": 1
+          }
+        },
+        {
+          "id": "comfort",
+          "name": "Confort",
+          "factor": 1.82,
+          "description": "Plus de loisirs, restauration, services VTC et achats premium. Une réserve permet des achats de luxe occasionnels.",
+          "budgets": {
+            "groceries": 1.6052173913043477,
+            "bakery": 1.6052173913043477,
+            "transport": 1.9531707317073175,
+            "fuel": 1.9531707317073175,
+            "leisure": 2.1878723404255322,
+            "restaurants": 2.3761111111111113,
+            "coffee": 2.3761111111111113,
+            "hotels": 2.3761111111111113,
+            "travel": 2.3761111111111113,
+            "home": 2.330877192982456,
+            "shopping": 1.8928,
+            "digital": 1.4155555555555557,
+            "health": 1.2,
+            "ridehailing": 6,
+            "childrenActivities": 2.2,
+            "luxury": 4
+          },
+          "basket": 1.4,
+          "basketOverrides": {
+            "groceries": 1.28,
+            "fuel": 1.1,
+            "health": 1.05,
+            "luxury": 1
+          },
+          "affinity": {
+            "everyday": 1,
+            "discount": 0.25,
+            "premium": 5,
+            "luxury": 1,
+            "healthcare": 1.3,
+            "children": 2,
+            "student": 0,
+            "vtc": 4
+          }
+        },
+        {
+          "id": "retired",
+          "name": "Retraité",
+          "factor": 0.85,
+          "description": "Plus de soins et d’équipements de santé, commerces de proximité, loisirs culturels et moins de déplacements.",
+          "budgets": {
+            "groceries": 1.05,
+            "bakery": 1.15,
+            "health": 2.150485436893204,
+            "fuel": 0.7,
+            "transport": 0.65,
+            "restaurants": 0.8,
+            "coffee": 0.8,
+            "shopping": 0.75,
+            "leisure": 1.2,
+            "home": 1.1,
+            "digital": 0.55,
+            "travel": 0.9,
+            "ridehailing": 0.7,
+            "childrenActivities": 1,
+            "luxury": 0
+          },
+          "basket": 1,
+          "basketOverrides": {
+            "health": 1.1,
+            "groceries": 1.05
+          },
+          "affinity": {
+            "everyday": 2,
+            "discount": 1.5,
+            "premium": 0.8,
+            "luxury": 0,
+            "healthcare": 5,
+            "children": 1,
+            "student": 0,
+            "vtc": 1
+          }
+        }
+      ],
+      "categoryBases": [
+        {
+          "key": "groceries",
+          "id": 14,
+          "name": "Alimentation",
+          "protected": true,
+          "monthly": 430
+        },
+        {
+          "key": "bakery",
+          "id": 116,
+          "name": "Boulangerie & proximité",
+          "protected": true,
+          "monthly": 40
+        },
+        {
+          "key": "fuel",
+          "id": 36,
+          "name": "Carburant",
+          "protected": true,
+          "monthly": 110
+        },
+        {
+          "key": "transport",
+          "id": 115,
+          "name": "Transports & péages",
+          "protected": true,
+          "monthly": 25
+        },
+        {
+          "key": "health",
+          "id": 49,
+          "name": "Santé",
+          "protected": true,
+          "monthly": 25
+        },
+        {
+          "key": "restaurants",
+          "id": 84,
+          "name": "Restaurants & livraison",
+          "protected": false,
+          "monthly": 65
+        },
+        {
+          "key": "coffee",
+          "id": 79,
+          "name": "Cafés",
+          "protected": false,
+          "monthly": 15
+        },
+        {
+          "key": "shopping",
+          "id": 64,
+          "name": "Achats & habillement",
+          "protected": false,
+          "monthly": 55
+        },
+        {
+          "key": "leisure",
+          "id": 75,
+          "name": "Loisirs",
+          "protected": false,
+          "monthly": 30
+        },
+        {
+          "key": "home",
+          "id": 29,
+          "name": "Maison & bricolage",
+          "protected": false,
+          "monthly": 35
+        },
+        {
+          "key": "digital",
+          "id": 18,
+          "name": "Numérique & télécoms",
+          "protected": false,
+          "monthly": 8
+        },
+        {
+          "key": "travel",
+          "id": 339,
+          "name": "Voyages",
+          "protected": false,
+          "monthly": 35
+        },
+        {
+          "key": "hotels",
+          "id": 98,
+          "name": "Hôtels & campings",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "fastfood",
+          "id": 71,
+          "name": "Restauration rapide",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "bars",
+          "id": 9010,
+          "name": "Bars & sorties",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "alcohol",
+          "id": 9011,
+          "name": "Alcool",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "cycling",
+          "id": 9012,
+          "name": "Vélo",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "taxes",
+          "id": 837,
+          "name": "Impôts & taxes",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "bankfees",
+          "id": 59,
+          "name": "Frais bancaires variables",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "incidentfees",
+          "id": 9013,
+          "name": "Frais d’incidents simulés",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "ridehailing",
+          "id": 9014,
+          "name": "VTC & chauffeurs",
+          "protected": false,
+          "monthly": 20
+        },
+        {
+          "key": "childrenActivities",
+          "id": 9015,
+          "name": "Activités extrascolaires",
+          "protected": false,
+          "monthly": 50
+        },
+        {
+          "key": "luxury",
+          "id": 9016,
+          "name": "Luxe & créateurs",
+          "protected": false,
+          "monthly": 40
+        }
+      ],
+      "observedBudgetShares": {
+        "groceries": {
+          "modest": 18.3,
+          "comfort": 14.2,
+          "all": 16.1
+        },
+        "bakery": {
+          "modest": 18.3,
+          "comfort": 14.2,
+          "all": 16.1
+        },
+        "transport": {
+          "modest": 13.6,
+          "comfort": 17.6,
+          "all": 16.4
+        },
+        "fuel": {
+          "modest": 13.6,
+          "comfort": 17.6,
+          "all": 16.4
+        },
+        "leisure": {
+          "modest": 7.2,
+          "comfort": 11.3,
+          "all": 9.4
+        },
+        "restaurants": {
+          "modest": 5.2,
+          "comfort": 9.4,
+          "all": 7.2
+        },
+        "coffee": {
+          "modest": 5.2,
+          "comfort": 9.4,
+          "all": 7.2
+        },
+        "hotels": {
+          "modest": 5.2,
+          "comfort": 9.4,
+          "all": 7.2
+        },
+        "travel": {
+          "modest": 5.2,
+          "comfort": 9.4,
+          "all": 7.2
+        },
+        "home": {
+          "modest": 4,
+          "comfort": 7.3,
+          "all": 5.7
+        },
+        "shopping": {
+          "modest": 5.5,
+          "comfort": 5.2,
+          "all": 5
+        },
+        "digital": {
+          "modest": 3.8,
+          "comfort": 2.1,
+          "all": 2.7
+        }
+      }
+    },
+    "seasonality": {
+      "version": "meniga.sep2024-aug2025.v1",
+      "combined": {
+        "all": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            65.00143325689297,
+            60.501074942669725,
+            65.00143325689297,
+            66.00143325689297,
+            67.00143325689297,
+            67.00143325689297,
+            69.5017915711162,
+            64.50250819956268,
+            58.001433256892966,
+            68.00143325689297,
+            64.00214988533945,
+            71.00071662844648
+          ],
+          "normalizedVolume": [
+            0.9929968848280518,
+            0.9242469886684959,
+            0.9929968848280518,
+            1.008273423129963,
+            1.0235499614318744,
+            1.0235499614318744,
+            1.0617467809876078,
+            0.9853750370799625,
+            0.8860611167146732,
+            1.0388264997337855,
+            0.9777312941280515,
+            1.0846451670376083
+          ]
+        },
+        "groceries": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            8.905204239107247,
+            8.425204239107249,
+            9.455225737960642,
+            9.360279485094129,
+            9.69524007052957,
+            9.575197072822784,
+            9.745232904245107,
+            9.64535473108101,
+            8.205197072822784,
+            9.245254403098501,
+            8.900358314223242,
+            10.1051325762626
+          ],
+          "normalizedVolume": [
+            0.9604501524354333,
+            0.9086808655341343,
+            1.0197714457188165,
+            1.009531237792046,
+            1.0456576349754512,
+            1.0327106758321707,
+            1.0510494961246772,
+            1.0402773673711154,
+            0.8849525028013796,
+            0.9971254743114688,
+            0.9599275064445536,
+            1.0898656406587546
+          ]
+        },
+        "shopping": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            7.3401146605514365,
+            6.990107494266972,
+            7.6850824122713455,
+            7.470093161698042,
+            7.745082412271346,
+            7.475096744840275,
+            7.605096744840275,
+            7.200150491973762,
+            6.550107494266973,
+            7.550107494266972,
+            7.610250819956268,
+            8.469949836008745
+          ],
+          "normalizedVolume": [
+            0.9820510470724514,
+            0.9352227725797071,
+            1.028205086545905,
+            0.9994411736646077,
+            1.0362326263799926,
+            1.0001106147143985,
+            1.017503617688255,
+            0.9633249147624142,
+            0.8763541471297314,
+            1.010146477697858,
+            1.0181931934099469,
+            1.1332143283547331
+          ]
+        },
+        "fuel": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            3.100035831422324,
+            2.9800214988533944,
+            3.2000286651378596,
+            3.2650107494266973,
+            3.335025081995627,
+            3.3850107494266974,
+            3.5,
+            3.6300501639912532,
+            2.890035831422324,
+            3.1900358314223243,
+            3.0650680797024163,
+            3.2899856674310706
+          ],
+          "normalizedVolume": [
+            0.9580256183685639,
+            0.9209367550699462,
+            0.9889270987262277,
+            1.009008963862325,
+            1.0306459796587637,
+            1.0460933978675544,
+            1.0816293251525246,
+            1.1218196311850488,
+            0.8931278588594125,
+            0.985838943872486,
+            0.9472192910271626,
+            1.0167271363499848
+          ]
+        },
+        "hotels": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            1.6250035831422325,
+            1.6449964168577675,
+            1.6599999999999997,
+            1.7699856674310703,
+            1.79,
+            1.804989250573303,
+            2.0999785011466052,
+            2.2799856674310703,
+            1.710007166284465,
+            1.7249964168577676,
+            1.6350035831422323,
+            1.6
+          ],
+          "normalizedVolume": [
+            0.9135672100878698,
+            0.9248070605772661,
+            0.9332419844966743,
+            0.9950752631349656,
+            1.0063272001500285,
+            1.0147540663856593,
+            1.180595243259283,
+            1.281794186082739,
+            0.9613557116667765,
+            0.9697825779024071,
+            0.9191891497535123,
+            0.8995103465028188
+          ]
+        },
+        "restaurants": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            3.4150107494266972,
+            3.454967751719908,
+            3.7199570022932114,
+            3.759971334862141,
+            3.874982084288838,
+            3.8199641685776764,
+            4.019957002293211,
+            4.04998566743107,
+            3.38,
+            3.629992833715536,
+            3.425025081995627,
+            3.474939086582049
+          ],
+          "normalizedVolume": [
+            0.9308429104317074,
+            0.9417341476885689,
+            1.0139633098597802,
+            1.0248701738553614,
+            1.0562191061377124,
+            1.0412226564793734,
+            1.0957354896915397,
+            1.1039205210440755,
+            0.9212998927711588,
+            0.9894414226219521,
+            0.9335725564441126,
+            0.9471778129746599
+          ]
+        },
+        "taxes": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            1.6647599294704283,
+            1.3848459248840062,
+            1.7145879386432723,
+            2.0247455969014982,
+            1.774982084288838,
+            2.2501791571116208,
+            2.0401504919737614,
+            2.264953419150979,
+            1.4350967448402752,
+            1.5499140045864221,
+            3.0001218268359024,
+            2.3000214988533947
+          ],
+          "normalizedVolume": [
+            0.8535640510427523,
+            0.7100451403164535,
+            0.8791121175309323,
+            1.0381377058805032,
+            0.9100777064449408,
+            1.1537231302336428,
+            1.046036180856383,
+            1.1612982638815879,
+            0.7358099924676806,
+            0.7946796730886726,
+            1.5382374928680815,
+            1.179278545388367
+          ]
+        },
+        "bankfees": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            2.9100071662844647,
+            2.4200573302757182,
+            2.425060913417951,
+            2.850035831422324,
+            2.4550609134179506,
+            2.410050163991254,
+            2.600257986240734,
+            2.180279485094128,
+            2.545017915711162,
+            3.1599713348621408,
+            2.730007166284465,
+            2.7550394145645565
+          ],
+          "normalizedVolume": [
+            1.1106598854154273,
+            0.9236611607986828,
+            0.9255708739924527,
+            1.0877706785853145,
+            0.9370209477065342,
+            0.9198417344111431,
+            0.9924381872695257,
+            0.832145360720921,
+            0.9713547579517035,
+            1.2060634906185443,
+            1.0419594431309378,
+            1.0515134793988126
+          ]
+        },
+        "incidentfees": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            3.039928337155352,
+            2.3950537471334865,
+            2.519964168577676,
+            2.484759929470428,
+            2.434566439789878,
+            2.619899672017492,
+            2.4206377993173698,
+            2.37554822076156,
+            4.168315923150765,
+            3.0644947769452293,
+            2.949505526371927,
+            2.489899672017492
+          ],
+          "normalizedVolume": [
+            1.1066835924422358,
+            0.8719174898215606,
+            0.9173910334731474,
+            0.9045749570781157,
+            0.8863020554448938,
+            0.95377247727481,
+            0.8812313445049195,
+            0.8648165178236614,
+            1.5174722324485248,
+            1.1156269861097388,
+            1.0737652371463455,
+            0.9064460764320462
+          ]
+        },
+        "fastfood": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            3.8150680797024155,
+            3.665039414564556,
+            3.7250179157111623,
+            3.790050163991254,
+            3.890050163991254,
+            3.8200358314223246,
+            3.8900573302757184,
+            3.7950967448402757,
+            3.6800501639912535,
+            4.020050163991254,
+            3.7900859954135777,
+            3.8800000000000003
+          ],
+          "normalizedVolume": [
+            1.0004417553018232,
+            0.9610990914330786,
+            0.9768275124504471,
+            0.9938811993732853,
+            1.0201046306306343,
+            1.0017444702591294,
+            1.0201065098763145,
+            0.9952045860330752,
+            0.9650354249902015,
+            1.0541950912651878,
+            0.993890595601687,
+            1.017469132785137
+          ]
+        },
+        "bars": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            3.255068079702416,
+            3.1750465808490214,
+            3.470035831422324,
+            3.3600573302757186,
+            3.4400573302757187,
+            3.3750394145645566,
+            3.3450537471334862,
+            3.240071662844648,
+            3.1100573302757186,
+            3.320093161698043,
+            3.2550967448402752,
+            3.2500286651378594
+          ],
+          "normalizedVolume": [
+            0.9864912391200934,
+            0.9622396702965776,
+            1.0516400466327216,
+            1.0183096138380243,
+            1.042554667150956,
+            1.0228501317420458,
+            1.013762580423419,
+            0.9819463775423493,
+            0.9425438222351126,
+            1.006197946365865,
+            0.9864999264675387,
+            0.9849639781852979
+          ]
+        },
+        "alcohol": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            1.4150107494266972,
+            1.384982084288838,
+            1.4299785011466053,
+            1.4149964168577673,
+            1.4149677517199082,
+            1.4049964168577675,
+            1.4150107494266972,
+            1.334982084288838,
+            1.374974918004373,
+            1.3950035831422323,
+            1.3750035831422325,
+            1.3149892505733027
+          ],
+          "normalizedVolume": [
+            1.0183049359119392,
+            0.9966949672660346,
+            1.0290763985754292,
+            1.0182946215551814,
+            1.0182739928416664,
+            1.0110981749110517,
+            1.0183049359119392,
+            0.9607127340453854,
+            0.9894933634435259,
+            1.0039068854453006,
+            0.9895139921570411,
+            0.9463249979355044
+          ]
+        },
+        "cycling": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            2.5244947769452293,
+            2.2045377746520183,
+            2.534580772358807,
+            2.324652435203456,
+            2.364494776945229,
+            2.3494481960962084,
+            2.3893980321049546,
+            2.549505526371927,
+            2.3401648245426907,
+            2.39998566743107,
+            2.294566439789878,
+            2.3944231141005816
+          ],
+          "normalizedVolume": [
+            1.0566330902058791,
+            0.9227143516315113,
+            1.0608546067639553,
+            0.9729886188300642,
+            0.9896647225242022,
+            0.9833669415326441,
+            1.0000880371992467,
+            1.0671013968533876,
+            0.9794813650356342,
+            1.0045195162954892,
+            0.9603960563117784,
+            1.0021912968162074
+          ]
+        },
+        "culture": {
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "weightedCounts": [
+            1.5899928337155353,
+            1.6499928337155352,
+            1.6499928337155352,
+            1.7449964168577674,
+            1.7650035831422322,
+            1.7599856674310703,
+            1.9949820842888377,
+            2.019992833715535,
+            1.6149964168577677,
+            1.7599928337155353,
+            1.69,
+            1.7499785011466056
+          ],
+          "normalizedVolume": [
+            0.9090042252960259,
+            0.9433064261369632,
+            0.9433064261369632,
+            0.9976202926295223,
+            1.009058456565318,
+            1.0061896973565319,
+            1.1405379354891285,
+            1.1548366646560775,
+            0.9232988574741581,
+            1.0061937943453487,
+            0.9661786570197382,
+            1.000468566894226
+          ]
+        }
+      },
+      "mapping": {
+        "groceries": {
+          "series": "groceries"
+        },
+        "bakery": {
+          "series": "groceries",
+          "proxy": true
+        },
+        "fuel": {
+          "series": "fuel"
+        },
+        "transport": {
+          "series": "fuel",
+          "proxy": true
+        },
+        "restaurants": {
+          "series": "restaurants"
+        },
+        "coffee": {
+          "series": "bars",
+          "proxy": true
+        },
+        "shopping": {
+          "series": "shopping"
+        },
+        "home": {
+          "series": "shopping",
+          "proxy": true
+        },
+        "leisure": {
+          "series": "culture"
+        },
+        "travel": {
+          "series": "hotels",
+          "proxy": true
+        },
+        "hotels": {
+          "series": "hotels"
+        },
+        "fastfood": {
+          "series": "fastfood"
+        },
+        "bars": {
+          "series": "bars"
+        },
+        "alcohol": {
+          "series": "alcohol"
+        },
+        "cycling": {
+          "series": "cycling"
+        },
+        "taxes": {
+          "series": "taxes"
+        },
+        "bankfees": {
+          "series": "bankfees"
+        },
+        "incidentfees": {
+          "series": "incidentfees"
+        }
+      },
+      "source": {
+        "version": "meniga.sep2024-aug2025.v1",
+        "title": "Volumétrie transactions Meniga — Analyse",
+        "period": "Septembre 2024 – août 2025",
+        "sample": {
+          "ce": 300231,
+          "bp": 299801
+        },
+        "measure": "Nombre moyen de transactions par mois et par client. Aucun montant monétaire fourni.",
+        "sourceMonths": [
+          "Sept.",
+          "Oct.",
+          "Nov.",
+          "Déc.",
+          "Janv.",
+          "Févr.",
+          "Mars",
+          "Avr.",
+          "Mai",
+          "Juin",
+          "Juil.",
+          "Août"
+        ],
+        "calendarMonths": [
+          "Janv.",
+          "Févr.",
+          "Mars",
+          "Avr.",
+          "Mai",
+          "Juin",
+          "Juil.",
+          "Août",
+          "Sept.",
+          "Oct.",
+          "Nov.",
+          "Déc."
+        ]
+      }
+    },
+    "banking": {
+      "products": [
+        {
+          "id": "checking",
+          "name": "Compte courant",
+          "type": "checking",
+          "rate": 0,
+          "ceiling": null,
+          "note": "Compte de paiement principal. Les revenus et dépenses y sont comptabilisés."
+        },
+        {
+          "id": "livret-a",
+          "name": "Livret A",
+          "type": "savings",
+          "rate": 1.7,
+          "ceiling": 20000,
+          "note": "Plafond de scénario : 20 000 € ; plafond réglementaire : 22 950 €. Repère de taux : 1,7 % depuis le 01/08/2026. Intérêts exonérés, capitalisés au 31 décembre."
+        },
+        {
+          "id": "ldds",
+          "name": "LDDS",
+          "type": "savings",
+          "rate": 1.7,
+          "ceiling": 12000,
+          "note": "Plafond réglementaire : 12 000 €. Taux aligné sur le Livret A. Intérêts exonérés, par quinzaines entières."
+        },
+        {
+          "id": "csl",
+          "name": "Compte sur livret",
+          "type": "savings",
+          "rate": 1,
+          "ceiling": null,
+          "note": "Taux et plafond contractuels, sans plafond légal. Le taux saisi est un rendement net de scénario, après fiscalité supposée."
+        },
+        {
+          "id": "life-euro",
+          "name": "Assurance-vie · fonds euros",
+          "type": "investment",
+          "rate": 2.5,
+          "ceiling": null,
+          "note": "Rendement net de scénario, après frais et fiscalité supposés, non garanti. Capitalisation annuelle ; retraits simplifiés immédiats si activés. Les unités de compte ne sont pas modélisées."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Banque de France · Livret A : taux, plafond et quinzaines",
+          "url": "https://www.banque-france.fr/fr/a-votre-service/particuliers/connaitre-pratiques-bancaires-assurance/epargne/livret-a"
+        },
+        {
+          "title": "Service Public · LDDS",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2368"
+        },
+        {
+          "title": "Service Public · Compte sur livret",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34394"
+        },
+        {
+          "title": "Service Public · Assurance-vie",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15274"
+        },
+        {
+          "title": "Service Public · Découvert, agios et plafonds de commissions",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31423"
+        },
+        {
+          "title": "Caisse d’Épargne · Tarifs particuliers 2026 (exemples de taux, p. 26)",
+          "url": "https://www.img.caisse-epargne.fr/app/uploads/sites/5/2025/11/28143245/2026-part-brochure-tarification-web.pdf"
+        }
+      ],
+      "policy": "France scenario fee policy"
+    }
+  },
+  "referenceHash": "4338ca0c5b68703bcf926eb19602bd3964ce973d7d29f17472453d61639adacd"
+}

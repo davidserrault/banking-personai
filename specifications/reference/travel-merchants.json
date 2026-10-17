@@ -1,0 +1,330 @@
+[
+  {
+    "id": 900000,
+    "name": "SNCF Connect",
+    "category": "travel",
+    "mean": 65,
+    "destinationId": "france",
+    "currency": "EUR"
+  },
+  {
+    "id": 900001,
+    "name": "Hôtel de séjour fictif",
+    "category": "hotels",
+    "mean": 95,
+    "destinationId": "france",
+    "currency": "EUR"
+  },
+  {
+    "id": 900002,
+    "name": "Restaurant de quartier",
+    "category": "restaurants",
+    "mean": 24,
+    "destinationId": "france",
+    "currency": "EUR"
+  },
+  {
+    "id": 900003,
+    "name": "Carrefour City",
+    "category": "groceries",
+    "mean": 20,
+    "destinationId": "france",
+    "currency": "EUR"
+  },
+  {
+    "id": 900004,
+    "name": "Musée local fictif",
+    "category": "leisure",
+    "mean": 14,
+    "destinationId": "france",
+    "currency": "EUR"
+  },
+  {
+    "id": 900100,
+    "name": "Train / vol · Royaume-Uni",
+    "category": "travel",
+    "mean": 100,
+    "destinationId": "uk",
+    "currency": "GBP"
+  },
+  {
+    "id": 900101,
+    "name": "Hôtel londonien fictif",
+    "category": "hotels",
+    "mean": 110,
+    "destinationId": "uk",
+    "currency": "GBP"
+  },
+  {
+    "id": 900102,
+    "name": "Pret A Manger",
+    "category": "restaurants",
+    "mean": 13,
+    "destinationId": "uk",
+    "currency": "GBP"
+  },
+  {
+    "id": 900103,
+    "name": "Tesco",
+    "category": "groceries",
+    "mean": 18,
+    "destinationId": "uk",
+    "currency": "GBP"
+  },
+  {
+    "id": 900104,
+    "name": "Caffè Nero",
+    "category": "coffee",
+    "mean": 6,
+    "destinationId": "uk",
+    "currency": "GBP"
+  },
+  {
+    "id": 900105,
+    "name": "Musée local fictif",
+    "category": "leisure",
+    "mean": 19,
+    "destinationId": "uk",
+    "currency": "GBP"
+  },
+  {
+    "id": 900200,
+    "name": "Vol · États-Unis",
+    "category": "travel",
+    "mean": 600,
+    "destinationId": "usa",
+    "currency": "USD"
+  },
+  {
+    "id": 900201,
+    "name": "Hôtel américain fictif",
+    "category": "hotels",
+    "mean": 150,
+    "destinationId": "usa",
+    "currency": "USD"
+  },
+  {
+    "id": 900202,
+    "name": "Restaurant local fictif",
+    "category": "restaurants",
+    "mean": 32,
+    "destinationId": "usa",
+    "currency": "USD"
+  },
+  {
+    "id": 900203,
+    "name": "Trader Joe’s",
+    "category": "groceries",
+    "mean": 25,
+    "destinationId": "usa",
+    "currency": "USD"
+  },
+  {
+    "id": 900204,
+    "name": "Starbucks",
+    "category": "coffee",
+    "mean": 7,
+    "destinationId": "usa",
+    "currency": "USD"
+  },
+  {
+    "id": 900205,
+    "name": "Attraction locale fictive",
+    "category": "leisure",
+    "mean": 35,
+    "destinationId": "usa",
+    "currency": "USD"
+  },
+  {
+    "id": 900300,
+    "name": "Vol · Japon",
+    "category": "travel",
+    "mean": 100000,
+    "destinationId": "japan",
+    "currency": "JPY"
+  },
+  {
+    "id": 900301,
+    "name": "Hôtel japonais fictif",
+    "category": "hotels",
+    "mean": 13000,
+    "destinationId": "japan",
+    "currency": "JPY"
+  },
+  {
+    "id": 900302,
+    "name": "Restaurant local fictif",
+    "category": "restaurants",
+    "mean": 1800,
+    "destinationId": "japan",
+    "currency": "JPY"
+  },
+  {
+    "id": 900303,
+    "name": "7-Eleven",
+    "category": "groceries",
+    "mean": 950,
+    "destinationId": "japan",
+    "currency": "JPY"
+  },
+  {
+    "id": 900304,
+    "name": "Café local fictif",
+    "category": "coffee",
+    "mean": 550,
+    "destinationId": "japan",
+    "currency": "JPY"
+  },
+  {
+    "id": 900305,
+    "name": "Musée local fictif",
+    "category": "leisure",
+    "mean": 1500,
+    "destinationId": "japan",
+    "currency": "JPY"
+  },
+  {
+    "id": 900400,
+    "name": "Train · Suisse",
+    "category": "travel",
+    "mean": 85,
+    "destinationId": "switzerland",
+    "currency": "CHF"
+  },
+  {
+    "id": 900401,
+    "name": "Hôtel suisse fictif",
+    "category": "hotels",
+    "mean": 145,
+    "destinationId": "switzerland",
+    "currency": "CHF"
+  },
+  {
+    "id": 900402,
+    "name": "Restaurant local fictif",
+    "category": "restaurants",
+    "mean": 35,
+    "destinationId": "switzerland",
+    "currency": "CHF"
+  },
+  {
+    "id": 900403,
+    "name": "Coop",
+    "category": "groceries",
+    "mean": 27,
+    "destinationId": "switzerland",
+    "currency": "CHF"
+  },
+  {
+    "id": 900404,
+    "name": "Café local fictif",
+    "category": "coffee",
+    "mean": 6,
+    "destinationId": "switzerland",
+    "currency": "CHF"
+  },
+  {
+    "id": 900405,
+    "name": "Musée local fictif",
+    "category": "leisure",
+    "mean": 22,
+    "destinationId": "switzerland",
+    "currency": "CHF"
+  },
+  {
+    "id": 900500,
+    "name": "Vol · Maroc",
+    "category": "travel",
+    "mean": 2300,
+    "destinationId": "morocco",
+    "currency": "MAD"
+  },
+  {
+    "id": 900501,
+    "name": "Riad fictif",
+    "category": "hotels",
+    "mean": 700,
+    "destinationId": "morocco",
+    "currency": "MAD"
+  },
+  {
+    "id": 900502,
+    "name": "Restaurant local fictif",
+    "category": "restaurants",
+    "mean": 150,
+    "destinationId": "morocco",
+    "currency": "MAD"
+  },
+  {
+    "id": 900503,
+    "name": "Épicerie locale fictive",
+    "category": "groceries",
+    "mean": 95,
+    "destinationId": "morocco",
+    "currency": "MAD"
+  },
+  {
+    "id": 900504,
+    "name": "Café local fictif",
+    "category": "coffee",
+    "mean": 25,
+    "destinationId": "morocco",
+    "currency": "MAD"
+  },
+  {
+    "id": 900505,
+    "name": "Visite culturelle fictive",
+    "category": "leisure",
+    "mean": 100,
+    "destinationId": "morocco",
+    "currency": "MAD"
+  },
+  {
+    "id": 900600,
+    "name": "Train / vol · Espagne",
+    "category": "travel",
+    "mean": 95,
+    "destinationId": "spain",
+    "currency": "EUR"
+  },
+  {
+    "id": 900601,
+    "name": "Hôtel espagnol fictif",
+    "category": "hotels",
+    "mean": 80,
+    "destinationId": "spain",
+    "currency": "EUR"
+  },
+  {
+    "id": 900602,
+    "name": "Restaurant local fictif",
+    "category": "restaurants",
+    "mean": 21,
+    "destinationId": "spain",
+    "currency": "EUR"
+  },
+  {
+    "id": 900603,
+    "name": "Mercadona",
+    "category": "groceries",
+    "mean": 20,
+    "destinationId": "spain",
+    "currency": "EUR"
+  },
+  {
+    "id": 900604,
+    "name": "Café local fictif",
+    "category": "coffee",
+    "mean": 4,
+    "destinationId": "spain",
+    "currency": "EUR"
+  },
+  {
+    "id": 900605,
+    "name": "Musée local fictif",
+    "category": "leisure",
+    "mean": 15,
+    "destinationId": "spain",
+    "currency": "EUR"
+  }
+]

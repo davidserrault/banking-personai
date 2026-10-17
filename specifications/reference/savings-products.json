@@ -1,0 +1,42 @@
+[
+  {
+    "id": "checking",
+    "name": "Compte courant",
+    "type": "checking",
+    "rate": 0,
+    "ceiling": null,
+    "note": "Compte de paiement principal. Les revenus et dépenses y sont comptabilisés."
+  },
+  {
+    "id": "livret-a",
+    "name": "Livret A",
+    "type": "savings",
+    "rate": 1.7,
+    "ceiling": 20000,
+    "note": "Plafond de scénario : 20 000 € ; plafond réglementaire : 22 950 €. Repère de taux : 1,7 % depuis le 01/08/2026. Intérêts exonérés, capitalisés au 31 décembre."
+  },
+  {
+    "id": "ldds",
+    "name": "LDDS",
+    "type": "savings",
+    "rate": 1.7,
+    "ceiling": 12000,
+    "note": "Plafond réglementaire : 12 000 €. Taux aligné sur le Livret A. Intérêts exonérés, par quinzaines entières."
+  },
+  {
+    "id": "csl",
+    "name": "Compte sur livret",
+    "type": "savings",
+    "rate": 1,
+    "ceiling": null,
+    "note": "Taux et plafond contractuels, sans plafond légal. Le taux saisi est un rendement net de scénario, après fiscalité supposée."
+  },
+  {
+    "id": "life-euro",
+    "name": "Assurance-vie · fonds euros",
+    "type": "investment",
+    "rate": 2.5,
+    "ceiling": null,
+    "note": "Rendement net de scénario, après frais et fiscalité supposés, non garanti. Capitalisation annuelle ; retraits simplifiés immédiats si activés. Les unités de compte ne sont pas modélisées."
+  }
+]

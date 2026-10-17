@@ -1,0 +1,38 @@
+[
+  {
+    "id": "appstore",
+    "label": "Micropaiements App Store"
+  },
+  {
+    "id": "school",
+    "label": "Rentrée scolaire"
+  },
+  {
+    "id": "schoolTrip",
+    "label": "Voyages scolaires"
+  },
+  {
+    "id": "birthday",
+    "label": "Repas d’anniversaire à emporter"
+  },
+  {
+    "id": "appliance",
+    "label": "Réparation d’électroménager"
+  },
+  {
+    "id": "gifts",
+    "label": "Cadeaux de fin d’année"
+  },
+  {
+    "id": "equipment",
+    "label": "Équipement de la maison"
+  },
+  {
+    "id": "homeRepair",
+    "label": "Entretien du logement"
+  },
+  {
+    "id": "travel",
+    "label": "Voyages occasionnels"
+  }
+]

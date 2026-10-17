@@ -1,0 +1,325 @@
+{
+  "title": "Person’IA developer specification",
+  "specificationVersion": "2",
+  "documentLanguage": "en",
+  "uiLocale": "en-GB",
+  "defaultPersonaCountry": "FR",
+  "visualTheme": "dark",
+  "date": "2026-09-15",
+  "referenceImplementation": "5a94fd4a62aad9623c2fa92f52d3277e771c50f2",
+  "status": "Target specification and examples; no application deployment included",
+  "counts": {
+    "personas": 4,
+    "franceMerchants": 99,
+    "countryReferenceExamples": 2,
+    "jsonFilesIncludingManifest": 52
+  },
+  "files": [
+    {
+      "path": "ARTIFACT-CHECKS.json",
+      "role": "Revision-2 artifact verification",
+      "sha256": "e7d68c632b160525463e96ebe3bc9c43db8f2bf4d74a1471e2f11218fc8496a8",
+      "bytes": 1453
+    },
+    {
+      "path": "DEFAULTS-CHECK.json",
+      "role": "Revision-2 artifact verification",
+      "sha256": "ccbdd03b563733ccc06e9e5e5534cffe291d011f4184fb63b383e73e5ab32db1",
+      "bytes": 459
+    },
+    {
+      "path": "configurations/lea.personia.json",
+      "role": "Target version-2 complete persona example; requires target importer",
+      "sha256": "4490d78e442cd8efe7e253e6a587fdaa2c8b12cff7ab0865a8dcf94daf31853a",
+      "bytes": 65550
+    },
+    {
+      "path": "configurations/michel.personia.json",
+      "role": "Target version-2 complete persona example; requires target importer",
+      "sha256": "f1d6e1e4850ca6eed357db85d4a8666c87d76ff1fdde45514ad0a4255d028ac5",
+      "bytes": 65293
+    },
+    {
+      "path": "configurations/nicolas.personia.json",
+      "role": "Target version-2 complete persona example; requires target importer",
+      "sha256": "dea42055777f16e93e3ae227e382493fc6832dd0567c68509b136645c5afa103",
+      "bytes": 65361
+    },
+    {
+      "path": "configurations/sarah.personia.json",
+      "role": "Target version-2 complete persona example; requires target importer",
+      "sha256": "de795d36640e235548944472cb6a0da46b6b26dfa66250d914b6a6de76da85f2",
+      "bytes": 65243
+    },
+    {
+      "path": "contracts/local-merchant-reference.schema.json",
+      "role": "Target exchange contract/schema",
+      "sha256": "69fed44c0cd2f9d6281e199e2559b3b46f96aa65cb966b90369e1565014e3ba9",
+      "bytes": 5605
+    },
+    {
+      "path": "country-references/fr.merchants.v1.json",
+      "role": "Local merchant-reference example; France baseline or explicitly fictional UK illustration",
+      "sha256": "473b60eaa0c3b7f9748da27c0eec18f9731bc9fce72fecec16b2cefa8668ece5",
+      "bytes": 22657
+    },
+    {
+      "path": "country-references/gb.example.v1.json",
+      "role": "Local merchant-reference example; France baseline or explicitly fictional UK illustration",
+      "sha256": "b8fb958213f5c3d3b1e4c175bfa58179af3c97c3c057192ffd650039884d1b11",
+      "bytes": 1210
+    },
+    {
+      "path": "derived/lea-reference.json",
+      "role": "Reference French financial derivation fixture",
+      "sha256": "b28656b59624a3b4781c609e991c5253ce0d6c171056d0c28854f490dc2cea59",
+      "bytes": 19419
+    },
+    {
+      "path": "derived/michel-reference.json",
+      "role": "Reference French financial derivation fixture",
+      "sha256": "dbf7a274bde39a74ebc38250798930432f953ac57766c15f77a8a3c3f0323e60",
+      "bytes": 18865
+    },
+    {
+      "path": "derived/nicolas-reference.json",
+      "role": "Reference French financial derivation fixture",
+      "sha256": "f21dcbdc9b6ef4dd457695f37ce3cc47e7034c85f959de34c60fe90fbc143e70",
+      "bytes": 19316
+    },
+    {
+      "path": "derived/sarah-reference.json",
+      "role": "Reference French financial derivation fixture",
+      "sha256": "abc1929d062dca4718425cebb2dbf7517cb3e8b1b9121da5e4d94689b9481e7e",
+      "bytes": 20616
+    },
+    {
+      "path": "design/dark-theme.json",
+      "role": "Target dark visual tokens",
+      "sha256": "cfff1cc914af19dea3dcbf84766c214ddda075d4c80484cfe4e8e70572cd50d6",
+      "bytes": 825
+    },
+    {
+      "path": "examples/credit-savings-fixture-history.json",
+      "role": "Reference financial calculation fixture; not the target interface/import contract",
+      "sha256": "7e1c5c49defe5deeb5f4153e46a51dcc4a7d012ea781bb51832f879a88b40147",
+      "bytes": 159353
+    },
+    {
+      "path": "examples/credit-savings-fixture.personia.json",
+      "role": "Reference financial calculation fixture; not the target interface/import contract",
+      "sha256": "28e7f81d82890dd30dde9929254a0346177ad77f5aac872df3ed0211497ac771",
+      "bytes": 24043
+    },
+    {
+      "path": "examples/nicolas-checking-history.json",
+      "role": "Reference financial calculation fixture; not the target interface/import contract",
+      "sha256": "2f64002a664f5e5fa2f4b9b3f90654327861feaeaf4093b0078e7fdad32cf1fe",
+      "bytes": 547090
+    },
+    {
+      "path": "examples/nicolas-history.json",
+      "role": "Reference financial calculation fixture; not the target interface/import contract",
+      "sha256": "a659459612011f9538395c2dd635590cb6a7c78fc3328bc6f161e6a129632b2d",
+      "bytes": 633130
+    },
+    {
+      "path": "i18n/en-GB.json",
+      "role": "English system interface vocabulary",
+      "sha256": "68b5c6210973f0d5b0231ae3049059ae6cb8b216a8be41e17e8279e8f97d4077",
+      "bytes": 15275
+    },
+    {
+      "path": "models/lea.json",
+      "role": "Target French persona configuration; financial defaults retained",
+      "sha256": "e9b1d2c48c6b2aa49f66e45fcc6a8c53272f94c6a802b90d0e23478f28a8853f",
+      "bytes": 5100
+    },
+    {
+      "path": "models/michel.json",
+      "role": "Target French persona configuration; financial defaults retained",
+      "sha256": "f7fa44375a57335e8940ec39ce6e404b7c2569f72d9f0642b4898066d9a8c78a",
+      "bytes": 4866
+    },
+    {
+      "path": "models/nicolas.json",
+      "role": "Target French persona configuration; financial defaults retained",
+      "sha256": "09d54a30235d7504505f3bbc6ea72b334d8e58390755fcac4a4440926fe76638",
+      "bytes": 4923
+    },
+    {
+      "path": "models/sarah.json",
+      "role": "Target French persona configuration; financial defaults retained",
+      "sha256": "51d43361671c99d2093f9f35dda4d9385ed2e04ed6ad0ac6f03640ee66b8e4fa",
+      "bytes": 4817
+    },
+    {
+      "path": "reference/bank-fees-defaults.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "fc63340647bdafeef2c74b785dace56eb2c8a1a6f0a4c24c5c999416815f8132",
+      "bytes": 169
+    },
+    {
+      "path": "reference/banking-sources.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "0e15f69aae4507d3b1f9d0971f6ec29b08b567a91472b23e97e33e2eff4fa908",
+      "bytes": 1006
+    },
+    {
+      "path": "reference/calibration-statistics.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "873e7d891be6ae476d2dfd58b0a3217b5b2270f15f0839965e0e632513d84041",
+      "bytes": 8881
+    },
+    {
+      "path": "reference/categories.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "180191742679254660015938a8511ca3aeae668727bf9d92d8e84c4dfe279d00",
+      "bytes": 2752
+    },
+    {
+      "path": "reference/consumption-profiles.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "b9f6ec9190803241148e4175993c83b4a8debc5e34065ebe9311d816814e0e62",
+      "bytes": 4581
+    },
+    {
+      "path": "reference/consumption-sources.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "30c1596b89d0462a9d329eec17979eaf2a1952e876a02057b926f9dcce38a8a1",
+      "bytes": 3180
+    },
+    {
+      "path": "reference/durable-change-types.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "113e740f31408e981a46551957d77b85325b399939a18678f5196e76a897cd60",
+      "bytes": 285
+    },
+    {
+      "path": "reference/event-templates.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "6af46aa186f7a240c32dc66e669c20552eea37d8e4c37a2de702d051ed855784",
+      "bytes": 6941
+    },
+    {
+      "path": "reference/event-types.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "2790badaf4a5f260ccc8d55935e09a57f8bf2e03ac5cad214fdf7db53b3566a3",
+      "bytes": 539
+    },
+    {
+      "path": "reference/field-options.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "612082c8572bfcff7507e89b6c6ee74ded5c2cac4cf7eff75e167c8079a5d51b",
+      "bytes": 713
+    },
+    {
+      "path": "reference/financing-defaults.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "51de81773cd28e6803dd7a0dc1bd62744791d702786997baef34475f826766fb",
+      "bytes": 280
+    },
+    {
+      "path": "reference/habit-types.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "38f43dd312420966fb280ce36ff81daed6f7b2bfaa4f7ab09b8f51283f501039",
+      "bytes": 639
+    },
+    {
+      "path": "reference/income-frequencies.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "9ad26254ea40390115c2a273bdb43c780a6ae6c608113c08ef018b017439a140",
+      "bytes": 412
+    },
+    {
+      "path": "reference/merchant-segments.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "5ae1e3f45869ad70385d766d85800648da68b2544334aebddb8b00981f9d5b89",
+      "bytes": 513
+    },
+    {
+      "path": "reference/merchants.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "7dbdaa03f893e17473105e3b2d89d3877019cdaf33bf1bbd41039fe217b80020",
+      "bytes": 17430
+    },
+    {
+      "path": "reference/observed-budget-shares.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "995f7eaf113d65cbb9ec5a11dd6d832bfb0c6b4bae3ebea77ad1c39a523215fc",
+      "bytes": 899
+    },
+    {
+      "path": "reference/regions.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "0596263d1607cb84d4042cbeb8d71f4c571e7810ab5221c698bdee9bed7f051e",
+      "bytes": 1052
+    },
+    {
+      "path": "reference/runtime-versions.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "8c8f809d9aeb95890007f98c9f5990c78981a6ade3fa1e1183470fd31749ea1c",
+      "bytes": 1575
+    },
+    {
+      "path": "reference/savings-products.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "0f6f0276aaf3bafe476d5b291ac66cc6e9eeb94c06f6c7cd33385fc2646fba07",
+      "bytes": 1371
+    },
+    {
+      "path": "reference/seasonality-applied-default.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "68abf50733ad906844f96da19eafb33cfab135eb40fc2c2863de1b3b667461dc",
+      "bytes": 35727
+    },
+    {
+      "path": "reference/seasonality-category-mapping.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "c837a000fd79c04fd6b1262a062c2e3b9d57e4f66e89dc898cc0692c151a4ab1",
+      "bytes": 892
+    },
+    {
+      "path": "reference/seasonality-combined.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "24fc2b5e803fc920e730b6288473ef2cfbe88e90d50fd4ecf02fc6c2b59b30ea",
+      "bytes": 11555
+    },
+    {
+      "path": "reference/seasonality-observations.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "e668f80be97d05c5d0a8d3d7e1c1e6eeba26c2119fda069a18b79cbd2948d4a7",
+      "bytes": 5375
+    },
+    {
+      "path": "reference/seasonality-source.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "8266b3dbfe074fbd52a2e4662bf502f06754636bfb7029d0c1111d6c1cad92f7",
+      "bytes": 654
+    },
+    {
+      "path": "reference/transaction-system-categories.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "383077bffb125090cb5cbc251969667726a1f76048d9c41de64ffe47357c8035",
+      "bytes": 526
+    },
+    {
+      "path": "reference/travel-destinations.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "75647040b84af805a2bf9999bba9c6db4d4edc9c7612fe18a07c4c2d280e5915",
+      "bytes": 755
+    },
+    {
+      "path": "reference/travel-merchants.json",
+      "role": "Financial/reference dataset; France scope unless travel destination is specified",
+      "sha256": "49f7072bfeee05f0f91a2f453edd388f4ccf80420cce6184a2e3528918782195",
+      "bytes": 6453
+    },
+    {
+      "path": "verification.json",
+      "role": "Recorded reference financial checks",
+      "sha256": "67e3e72b4446e9af0f47145427842f68ce53a0ec2aa7d9df5b800c8bac476c2f",
+      "bytes": 2686
+    }
+  ]
+}

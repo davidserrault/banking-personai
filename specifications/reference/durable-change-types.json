@@ -1,0 +1,18 @@
+[
+  {
+    "id": "salary",
+    "label": "Changement de salaire"
+  },
+  {
+    "id": "rent",
+    "label": "Changement de loyer"
+  },
+  {
+    "id": "category-prices",
+    "label": "Prix des catégories de dépenses"
+  },
+  {
+    "id": "birth",
+    "label": "Naissance d’un enfant"
+  }
+]

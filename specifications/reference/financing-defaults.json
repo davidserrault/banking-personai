@@ -1,0 +1,14 @@
+{
+  "consumerEnabled": false,
+  "cardEnabled": false,
+  "priority": "consumer",
+  "scope": "events",
+  "consumerInsurance": 0,
+  "cardInsurance": 0,
+  "consumerRate": 6,
+  "consumerMonths": 36,
+  "consumerLimit": 25000,
+  "cardRate": 16,
+  "cardMonths": 12,
+  "cardLimit": 3000
+}

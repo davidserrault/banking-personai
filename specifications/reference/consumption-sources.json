@@ -1,0 +1,50 @@
+[
+  {
+    "id": "insee-budget",
+    "title": "Insee · Budget de famille 2017",
+    "url": "https://www.insee.fr/fr/statistiques/4764315",
+    "date": "Enquête 2017 · publication 2020",
+    "finding": "Loisirs et culture : 7,2 % du budget des ménages modestes, 11,3 % chez les aisés ; restauration et hôtels : 5,2 % contre 9,4 %. Les familles dépensent davantage en alimentation en euros que les personnes seules.",
+    "use": "Répartition différente des enveloppes par catégorie et prise en compte de la taille du foyer."
+  },
+  {
+    "id": "insee-level",
+    "title": "Insee · Comportements de consommation",
+    "url": "https://www.insee.fr/fr/statistiques/4127596",
+    "date": "Enquête 2017 · publication 2019",
+    "finding": "Les 20 % de ménages les plus aisés consomment au total 2,6 fois plus que les 20 % les plus modestes.",
+    "use": "Écart de niveau entre les scénarios « Budget mesuré » et « Confort », avant adaptation au foyer."
+  },
+  {
+    "id": "insee-shops",
+    "title": "Insee · Lieux d’achat et revenus",
+    "url": "https://www.insee.fr/fr/statistiques/fichier/1373172/fporsoc07c.pdf",
+    "date": "Enquête 2006 · publication 2007, p. 106",
+    "finding": "La part de l’alimentation achetée en maxi-discount atteint 17,8 % dans le premier décile de niveau de vie, contre 5,4 % dans le dernier.",
+    "use": "Préférence accrue pour le discount. Ce repère historique ne décrit pas les parts de marché actuelles."
+  },
+  {
+    "id": "drees-health",
+    "title": "DREES · La complémentaire santé",
+    "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2024-07/CS2024EMB.pdf#page=14",
+    "date": "Données 2019 · édition 2024, p. 13",
+    "finding": "Reste à charge annuel après assurances obligatoire et complémentaire : 206 € pour les ménages de moins de 40 ans, 443 € à 60–69 ans, 590 € à 70 ans ou plus (âge du membre le plus âgé).",
+    "use": "Santé renforcée avec l’âge et dans le profil retraité. Seuls des paiements nets simulés sont générés, hors cotisations de mutuelle."
+  },
+  {
+    "id": "injep-children",
+    "title": "INJEP–DEPP · Petites vacances des collégiens",
+    "url": "https://injep.fr/wp-content/uploads/2023/12/IAS73_vacances-collegiens_web.pdf",
+    "date": "Enquête 2019 · publication 2023",
+    "finding": "Un peu plus d’un collégien sur cinq participe à un stage ou séjour collectif pendant les petites vacances ; près des deux tiers de ces séjours sont sportifs.",
+    "use": "Clubs sportifs, ateliers, musique et stages pour les foyers avec enfants. Les coûts mensuels sont des hypothèses."
+  },
+  {
+    "id": "ove-students",
+    "title": "OVE · Conditions de vie étudiantes 2023",
+    "url": "https://www.ove-national.education.fr/publication/ove-infos-n48-la-crise-dans-le-retroviseur/",
+    "date": "Enquête 2023 · publication 2024",
+    "finding": "L’enquête documente les contraintes budgétaires et alimentaires étudiantes, ainsi que leur diversité.",
+    "use": "Un scénario étudiant privilégiant les petits paniers, la seconde main et la restauration universitaire ; il reste entièrement ajustable."
+  }
+]

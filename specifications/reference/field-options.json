@@ -1,0 +1,53 @@
+{
+  "employment": [
+    "full-time",
+    "part-time",
+    "self-employed",
+    "student",
+    "retired",
+    "unemployed"
+  ],
+  "urbanity": [
+    "metropole",
+    "city",
+    "rural"
+  ],
+  "housing": [
+    "mortgage",
+    "rent",
+    "owner",
+    "hosted"
+  ],
+  "family": [
+    "single",
+    "couple",
+    "single-parent"
+  ],
+  "autonomy": [
+    "supported",
+    "transition",
+    "independent"
+  ],
+  "lowBalance": [
+    "rare",
+    "occasional",
+    "repetitive"
+  ],
+  "interestMode": [
+    "fortnight",
+    "daily"
+  ],
+  "bankFeeProtection": [
+    "standard",
+    "fragile",
+    "specific"
+  ],
+  "financingPriority": [
+    "consumer",
+    "card"
+  ],
+  "financingScope": [
+    "events",
+    "all"
+  ]
+}

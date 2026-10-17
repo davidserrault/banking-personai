@@ -1,0 +1,38 @@
+{
+  "version": "meniga.sep2024-aug2025.v1",
+  "title": "Volumétrie transactions Meniga — Analyse",
+  "period": "Septembre 2024 – août 2025",
+  "sample": {
+    "ce": 300231,
+    "bp": 299801
+  },
+  "measure": "Nombre moyen de transactions par mois et par client. Aucun montant monétaire fourni.",
+  "sourceMonths": [
+    "Sept.",
+    "Oct.",
+    "Nov.",
+    "Déc.",
+    "Janv.",
+    "Févr.",
+    "Mars",
+    "Avr.",
+    "Mai",
+    "Juin",
+    "Juil.",
+    "Août"
+  ],
+  "calendarMonths": [
+    "Janv.",
+    "Févr.",
+    "Mars",
+    "Avr.",
+    "Mai",
+    "Juin",
+    "Juil.",
+    "Août",
+    "Sept.",
+    "Oct.",
+    "Nov.",
+    "Déc."
+  ]
+}

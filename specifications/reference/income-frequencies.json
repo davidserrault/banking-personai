@@ -1,0 +1,30 @@
+[
+  {
+    "id": "daily",
+    "label": "Quotidienne"
+  },
+  {
+    "id": "weekly",
+    "label": "Hebdomadaire"
+  },
+  {
+    "id": "fortnightly",
+    "label": "Tous les 14 jours"
+  },
+  {
+    "id": "monthly",
+    "label": "Mensuelle"
+  },
+  {
+    "id": "quarterly",
+    "label": "Trimestrielle"
+  },
+  {
+    "id": "semiannual",
+    "label": "Semestrielle"
+  },
+  {
+    "id": "annual",
+    "label": "Annuelle"
+  }
+]

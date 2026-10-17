@@ -1,0 +1,237 @@
+{
+  "id": "fr.nicolas.median_salary_family",
+  "name": "Nicolas",
+  "seed": "310505",
+  "locale": "fr-FR",
+  "currency": "EUR",
+  "age": 38,
+  "household": 4,
+  "children": 2,
+  "employment": "full-time",
+  "bankFees": {
+    "enabled": true,
+    "authorizedRate": 9.07,
+    "minimumQuarterly": 4,
+    "unauthorizedRate": 19.16,
+    "commission": 8,
+    "monthlyCap": 80,
+    "protection": "standard"
+  },
+  "region": "centre",
+  "urbanity": "metropole",
+  "housing": "mortgage",
+  "car": true,
+  "family": "couple",
+  "autonomy": "transition",
+  "style": "family",
+  "accounts": [
+    {
+      "key": "checking_nicolas",
+      "name": "Primary current account",
+      "bank": "Caisse d’Épargne",
+      "type": "checking",
+      "openingBalance": 80
+    },
+    {
+      "key": "saving_nicolas_livret",
+      "name": "Livret A",
+      "product": "livret-a",
+      "annualRate": 1.7,
+      "ceiling": 20000,
+      "withdrawalRank": 2,
+      "depositRank": 2,
+      "interestMode": "fortnight",
+      "bank": "Caisse d’Épargne",
+      "type": "savings",
+      "openingBalance": 1750
+    },
+    {
+      "key": "saving_nicolas_projects",
+      "name": "Savings account",
+      "product": "csl",
+      "annualRate": 1,
+      "ceiling": null,
+      "withdrawalRank": 1,
+      "depositRank": 1,
+      "interestMode": "fortnight",
+      "bank": "Caisse d’Épargne",
+      "type": "savings",
+      "openingBalance": 950
+    },
+    {
+      "key": "investment_nicolas",
+      "name": "Life insurance",
+      "product": "life-euro",
+      "annualRate": 2.5,
+      "ceiling": null,
+      "withdrawalRank": 0,
+      "depositRank": 3,
+      "interestMode": "daily",
+      "bank": "Caisse d’Épargne",
+      "type": "investment",
+      "openingBalance": 4200
+    }
+  ],
+  "charges": [
+    {
+      "id": "housing",
+      "name": "Mortgage payment",
+      "amount": 880,
+      "day": 5,
+      "categoryId": 800,
+      "enabled": true
+    },
+    {
+      "id": "borrower",
+      "name": "Borrower insurance",
+      "amount": 42,
+      "day": 5,
+      "categoryId": 54,
+      "enabled": true
+    },
+    {
+      "id": "insurance",
+      "name": "Home insurance",
+      "amount": 33,
+      "day": 8,
+      "categoryId": 54,
+      "enabled": true
+    },
+    {
+      "id": "energy",
+      "name": "Electricity · EDF",
+      "amount": 92,
+      "day": 10,
+      "categoryId": 328,
+      "enabled": true
+    },
+    {
+      "id": "internet",
+      "name": "Broadband",
+      "amount": 41.99,
+      "day": 12,
+      "categoryId": 18,
+      "enabled": true
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile plan",
+      "amount": 24.99,
+      "day": 15,
+      "categoryId": 18,
+      "enabled": true
+    },
+    {
+      "id": "fees",
+      "name": "Bank account fee",
+      "amount": 6.4,
+      "day": 2,
+      "categoryId": 59,
+      "enabled": true
+    }
+  ],
+  "discretionary": 1,
+  "savingAggression": 0.4,
+  "lowBalance": "repetitive",
+  "buffer": 260,
+  "overdraft": true,
+  "overdraftLimit": 500,
+  "autoSavings": true,
+  "autoTopup": false,
+  "topupThreshold": 0,
+  "topupAmount": 300,
+  "preferredMerchants": [
+    "Carrefour City",
+    "Monoprix",
+    "Franprix",
+    "Amazon",
+    "Leroy Merlin",
+    "Caffè Nero",
+    "Pret",
+    "Big Fernand",
+    "Deliveroo"
+  ],
+  "budgets": {
+    "groceries": 430,
+    "bakery": 40,
+    "fuel": 110,
+    "transport": 25,
+    "health": 25,
+    "restaurants": 65,
+    "coffee": 15,
+    "shopping": 55,
+    "leisure": 30,
+    "home": 35,
+    "digital": 8,
+    "travel": 35,
+    "hotels": 0,
+    "fastfood": 0,
+    "bars": 0,
+    "alcohol": 0,
+    "cycling": 0,
+    "taxes": 0,
+    "bankfees": 0,
+    "incidentfees": 0,
+    "ridehailing": 20,
+    "childrenActivities": 50,
+    "luxury": 40
+  },
+  "events": {
+    "appstore": true,
+    "school": true,
+    "schoolTrip": true,
+    "birthday": true,
+    "appliance": true,
+    "gifts": true,
+    "equipment": true,
+    "homeRepair": true,
+    "travel": true
+  },
+  "travelCities": [
+    "Nantes",
+    "Lille",
+    "Paris"
+  ],
+  "startDate": "2025-09-15",
+  "years": 1,
+  "seasonality": {
+    "enabled": true,
+    "volumeStrength": 1,
+    "amountStrength": 0
+  },
+  "financing": {
+    "consumerEnabled": false,
+    "cardEnabled": false,
+    "priority": "consumer",
+    "scope": "events",
+    "consumerInsurance": 0,
+    "cardInsurance": 0,
+    "consumerRate": 6,
+    "consumerMonths": 36,
+    "consumerLimit": 25000,
+    "cardRate": 16,
+    "cardMonths": 12,
+    "cardLimit": 3000
+  },
+  "plannedEvents": [],
+  "incomes": [
+    {
+      "id": "income_main",
+      "label": "Salary",
+      "amount": 2000,
+      "frequency": "monthly",
+      "day": 28,
+      "month": 1,
+      "amountVariation": 0,
+      "frequencyVariation": 0,
+      "annualGrowth": 0,
+      "main": true,
+      "enabled": true
+    }
+  ],
+  "countryCode": "FR",
+  "currencyDigits": 2,
+  "timeZone": "Europe/Paris",
+  "referenceId": "fr.merchants.v1",
+  "merchantOverrides": {}
+}

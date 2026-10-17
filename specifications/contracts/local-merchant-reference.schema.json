@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PersonIA local merchant reference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "version",
+    "id",
+    "name",
+    "countryCode",
+    "currency",
+    "currencyDigits",
+    "locale",
+    "timeZone",
+    "dataStatus",
+    "regions",
+    "merchants",
+    "sources"
+  ],
+  "properties": {
+    "format": {
+      "const": "personia.merchant-reference"
+    },
+    "version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 150,
+      "pattern": "^[a-z0-9][a-z0-9.-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "countryCode": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "currencyDigits": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "locale": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})+$"
+    },
+    "timeZone": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "dataStatus": {
+      "enum": [
+        "scenario-assumptions",
+        "documented-estimates"
+      ]
+    },
+    "regions": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "factor"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "factor": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 10
+          }
+        }
+      }
+    },
+    "merchants": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "category",
+          "mean",
+          "regions"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "category": {
+            "enum": [
+              "groceries",
+              "bakery",
+              "fuel",
+              "transport",
+              "health",
+              "restaurants",
+              "coffee",
+              "shopping",
+              "leisure",
+              "home",
+              "digital",
+              "travel",
+              "hotels",
+              "fastfood",
+              "bars",
+              "alcohol",
+              "cycling",
+              "taxes",
+              "bankfees",
+              "incidentfees",
+              "ridehailing",
+              "childrenActivities",
+              "luxury"
+            ]
+          },
+          "mean": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 100000
+          },
+          "regions": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 200,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 150
+            }
+          },
+          "segment": {
+            "enum": [
+              "everyday",
+              "discount",
+              "premium",
+              "luxury",
+              "healthcare",
+              "children",
+              "student",
+              "vtc"
+            ]
+          },
+          "urbanOnly": {
+            "type": "boolean"
+          },
+          "travelOnly": {
+            "type": "boolean"
+          },
+          "scenario": {
+            "type": "boolean"
+          },
+          "monthlyFrequencyByProfile": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "student": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "modest": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "family": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "comfort": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "retired": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000
+              }
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "note"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 5000
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://",
+            "maxLength": 2000
+          }
+        }
+      }
+    }
+  }
+}

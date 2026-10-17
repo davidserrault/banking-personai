@@ -1,0 +1,110 @@
+{
+  "asOf": "2026-09-15",
+  "configurations": [
+    {
+      "model": "nicolas",
+      "importRoundTrip": true,
+      "deterministicHistoryRoundTrip": true,
+      "engineValidationErrors": 0,
+      "period": {
+        "start": "2025-09-15",
+        "end": "2026-09-14",
+        "endExclusive": "2026-09-15",
+        "months": 12
+      }
+    },
+    {
+      "model": "lea",
+      "importRoundTrip": true,
+      "deterministicHistoryRoundTrip": true,
+      "engineValidationErrors": 0,
+      "period": {
+        "start": "2025-09-15",
+        "end": "2026-09-14",
+        "endExclusive": "2026-09-15",
+        "months": 12
+      }
+    },
+    {
+      "model": "sarah",
+      "importRoundTrip": true,
+      "deterministicHistoryRoundTrip": true,
+      "engineValidationErrors": 0,
+      "period": {
+        "start": "2025-09-15",
+        "end": "2026-09-14",
+        "endExclusive": "2026-09-15",
+        "months": 12
+      }
+    },
+    {
+      "model": "michel",
+      "importRoundTrip": true,
+      "deterministicHistoryRoundTrip": true,
+      "engineValidationErrors": 0,
+      "period": {
+        "start": "2025-09-15",
+        "end": "2026-09-14",
+        "endExclusive": "2026-09-15",
+        "months": 12
+      }
+    }
+  ],
+  "deterministicNicolasRoundTrip": true,
+  "historyChecks": [
+    {
+      "persona": "Nicolas",
+      "transactions": 507,
+      "fingerprint": "4d1612e5",
+      "openingAssets": 6980,
+      "closingAccounts": [
+        {
+          "key": "checking_nicolas",
+          "balance": 925.72
+        },
+        {
+          "key": "saving_nicolas_livret",
+          "balance": 1758.68
+        },
+        {
+          "key": "saving_nicolas_projects",
+          "balance": 1013.64
+        },
+        {
+          "key": "investment_nicolas",
+          "balance": 4231.07
+        }
+      ],
+      "ledgerReconciliation": true,
+      "internalTransfersBalanced": true
+    },
+    {
+      "persona": "Credit and savings fixture",
+      "transactions": 26,
+      "fingerprint": "f1afa425",
+      "openingAssets": 1000,
+      "closingAccounts": [
+        {
+          "key": "checking_fixture",
+          "balance": -5768.4
+        },
+        {
+          "key": "saving_fixture",
+          "balance": 0
+        }
+      ],
+      "ledgerReconciliation": true,
+      "internalTransfersBalanced": true
+    }
+  ],
+  "creditFixture": {
+    "drawdown": 6000,
+    "paymentExcludingInsurance": 516.4,
+    "monthlyInsurance": 8,
+    "paidInstallments": 11,
+    "outsideWindowInstallments": 1,
+    "closingDebt": 513.82
+  },
+  "foreignKeyChecks": true,
+  "scope": "Reference financial fixture checks against recorded implementation; does not validate target country/UI/theme features."
+}

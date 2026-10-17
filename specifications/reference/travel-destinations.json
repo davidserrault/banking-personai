@@ -1,0 +1,51 @@
+[
+  {
+    "id": "france",
+    "name": "France",
+    "currency": "EUR",
+    "rate": 1,
+    "digits": 2
+  },
+  {
+    "id": "uk",
+    "name": "Royaume-Uni",
+    "currency": "GBP",
+    "rate": 0.85,
+    "digits": 2
+  },
+  {
+    "id": "usa",
+    "name": "États-Unis",
+    "currency": "USD",
+    "rate": 1.1,
+    "digits": 2
+  },
+  {
+    "id": "japan",
+    "name": "Japon",
+    "currency": "JPY",
+    "rate": 160,
+    "digits": 0
+  },
+  {
+    "id": "switzerland",
+    "name": "Suisse",
+    "currency": "CHF",
+    "rate": 0.95,
+    "digits": 2
+  },
+  {
+    "id": "morocco",
+    "name": "Maroc",
+    "currency": "MAD",
+    "rate": 11,
+    "digits": 2
+  },
+  {
+    "id": "spain",
+    "name": "Espagne",
+    "currency": "EUR",
+    "rate": 1,
+    "digits": 2
+  }
+]

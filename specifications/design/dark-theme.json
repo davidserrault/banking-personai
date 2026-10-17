@@ -1,0 +1,39 @@
+{
+  "theme": "dark",
+  "fontFamily": "Inter",
+  "colors": {
+    "canvas": "#0B0B0C",
+    "surface": "#151518",
+    "surfaceRaised": "#202024",
+    "contentPrimary": "#FFFFFF",
+    "contentSecondary": "#C4C4CC",
+    "contentMuted": "#A1A1AA",
+    "border": "#3F3F46",
+    "controlBorder": "#71717A",
+    "focus": "#FFFFFF",
+    "error": "#FF8585",
+    "negative": "#FF8585",
+    "overdraft": "#F5C36A",
+    "actionFill": "#FFFFFF",
+    "actionContent": "#0B0B0C"
+  },
+  "chart": {
+    "positiveLine": "#FFFFFF",
+    "negativeLine": "#FF8585",
+    "grid": "#3F3F46",
+    "donutSlices": [
+      "#FFFFFF",
+      "#D4D4D8",
+      "#A1A1AA",
+      "#8B8B95",
+      "#777781",
+      "#686872"
+    ],
+    "separator": "#151518"
+  },
+  "contrastTargets": {
+    "normalText": 4.5,
+    "largeText": 3,
+    "essentialControls": 3
+  }
+}

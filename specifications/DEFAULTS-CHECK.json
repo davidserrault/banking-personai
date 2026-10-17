@@ -1,0 +1,21 @@
+{
+  "scope": "Target specification artifact comparison against the preceding French model snapshots",
+  "results": [
+    {
+      "model": "nicolas",
+      "frenchFinancialDefaultsPreserved": true
+    },
+    {
+      "model": "lea",
+      "frenchFinancialDefaultsPreserved": true
+    },
+    {
+      "model": "sarah",
+      "frenchFinancialDefaultsPreserved": true
+    },
+    {
+      "model": "michel",
+      "frenchFinancialDefaultsPreserved": true
+    }
+  ]
+}

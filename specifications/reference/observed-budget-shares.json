@@ -1,0 +1,62 @@
+{
+  "groceries": {
+    "modest": 18.3,
+    "comfort": 14.2,
+    "all": 16.1
+  },
+  "bakery": {
+    "modest": 18.3,
+    "comfort": 14.2,
+    "all": 16.1
+  },
+  "transport": {
+    "modest": 13.6,
+    "comfort": 17.6,
+    "all": 16.4
+  },
+  "fuel": {
+    "modest": 13.6,
+    "comfort": 17.6,
+    "all": 16.4
+  },
+  "leisure": {
+    "modest": 7.2,
+    "comfort": 11.3,
+    "all": 9.4
+  },
+  "restaurants": {
+    "modest": 5.2,
+    "comfort": 9.4,
+    "all": 7.2
+  },
+  "coffee": {
+    "modest": 5.2,
+    "comfort": 9.4,
+    "all": 7.2
+  },
+  "hotels": {
+    "modest": 5.2,
+    "comfort": 9.4,
+    "all": 7.2
+  },
+  "travel": {
+    "modest": 5.2,
+    "comfort": 9.4,
+    "all": 7.2
+  },
+  "home": {
+    "modest": 4,
+    "comfort": 7.3,
+    "all": 5.7
+  },
+  "shopping": {
+    "modest": 5.5,
+    "comfort": 5.2,
+    "all": 5
+  },
+  "digital": {
+    "modest": 3.8,
+    "comfort": 2.1,
+    "all": 2.7
+  }
+}
