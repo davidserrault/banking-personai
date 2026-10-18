@@ -1,3 +1,4 @@
+import { CategoryField } from "./CategoryField";
 import { useState } from "react";
 import type { ConfigurationFile } from "../domain/types";
 import { seasonalFactors } from "../engine";
@@ -20,11 +21,11 @@ export function Seasonality({ file }: { file: ConfigurationFile }) {
   }));
   return (
     <div className="seasonality-explorer">
-      <Field
+      <CategoryField
         label={t("behavior.category")}
         value={category}
         onChange={setCategory}
-        options={categories.map((x) => [x.key, categoryLabel(x.key)])}
+        scope="spending"
       />
       <p className="field-hint">{t("studio.seasonalNote")}</p>
       <div

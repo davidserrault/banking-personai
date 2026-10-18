@@ -48,10 +48,10 @@ export function planTrip(
   }[] = [];
   for (let day = 0; day < event.durationDays; day++) {
     const kinds = ["restaurants"];
-    if (day === 0) kinds.push("travel");
+    if (day === 0) kinds.push(abroad ? "planeTicket" : "trainTicket");
     if (day < event.durationDays - 1) kinds.push("hotels");
     if (day % 3 === 0) kinds.push("groceries");
-    if (day % 2 === 0) kinds.push("leisure");
+    if (day % 2 === 0) kinds.push("arts");
     for (const category of kinds) {
       const foreignMerchant = abroad
         ? tripMerchants.find(
@@ -67,9 +67,15 @@ export function planTrip(
       const merchant = foreignMerchant ?? domesticMerchant;
       const mean =
         merchant?.mean ??
-        { travel: 65, hotels: 95, groceries: 20, leisure: 14, restaurants: 24 }[
-          category
-        ] ??
+        {
+          travel: 65,
+          hotels: 95,
+          groceries: 20,
+          arts: 14,
+          trainTicket: 65,
+          planeTicket: 120,
+          restaurants: 24,
+        }[category] ??
         20;
       candidates.push({
         date: addDays(event.startDate, day),

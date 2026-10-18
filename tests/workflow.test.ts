@@ -18,7 +18,10 @@ test("reference draft merges into the latest configuration without reverting sub
   assert.equal(applied.configuration.name, "Edited later");
   assert.equal(applied.configuration.incomes[0].amount, 2500);
   assert.equal(applied.configuration.budgetOverrides?.groceries, 600);
-  assert.equal(file.configuration.budgetOverrides, undefined);
+  assert.deepEqual(
+    file.configuration.budgetOverrides,
+    source.configuration.budgetOverrides,
+  );
 });
 
 test("monthly aggregates reconcile to whole-history totals without retired fee fields", () => {

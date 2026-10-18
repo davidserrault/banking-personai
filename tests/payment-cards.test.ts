@@ -60,6 +60,8 @@ function scenario(type: PaymentCardType = "debit") {
   c.otherTaxes = [];
   c.incomeTax!.enabled = false;
   c.budgets = Object.fromEntries(Object.keys(c.budgets).map((key) => [key, 0]));
+  c.budgetOverrides = {};
+  c.merchantOverrides = {};
   c.events = Object.fromEntries(
     Object.keys(c.events).map((key) => [key, false]),
   );
@@ -166,7 +168,7 @@ test("deferred purchases use a zero-opening ledger; monthly settlement is a pair
       name: "Rent",
       amount: 20,
       day: 17,
-      categoryId: 14,
+      categoryId: 273,
       enabled: true,
     },
   ];
@@ -251,7 +253,7 @@ test("credit defaults to 20% yearly and applies monthly interest to the balance 
       id: "one-off-purchase",
       startDate: "2025-01-15",
       amount: 100,
-      category: "shopping",
+      category: "shoppingOthers",
       enabled: true,
       mandatory: true,
     },
@@ -384,7 +386,7 @@ test("authorized overdrafts limit card debits and accrue only card-related inter
       name: "Rent",
       amount: 100,
       day: 1,
-      categoryId: 14,
+      categoryId: 273,
       enabled: true,
     },
   ];

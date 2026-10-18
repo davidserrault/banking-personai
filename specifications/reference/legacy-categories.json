@@ -1,0 +1,163 @@
+[
+  {
+    "key": "groceries",
+    "id": 14,
+    "name": "Alimentation",
+    "protected": true,
+    "monthly": 430
+  },
+  {
+    "key": "bakery",
+    "id": 116,
+    "name": "Boulangerie & proximité",
+    "protected": true,
+    "monthly": 40
+  },
+  {
+    "key": "fuel",
+    "id": 36,
+    "name": "Carburant",
+    "protected": true,
+    "monthly": 110
+  },
+  {
+    "key": "transport",
+    "id": 115,
+    "name": "Transports & péages",
+    "protected": true,
+    "monthly": 25
+  },
+  {
+    "key": "health",
+    "id": 49,
+    "name": "Santé",
+    "protected": true,
+    "monthly": 25
+  },
+  {
+    "key": "restaurants",
+    "id": 84,
+    "name": "Restaurants & livraison",
+    "protected": false,
+    "monthly": 65
+  },
+  {
+    "key": "coffee",
+    "id": 79,
+    "name": "Cafés",
+    "protected": false,
+    "monthly": 15
+  },
+  {
+    "key": "shopping",
+    "id": 64,
+    "name": "Achats & habillement",
+    "protected": false,
+    "monthly": 55
+  },
+  {
+    "key": "leisure",
+    "id": 75,
+    "name": "Loisirs",
+    "protected": false,
+    "monthly": 30
+  },
+  {
+    "key": "home",
+    "id": 29,
+    "name": "Maison & bricolage",
+    "protected": false,
+    "monthly": 35
+  },
+  {
+    "key": "digital",
+    "id": 18,
+    "name": "Numérique & télécoms",
+    "protected": false,
+    "monthly": 8
+  },
+  {
+    "key": "travel",
+    "id": 339,
+    "name": "Voyages",
+    "protected": false,
+    "monthly": 35
+  },
+  {
+    "key": "hotels",
+    "id": 98,
+    "name": "Hôtels & campings",
+    "protected": false,
+    "monthly": 0
+  },
+  {
+    "key": "fastfood",
+    "id": 71,
+    "name": "Restauration rapide",
+    "protected": false,
+    "monthly": 0
+  },
+  {
+    "key": "bars",
+    "id": 9010,
+    "name": "Bars & sorties",
+    "protected": false,
+    "monthly": 0
+  },
+  {
+    "key": "alcohol",
+    "id": 9011,
+    "name": "Alcool",
+    "protected": false,
+    "monthly": 0
+  },
+  {
+    "key": "cycling",
+    "id": 9012,
+    "name": "Vélo",
+    "protected": false,
+    "monthly": 0
+  },
+  {
+    "key": "taxes",
+    "id": 837,
+    "name": "Impôts & taxes",
+    "protected": true,
+    "monthly": 0
+  },
+  {
+    "key": "bankfees",
+    "id": 59,
+    "name": "Frais bancaires variables",
+    "protected": true,
+    "monthly": 0
+  },
+  {
+    "key": "incidentfees",
+    "id": 9013,
+    "name": "Frais d’incidents simulés",
+    "protected": true,
+    "monthly": 0
+  },
+  {
+    "key": "ridehailing",
+    "id": 9014,
+    "name": "VTC & chauffeurs",
+    "protected": false,
+    "monthly": 20
+  },
+  {
+    "key": "childrenActivities",
+    "id": 9015,
+    "name": "Activités extrascolaires",
+    "protected": false,
+    "monthly": 50
+  },
+  {
+    "key": "luxury",
+    "id": 9016,
+    "name": "Luxe & créateurs",
+    "protected": false,
+    "monthly": 40
+  }
+]

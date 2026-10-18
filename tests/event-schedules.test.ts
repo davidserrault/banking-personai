@@ -36,6 +36,8 @@ function scenario() {
   c.plannedEvents = [];
   c.events = Object.fromEntries(Object.keys(c.events).map((k) => [k, false]));
   c.budgets = Object.fromEntries(Object.keys(c.budgets).map((k) => [k, 0]));
+  c.budgetOverrides = {};
+  c.merchantOverrides = {};
   c.autoSavings = c.autoTopup = c.incomeTax!.enabled = false;
   c.financing.consumerEnabled = c.financing.cardEnabled = false;
   return file;

@@ -1,4 +1,8 @@
 import {
+  categoryById,
+  categoryByKey as bridgeCategoryByKey,
+} from "../domain/categories";
+import {
   ModeRuntime,
   categoryEffect,
   blend,
@@ -80,7 +84,7 @@ export {
 } from "./consumption";
 export { monthlyIncome, annualFrequency } from "./incomes";
 export { addDays, addMonths } from "./calendar";
-export const ENGINE_VERSION = "personai.deterministic.v1.8.0";
+export const ENGINE_VERSION = "personai.deterministic.v2.0.0";
 
 /** Display labels do not participate in financial identity. Merchant names do: affinity and transport gates use them. */
 function financialConfig(config: PersonaConfig): unknown {
@@ -718,7 +722,12 @@ export function generate(
         );
       }
     }
-    const category = options.category ?? "other";
+    const subcategory =
+      categoryById[options.categoryId ?? -1] ??
+      bridgeCategoryByKey[options.category ?? "uncategorized"];
+    if (!subcategory)
+      throw new Error(`Unknown transaction category: ${options.category}`);
+    const category = subcategory.key;
     const m = monthActivity();
     if (["income", "inheritance"].includes(options.kind))
       m.income += major(amountMinor);
@@ -748,7 +757,8 @@ export function generate(
       amountMinor,
       balanceAfter: major(balances[account.key]),
       balanceAfterMinor: balances[account.key],
-      categoryId: options.categoryId ?? categoryByKey[category]?.id ?? 9002,
+      categoryId: subcategory.id,
+      parentCategoryId: subcategory.parentId,
       category,
       label,
       currency: config.currency,
@@ -803,8 +813,11 @@ export function generate(
       `${rule ? rule.label + " · " : ""}Transfer to ${to.name}`,
       {
         kind: "transfer",
-        category: "transfers",
-        categoryId: 212,
+        category:
+          paymentCardId && to.type === "deferred-card"
+            ? "monthlyDebit"
+            : "internalTransfer",
+        categoryId: paymentCardId && to.type === "deferred-card" ? 191 : 326,
         transferId,
         eventId,
         transferRuleId: rule?.id,
@@ -817,8 +830,8 @@ export function generate(
       `${rule ? rule.label + " · " : ""}Transfer from ${from.name}`,
       {
         kind: "transfer",
-        category: "transfers",
-        categoryId: 212,
+        category: "incomeTransfer",
+        categoryId: 282,
         transferId,
         eventId,
         transferRuleId: rule?.id,
@@ -873,8 +886,8 @@ export function generate(
     loans.push(loan);
     post(checking, amount, loan.label, {
       kind: "credit-drawdown",
-      category: "credit",
-      categoryId: 9000,
+      category: "loanIncome",
+      categoryId: 441894,
       loanId: loan.id,
       eventId,
     });
@@ -953,8 +966,8 @@ export function generate(
           "Synthetic external support",
           {
             kind: "support",
-            category: "income",
-            categoryId: 859,
+            category: "otherIncome",
+            categoryId: 3,
             eventId: options.eventId,
           },
         );
@@ -1161,7 +1174,7 @@ export function generate(
     amount: number,
     label: string,
     category: string,
-    categoryId = 9002,
+    categoryId = bridgeCategoryByKey[category]?.id ?? 276,
   ): void {
     if (amount > 0)
       recurring.push({
@@ -1273,7 +1286,7 @@ export function generate(
       if (newMonth)
         remaining[category.key] =
           target +
-          (["health", "luxury"].includes(category.key)
+          (["healthOthers", "clothing"].includes(category.key)
             ? Math.min(remaining[category.key] ?? 0, target * 5)
             : 0);
       else
@@ -1378,8 +1391,15 @@ export function generate(
     for (const payment of incomes.get(date) ?? []) {
       post(checking, payment.amountMinor, payment.income.label, {
         kind: "income",
-        category: "income",
-        categoryId: 859,
+        categoryId:
+          payment.income.categoryId ??
+          (payment.income.kind === "refund"
+            ? 283
+            : payment.income.kind === "bonus"
+              ? 233
+              : payment.income.main || payment.income.kind === "salary"
+                ? 230
+                : 3),
         incomeId: payment.income.id,
       });
       lastIncomeDate = date;
@@ -1387,8 +1407,8 @@ export function generate(
     for (const event of todayEvents.filter((e) => e.type === "inheritance")) {
       post(checking, minor(event.amount), event.label, {
         kind: "inheritance",
-        category: "income",
-        categoryId: 859,
+        category: "otherIncome",
+        categoryId: 3,
         eventId: event.id,
       });
       if (event.amount > 0) lastIncomeDate = date;
@@ -1526,8 +1546,8 @@ export function generate(
       loans.push(loan);
       post(checking, loan.principalMinor, loan.label, {
         kind: "credit-drawdown",
-        category: "credit",
-        categoryId: 9000,
+        category: "loanIncome",
+        categoryId: 441894,
         loanId: loan.id,
       });
     }
@@ -1538,8 +1558,8 @@ export function generate(
       )) {
         expense(row.amountMinor, `${loan.label} repayment`, {
           kind: "credit-repayment",
-          category: "credit",
-          categoryId: 800,
+          category: loan.type === "student" ? "studentLoan" : "mortgageRefund",
+          categoryId: loan.type === "student" ? 259 : 89,
           loanId: loan.id,
           eventId: loan.eventId,
           allowCredit: false,
@@ -1550,7 +1570,7 @@ export function generate(
           expense(row.insuranceMinor, `${loan.label} insurance`, {
             kind: "credit-insurance",
             category: "insurance",
-            categoryId: 54,
+            categoryId: 278,
             loanId: loan.id,
             eventId: loan.eventId,
             allowCredit: false,
@@ -1574,8 +1594,8 @@ export function generate(
       expense(minor(event.change.birthCost), event.label, {
         mandatory: true,
         kind: "event",
-        category: "childrenActivities",
-        categoryId: 9004,
+        category: "educationOthers",
+        categoryId: 267,
         protected: true,
         eventScope: true,
         eventId: event.id,
@@ -1584,8 +1604,8 @@ export function generate(
         event,
         event.change.childMonthlyCost,
         "Childcare costs",
-        "childrenActivities",
-        9004,
+        "daycare",
+        267,
       );
     }
     // 9. Explicit purchases and a single funding reservation for each trip.
@@ -1597,9 +1617,9 @@ export function generate(
       ) {
         const category =
           event.type === "property"
-            ? "housing"
+            ? "homeOthers"
             : event.type === "car"
-              ? "transport"
+              ? "autoOthers"
               : event.category;
         if (
           modeEffect &&
@@ -1629,9 +1649,9 @@ export function generate(
             category,
             categoryId:
               event.type === "property"
-                ? 800
+                ? 220
                 : event.type === "car"
-                  ? 9002
+                  ? 84
                   : categoryByKey[category]?.id,
             eventId: event.id,
             eventScope: true,
@@ -1714,8 +1734,8 @@ export function generate(
       if (due)
         expense(due, "Income tax", {
           kind: "tax",
-          category: "taxes",
-          categoryId: 837,
+          category: "incomeTaxes",
+          categoryId: 208,
           protected: true,
           allowCredit: false,
         });
@@ -1725,8 +1745,7 @@ export function generate(
       if (due)
         expense(due, tax.label, {
           kind: "tax",
-          category: "taxes",
-          categoryId: 837,
+          categoryId: tax.categoryId ?? 302,
           protected: true,
           allowCredit: false,
         });
@@ -1742,8 +1761,7 @@ export function generate(
       )
         expense(minor(chargeAmount(charge, date)), charge.name, {
           kind: "recurring",
-          category:
-            categories.find((c) => c.id === charge.categoryId)?.key ?? "fixed",
+          category: categoryById[charge.categoryId]?.key ?? "uncategorized",
           categoryId: charge.categoryId,
           protected: true,
         });
@@ -1793,7 +1811,7 @@ export function generate(
         !pool.length ||
         budget <= 0 ||
         (key === "fuel" && !state.car) ||
-        (key === "digital" && !config.events.appstore) ||
+        (key === "subscriptionOthers" && !config.events.appstore) ||
         (key === "incidentfees" && balances[checking.key] >= 0)
       )
         continue;
@@ -1853,7 +1871,10 @@ export function generate(
               (state.prices?.[key] ?? 1),
           ),
         );
-        if (amount > remaining[key] && ["health", "luxury"].includes(key))
+        if (
+          amount > remaining[key] &&
+          ["healthOthers", "clothing"].includes(key)
+        )
           continue;
         amount = Math.min(amount, remaining[key]);
         if (!amount) break;
@@ -1930,8 +1951,8 @@ export function generate(
       if (month === 12 && day === 31) {
         post(account, Math.round(interest.accrued), "Savings interest", {
           kind: "savings-interest",
-          category: "income",
-          categoryId: 859,
+          category: "interestIncome",
+          categoryId: 80,
         });
         interest.accrued = 0;
       }

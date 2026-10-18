@@ -1,35 +1,74 @@
 [
   {
-    "id": 859,
-    "label": "Revenus"
+    "id": 79,
+    "key": "bankfees",
+    "label": "Banking fees and charges",
+    "parentId": 164
   },
   {
-    "id": 54,
-    "label": "Assurances"
+    "id": 191,
+    "key": "monthlyDebit",
+    "label": "Monthly Debit",
+    "parentId": 164
   },
   {
-    "id": 328,
-    "label": "Énergie"
+    "id": 89,
+    "key": "mortgageRefund",
+    "label": "Mortgage refund",
+    "parentId": 164
   },
   {
-    "id": 800,
-    "label": "Crédit / logement"
+    "id": 267,
+    "key": "daycare",
+    "label": "Baby-sitter & Daycare",
+    "parentId": 167
   },
   {
-    "id": 212,
-    "label": "Transferts internes"
+    "id": 259,
+    "key": "studentLoan",
+    "label": "Student loan",
+    "parentId": 167
   },
   {
-    "id": 9000,
-    "label": "Déblocage de crédit"
+    "id": 80,
+    "key": "interestIncome",
+    "label": "Interest incomes",
+    "parentId": 2
   },
   {
-    "id": 9002,
-    "label": "Charge récurrente",
-    "meaning": "Vehicle purchase; current engine falls back to this generic label."
+    "id": 282,
+    "key": "incomeTransfer",
+    "label": "Internal transfer",
+    "parentId": 2
   },
   {
-    "id": 9004,
-    "label": "Enfance & garde"
+    "id": 441894,
+    "key": "loanIncome",
+    "label": "Loans",
+    "parentId": 2
+  },
+  {
+    "id": 278,
+    "key": "insurance",
+    "label": "Insurance",
+    "parentId": 160
+  },
+  {
+    "id": 208,
+    "key": "incomeTaxes",
+    "label": "Incomes taxes",
+    "parentId": 159
+  },
+  {
+    "id": 302,
+    "key": "taxes",
+    "label": "Taxes",
+    "parentId": 159
+  },
+  {
+    "id": 326,
+    "key": "internalTransfer",
+    "label": "Internal transfer",
+    "parentId": 303
   }
 ]

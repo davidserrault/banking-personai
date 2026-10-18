@@ -2,7 +2,7 @@ import { eventOccurrences } from "../engine/events";
 import { addDays } from "../engine/calendar";
 import { inflationFactor } from "../engine/inflation";
 import categories from "../../specifications/reference/categories.json";
-import systemCategories from "../../specifications/reference/transaction-system-categories.json";
+import { categoryById } from "../domain/categories";
 import destinations from "../../specifications/reference/travel-destinations.json";
 import products from "../../specifications/reference/savings-products.json";
 import type {
@@ -452,12 +452,13 @@ export function validateScenario(
         "This product is incompatible with the account type.",
       );
   });
-  const categoryIds = new Set(
-    [...categories, ...systemCategories].map((c) => c.id),
-  );
+  const categoryIds = new Set(categories.map((c) => c.id));
   config.charges.forEach((charge, i) => {
     money(charge.amount, `charges[${i}].amount`);
-    if (!categoryIds.has(charge.categoryId))
+    if (
+      !categoryIds.has(charge.categoryId) ||
+      categoryById[charge.categoryId]?.parentId === 2
+    )
       add(`charges[${i}].categoryId`, "Choose a known transaction category.");
   });
   unique(

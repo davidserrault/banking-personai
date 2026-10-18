@@ -1,0 +1,11 @@
+{
+  "id": "bridge",
+  "version": 1,
+  "name": "Bridge transaction categories",
+  "url": "https://www.bridgeapi.io/",
+  "documentationUrl": "https://docs.bridgeapi.io/docs/transactions-categories",
+  "mainCategoryCount": 15,
+  "subcategoryCount": 127,
+  "documentationClaimedSubcategoryCount": 126,
+  "note": "The supplied and published English category tree contains 127 entries. All entries are retained; the documentation overview states 126."
+}

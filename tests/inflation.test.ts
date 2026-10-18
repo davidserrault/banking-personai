@@ -38,6 +38,8 @@ function clean() {
   );
   c.budgets = Object.fromEntries(Object.keys(c.budgets).map((key) => [key, 0]));
   c.budgetOverrides = {};
+  c.merchantOverrides = {};
+  c.budgetOverrides = {};
   c.costOfLiving = 1;
   c.autoSavings = false;
   c.autoTopup = false;
@@ -52,7 +54,7 @@ const charge = (id: string, amount: number, day = 1) => ({
   name: id,
   amount,
   day,
-  categoryId: 14,
+  categoryId: 273,
   enabled: true,
 });
 const run = (file: ConfigurationFile) =>

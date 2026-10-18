@@ -1,9 +1,9 @@
 {
-  "name": "personai",
-  "version": "1.0.0",
+  "name": "persona-ledger-studio-2",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Deterministic synthetic customer and banking ledger studio",
+  "description": "Synthetic banking data studio with configurable personas and Bridge categories: 15 main categories and 127 subcategories.",
   "engines": {
     "node": ">=22.13.0"
   },

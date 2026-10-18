@@ -1,0 +1,62 @@
+[
+  {
+    "id": 165,
+    "name": "Auto & Transport"
+  },
+  {
+    "id": 164,
+    "name": "Bank"
+  },
+  {
+    "id": 171,
+    "name": "Bills & Utilities"
+  },
+  {
+    "id": 166,
+    "name": "Business services"
+  },
+  {
+    "id": 167,
+    "name": "Education & Children"
+  },
+  {
+    "id": 170,
+    "name": "Entertainment"
+  },
+  {
+    "id": 168,
+    "name": "Food & Dining"
+  },
+  {
+    "id": 163,
+    "name": "Health"
+  },
+  {
+    "id": 161,
+    "name": "Home"
+  },
+  {
+    "id": 2,
+    "name": "Incomes"
+  },
+  {
+    "id": 160,
+    "name": "Misc. expenses"
+  },
+  {
+    "id": 315,
+    "name": "Personal care"
+  },
+  {
+    "id": 162,
+    "name": "Shopping"
+  },
+  {
+    "id": 159,
+    "name": "Taxes"
+  },
+  {
+    "id": 303,
+    "name": "Withdrawals, checks & transfer"
+  }
+]

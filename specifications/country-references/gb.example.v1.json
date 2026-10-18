@@ -27,7 +27,7 @@
     {
       "id": 2,
       "name": "Example discount store",
-      "category": "shopping",
+      "category": "shoppingOthers",
       "mean": 18,
       "regions": [
         "*"
@@ -37,7 +37,7 @@
     {
       "id": 3,
       "name": "Example family activity centre",
-      "category": "childrenActivities",
+      "category": "educationOthers",
       "mean": 25,
       "regions": [
         "*"
@@ -50,5 +50,6 @@
       "title": "Illustrative developer fixture",
       "note": "Fictional merchant names and amounts. Demonstrates file structure only; no observed UK consumption or banking calibration is claimed."
     }
-  ]
+  ],
+  "categorySystem": "bridge"
 }

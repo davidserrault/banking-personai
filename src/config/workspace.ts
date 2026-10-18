@@ -1,5 +1,6 @@
+import { migrateCategorySystem } from "./category-migration";
 import type { ConfigurationFile } from "../domain/types";
-import { checkSchema, fileSchema } from "./schema";
+import { checkSchema, fileSchema, legacyCompatibleSchema } from "./schema";
 
 export const WORKSPACE_KEY = "personai.workspace.v1";
 export const HISTORY_LIMIT = 50;
@@ -140,7 +141,16 @@ export function serializeWorkspace(state: Workspace): string {
   return text;
 }
 function assertDraft(file: unknown): asserts file is ConfigurationFile {
-  if (checkSchema(file, fileSchema, "", true).length)
+  if (
+    checkSchema(
+      file,
+      (file as ConfigurationFile)?.configuration?.categorySystem === "bridge"
+        ? fileSchema
+        : legacyCompatibleSchema(fileSchema),
+      "",
+      true,
+    ).length
+  )
     throw new Error("Invalid saved configuration.");
 }
 export function parseWorkspace(text: string): Workspace {
@@ -189,7 +199,9 @@ export function parseWorkspace(text: string): Workspace {
         throw new Error("Inconsistent saved history.");
     }
   }
-  return state;
+  return state.present.configuration.categorySystem === "bridge"
+    ? state
+    : newWorkspace(migrateCategorySystem(state.present));
 }
 export function saveWorkspace(
   storage: Pick<Storage, "setItem">,

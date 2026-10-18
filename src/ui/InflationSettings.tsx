@@ -1,3 +1,4 @@
+import { categoryPath } from "../domain/categories";
 import type {
   InflationRate,
   InflationSettings as Settings,
@@ -138,7 +139,7 @@ export function InflationSettings({
         <details className="source-details">
           <summary>Budgets ({categories.length})</summary>
           {categories.map((category) =>
-            row("budgetOverrides", category.key, categoryLabel(category.key)),
+            row("budgetOverrides", category.key, categoryPath(category.key)),
           )}
         </details>
       </details>

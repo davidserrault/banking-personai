@@ -1,3 +1,4 @@
+import { migrateCategorySystem } from "./category-migration";
 import type { ConfigurationFile, PersonaConfig } from "../domain/types";
 import { defaultIncomeTax, defaultTaxSystem } from "../engine/taxes";
 import { differenceDays } from "../engine/calendar";
@@ -18,7 +19,7 @@ export function stripLegacySettings(config: PersonaConfig): PersonaConfig {
   return c;
 }
 export function modernizeScenario(file: ConfigurationFile): ConfigurationFile {
-  const next = structuredClone(file);
+  const next = migrateCategorySystem(file);
   next.configuration = stripLegacySettings(next.configuration);
   next.configuration.costOfLiving ??= 1;
   next.configuration.displayCurrency ??= next.configuration.currency;

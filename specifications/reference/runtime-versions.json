@@ -1,5 +1,5 @@
 {
-  "engineVersion": "personia.deterministic.v6.2.0",
+  "engineVersion": "personai.deterministic.v2.0.0",
   "consumptionVersion": "fr.consumption.v2",
   "seasonalityVersion": "meniga.sep2024-aug2025.v1",
   "packageVersion": "0.1.0",
@@ -50,5 +50,6 @@
     "format": "oxfmt",
     "test": "node scripts/test.mjs",
     "typecheck": "tsc --noEmit"
-  }
+  },
+  "categorySystem": "bridge"
 }

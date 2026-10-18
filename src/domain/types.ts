@@ -74,6 +74,7 @@ export interface AccountTransfer {
   };
 }
 export interface Income {
+  categoryId?: number;
   kind?: "salary" | "bonus" | "refund" | "other";
   expected?: boolean;
   cadence?: "recurring" | "exceptional";
@@ -153,11 +154,13 @@ export interface TaxPayment {
   month: number;
 }
 export interface OtherTax extends TaxPayment {
+  categoryId?: number;
   id: string;
   label: string;
   amount: number;
 }
 export interface PersonaConfig {
+  categorySystem?: "bridge";
   paymentCards?: PaymentCard[];
   defaultPaymentCardId?: string;
   accountTransfers?: AccountTransfer[];
@@ -269,6 +272,7 @@ export interface SourceRecord {
   [key: string]: unknown;
 }
 export interface CountryMerchantReference {
+  categorySystem?: "bridge";
   format: "personia.merchant-reference";
   version: 1;
   id: string;
@@ -302,8 +306,33 @@ export interface Assumptions {
   consumptionCountry: string | null;
   seasonalityCountry: string | null;
   sources: SourceRecord[];
-  consumption?: FrenchAssumptions["consumption"];
-  seasonality?: FrenchAssumptions["seasonality"];
+  consumption?: {
+    version: string;
+    profiles: {
+      id: string;
+      name: string;
+      description: string;
+      factor: number;
+      budgets: Partial<Record<string, number>>;
+      basket: number;
+      basketOverrides: Partial<Record<string, number>>;
+      affinity: Partial<Record<string, number>>;
+    }[];
+    categoryBases: {
+      key: string;
+      id: number;
+      name: string;
+      protected: boolean;
+      monthly: number;
+    }[];
+    observedBudgetShares: Record<
+      string,
+      { modest: number; comfort: number; all: number }
+    >;
+  };
+  seasonality?: Omit<FrenchAssumptions["seasonality"], "mapping"> & {
+    mapping: Record<string, { series: string; proxy?: boolean }>;
+  };
   banking?: FrenchAssumptions["banking"];
   conversion?: {
     from: string;

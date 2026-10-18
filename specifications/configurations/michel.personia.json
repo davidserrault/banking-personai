@@ -84,7 +84,7 @@
         "name": "Mortgage payment",
         "amount": 0,
         "day": 5,
-        "categoryId": 800,
+        "categoryId": 89,
         "enabled": false
       },
       {
@@ -92,7 +92,7 @@
         "name": "Borrower insurance",
         "amount": 42,
         "day": 5,
-        "categoryId": 54,
+        "categoryId": 278,
         "enabled": false
       },
       {
@@ -100,7 +100,7 @@
         "name": "Home insurance",
         "amount": 33,
         "day": 8,
-        "categoryId": 54,
+        "categoryId": 246,
         "enabled": true
       },
       {
@@ -108,7 +108,7 @@
         "name": "Electricity · EDF",
         "amount": 92,
         "day": 10,
-        "categoryId": 328,
+        "categoryId": 217,
         "enabled": true
       },
       {
@@ -116,7 +116,7 @@
         "name": "Broadband",
         "amount": 41.99,
         "day": 12,
-        "categoryId": 18,
+        "categoryId": 180,
         "enabled": true
       },
       {
@@ -124,7 +124,7 @@
         "name": "Mobile plan",
         "amount": 24.99,
         "day": 15,
-        "categoryId": 18,
+        "categoryId": 277,
         "enabled": true
       },
       {
@@ -132,7 +132,7 @@
         "name": "Bank account fee",
         "amount": 6.4,
         "day": 2,
-        "categoryId": 59,
+        "categoryId": 79,
         "enabled": true
       }
     ],
@@ -153,29 +153,35 @@
       "Jardinerie de quartier fictive"
     ],
     "budgets": {
-      "groceries": 430,
-      "bakery": 40,
-      "fuel": 110,
-      "transport": 25,
-      "health": 25,
-      "restaurants": 65,
-      "coffee": 15,
-      "shopping": 55,
-      "leisure": 30,
-      "home": 35,
-      "digital": 8,
-      "travel": 35,
+      "groceries": 297.33,
+      "foodOthers": 30.29,
+      "fuel": 77,
+      "tolls": 16.25,
+      "pharmacy": 5.97,
+      "healthOthers": 11.95,
+      "optician": 5.97,
+      "dentist": 2.99,
+      "restaurants": 52,
+      "coffee": 12,
+      "shoppingOthers": 18.61,
+      "sportingGoods": 5.03,
+      "clothing": 12.58,
+      "books": 5.03,
+      "arts": 21.6,
+      "sports": 7.2,
+      "amusements": 7.2,
+      "homeImprovement": 38.5,
+      "subscriptionOthers": 4.4,
+      "trainTicket": 10.5,
+      "travel": 21,
       "hotels": 0,
       "fastfood": 0,
       "bars": 0,
-      "alcohol": 0,
-      "cycling": 0,
       "taxes": 0,
       "bankfees": 0,
       "incidentfees": 0,
-      "ridehailing": 20,
-      "childrenActivities": 50,
-      "luxury": 40
+      "autoOthers": 14,
+      "educationOthers": 0
     },
     "events": {
       "appstore": true,
@@ -227,14 +233,444 @@
         "frequencyVariation": 0,
         "annualGrowth": 0,
         "main": true,
-        "enabled": true
+        "enabled": true,
+        "categoryId": 279
       }
     ],
     "countryCode": "FR",
     "currencyDigits": 2,
     "timeZone": "Europe/Paris",
     "referenceId": "fr.merchants.v1",
-    "merchantOverrides": {}
+    "merchantOverrides": {
+      "fr.merchants.v1|retired|800000": {
+        "mean": 29.4,
+        "frequency": 0.8534401102213036
+      },
+      "fr.merchants.v1|retired|800001": {
+        "mean": 39.9,
+        "frequency": 0.25154024301259476
+      },
+      "fr.merchants.v1|retired|800002": {
+        "mean": 26.25,
+        "frequency": 0.95585292344786
+      },
+      "fr.merchants.v1|retired|800003": {
+        "mean": 54.6,
+        "frequency": 0.4595446747345481
+      },
+      "fr.merchants.v1|retired|800004": {
+        "mean": 45.15,
+        "frequency": 0.555728443865035
+      },
+      "fr.merchants.v1|retired|800005": {
+        "mean": 50.4,
+        "frequency": 0.49784006429576044
+      },
+      "fr.merchants.v1|retired|800006": {
+        "mean": 34.65,
+        "frequency": 0.5430982519590114
+      },
+      "fr.merchants.v1|retired|800007": {
+        "mean": 53.55,
+        "frequency": 0.468555354631304
+      },
+      "fr.merchants.v1|retired|800008": {
+        "mean": 33.6,
+        "frequency": 0.29870403857745625
+      },
+      "fr.merchants.v1|retired|800009": {
+        "mean": 24.15,
+        "frequency": 2.0779411379301305
+      },
+      "fr.merchants.v1|retired|800010": {
+        "mean": 7.5,
+        "frequency": 1.3462222222222222
+      },
+      "fr.merchants.v1|retired|800011": {
+        "mean": 9,
+        "frequency": 1.1218518518518517
+      },
+      "fr.merchants.v1|retired|800012": {
+        "mean": 8.5,
+        "frequency": 1.1878431372549019
+      },
+      "fr.merchants.v1|retired|800013": {
+        "mean": 58,
+        "frequency": 0.5310344827586208
+      },
+      "fr.merchants.v1|retired|800014": {
+        "mean": 52,
+        "frequency": 0.44423076923076926
+      },
+      "fr.merchants.v1|retired|800015": {
+        "mean": 50,
+        "frequency": 0.462
+      },
+      "fr.merchants.v1|retired|800016": {
+        "mean": 8,
+        "frequency": 2.03125
+      },
+      "fr.merchants.v1|retired|800017": {
+        "mean": 3.5,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800018": {
+        "mean": 5,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800019": {
+        "mean": 3.8,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800020": {
+        "mean": 3.6,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800021": {
+        "mean": 3.5,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800022": {
+        "mean": 18.7,
+        "frequency": 0.31942959001782534
+      },
+      "fr.merchants.v1|retired|800023": {
+        "mean": 33,
+        "frequency": 0.0905050505050505
+      },
+      "fr.merchants.v1|retired|800024": {
+        "mean": 23,
+        "frequency": 0.2569169960474308
+      },
+      "fr.merchants.v1|retired|800025": {
+        "mean": 29,
+        "frequency": 0.2037617554858934
+      },
+      "fr.merchants.v1|retired|800026": {
+        "mean": 32,
+        "frequency": 0.18465909090909088
+      },
+      "fr.merchants.v1|retired|800027": {
+        "mean": 25,
+        "frequency": 0.23636363636363633
+      },
+      "fr.merchants.v1|retired|800028": {
+        "mean": 31,
+        "frequency": 0.19061583577712607
+      },
+      "fr.merchants.v1|retired|800029": {
+        "mean": 28,
+        "frequency": 0.211038961038961
+      },
+      "fr.merchants.v1|retired|800030": {
+        "mean": 29,
+        "frequency": 0.2037617554858934
+      },
+      "fr.merchants.v1|retired|800031": {
+        "mean": 34,
+        "frequency": 0.17379679144385024
+      },
+      "fr.merchants.v1|retired|800032": {
+        "mean": 5.5,
+        "frequency": 0.7272727272727273
+      },
+      "fr.merchants.v1|retired|800033": {
+        "mean": 7,
+        "frequency": 0.5714285714285714
+      },
+      "fr.merchants.v1|retired|800034": {
+        "mean": 11,
+        "frequency": 0.36363636363636365
+      },
+      "fr.merchants.v1|retired|800035": {
+        "mean": 7,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800036": {
+        "mean": 33,
+        "frequency": 0.15243902439024387
+      },
+      "fr.merchants.v1|retired|800037": {
+        "mean": 42,
+        "frequency": 0.11977351916376304
+      },
+      "fr.merchants.v1|retired|800038": {
+        "mean": 35,
+        "frequency": 0.10779616724738675
+      },
+      "fr.merchants.v1|retired|800039": {
+        "mean": 39,
+        "frequency": 0.12898686679174481
+      },
+      "fr.merchants.v1|retired|800040": {
+        "mean": 21,
+        "frequency": 0.23954703832752608
+      },
+      "fr.merchants.v1|retired|800041": {
+        "mean": 23,
+        "frequency": 0.3130434782608696
+      },
+      "fr.merchants.v1|retired|800042": {
+        "mean": 12,
+        "frequency": 0.6
+      },
+      "fr.merchants.v1|retired|800043": {
+        "mean": 28,
+        "frequency": 0.2571428571428572
+      },
+      "fr.merchants.v1|retired|800044": {
+        "mean": 57,
+        "frequency": 0.06432748538011696
+      },
+      "fr.merchants.v1|retired|800045": {
+        "mean": 52,
+        "frequency": 0.07051282051282051
+      },
+      "fr.merchants.v1|retired|800046": {
+        "mean": 38,
+        "frequency": 0.09649122807017543
+      },
+      "fr.merchants.v1|retired|800047": {
+        "mean": 79,
+        "frequency": 0.04641350210970464
+      },
+      "fr.merchants.v1|retired|800048": {
+        "mean": 34,
+        "frequency": 0.10784313725490195
+      },
+      "fr.merchants.v1|retired|800049": {
+        "mean": 130,
+        "frequency": 0.028205128205128206
+      },
+      "fr.merchants.v1|retired|800050": {
+        "mean": 145,
+        "frequency": 0.02528735632183908
+      },
+      "fr.merchants.v1|retired|800051": {
+        "mean": 3.99,
+        "frequency": 0.5513784461152882
+      },
+      "fr.merchants.v1|retired|800052": {
+        "mean": 3.49,
+        "frequency": 0.6303724928366762
+      },
+      "fr.merchants.v1|retired|800053": {
+        "mean": 68,
+        "frequency": 0.15441176470588236
+      },
+      "fr.merchants.v1|retired|800054": {
+        "mean": 95,
+        "frequency": 0.11052631578947368
+      },
+      "fr.merchants.v1|retired|800055": {
+        "mean": 175,
+        "frequency": 0.06
+      },
+      "fr.merchants.v1|retired|800056": {
+        "mean": 95,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800057": {
+        "mean": 16,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800058": {
+        "mean": 22,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800059": {
+        "mean": 28,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800060": {
+        "mean": 35,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800061": {
+        "mean": 120,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800062": {
+        "mean": 6.4,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800063": {
+        "mean": 8,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800064": {
+        "mean": 30.45,
+        "frequency": 0.6180083556774958
+      },
+      "fr.merchants.v1|retired|800065": {
+        "mean": 31.5,
+        "frequency": 0.5974080771549125
+      },
+      "fr.merchants.v1|retired|800066": {
+        "mean": 60.9,
+        "frequency": 0.16480222818066553
+      },
+      "fr.merchants.v1|retired|800067": {
+        "mean": 75.6,
+        "frequency": 0.13275735047886947
+      },
+      "fr.merchants.v1|retired|800068": {
+        "mean": 23,
+        "frequency": 0.11956521739130435
+      },
+      "fr.merchants.v1|retired|800069": {
+        "mean": 21,
+        "frequency": 0.17966027874564458
+      },
+      "fr.merchants.v1|retired|800070": {
+        "mean": 19,
+        "frequency": 0.1985718870346598
+      },
+      "fr.merchants.v1|retired|800071": {
+        "mean": 25,
+        "frequency": 0.11
+      },
+      "fr.merchants.v1|retired|800072": {
+        "mean": 22,
+        "frequency": 0.17149390243902438
+      },
+      "fr.merchants.v1|retired|800073": {
+        "mean": 115,
+        "frequency": 0.01749734888653234
+      },
+      "fr.merchants.v1|retired|800074": {
+        "mean": 145,
+        "frequency": 0.013877207737594615
+      },
+      "fr.merchants.v1|retired|800075": {
+        "mean": 130,
+        "frequency": 0.015478424015009377
+      },
+      "fr.merchants.v1|retired|800076": {
+        "mean": 320,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800077": {
+        "mean": 650,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800078": {
+        "mean": 850,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800079": {
+        "mean": 110,
+        "frequency": 0.02148760330578512
+      },
+      "fr.merchants.v1|retired|800080": {
+        "mean": 65,
+        "frequency": 0.03636363636363636
+      },
+      "fr.merchants.v1|retired|800081": {
+        "mean": 3.3,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800082": {
+        "mean": 3,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800083": {
+        "mean": 24,
+        "frequency": 0.15350877192982457
+      },
+      "fr.merchants.v1|retired|800084": {
+        "mean": 21,
+        "frequency": 0.1754385964912281
+      },
+      "fr.merchants.v1|retired|800085": {
+        "mean": 29,
+        "frequency": 0.12704174228675139
+      },
+      "fr.merchants.v1|retired|800086": {
+        "mean": 58,
+        "frequency": 0.050816696914700546
+      },
+      "fr.merchants.v1|retired|800087": {
+        "mean": 104.5,
+        "frequency": 0.057161084529505586
+      },
+      "fr.merchants.v1|retired|800088": {
+        "mean": 71.5,
+        "frequency": 0.04177156177156177
+      },
+      "fr.merchants.v1|retired|800089": {
+        "mean": 35.2,
+        "frequency": 0.08484848484848484
+      },
+      "fr.merchants.v1|retired|800090": {
+        "mean": 198,
+        "frequency": 0.015084175084175085
+      },
+      "fr.merchants.v1|retired|800091": {
+        "mean": 46.2,
+        "frequency": 0.06464646464646465
+      },
+      "fr.merchants.v1|retired|800092": {
+        "mean": 32,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800093": {
+        "mean": 48,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800094": {
+        "mean": 35,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800095": {
+        "mean": 85,
+        "frequency": 0
+      },
+      "fr.merchants.v1|retired|800096": {
+        "mean": 14,
+        "frequency": 0.5142857142857143
+      },
+      "fr.merchants.v1|retired|800097": {
+        "mean": 24,
+        "frequency": 0.3
+      },
+      "fr.merchants.v1|retired|800098": {
+        "mean": 38,
+        "frequency": 0.19298245614035087
+      }
+    },
+    "budgetOverrides": {
+      "groceries": 297.33,
+      "foodOthers": 30.29,
+      "fuel": 77,
+      "tolls": 16.25,
+      "pharmacy": 5.97,
+      "healthOthers": 11.95,
+      "optician": 5.97,
+      "dentist": 2.99,
+      "restaurants": 52,
+      "coffee": 12,
+      "shoppingOthers": 18.61,
+      "sportingGoods": 5.03,
+      "clothing": 12.58,
+      "books": 5.03,
+      "arts": 21.6,
+      "sports": 7.2,
+      "amusements": 7.2,
+      "homeImprovement": 38.5,
+      "subscriptionOthers": 4.4,
+      "trainTicket": 10.5,
+      "travel": 21,
+      "hotels": 0,
+      "fastfood": 0,
+      "bars": 0,
+      "taxes": 0,
+      "bankfees": 0,
+      "incidentfees": 0,
+      "autoOthers": 14,
+      "educationOthers": 0
+    },
+    "categorySystem": "bridge"
   },
   "reference": {
     "format": "personia.merchant-reference",
@@ -419,7 +855,7 @@
       {
         "id": 800010,
         "name": "Boulangerie du quartier",
-        "category": "bakery",
+        "category": "foodOthers",
         "mean": 7.5,
         "regions": [
           "*"
@@ -429,7 +865,7 @@
       {
         "id": 800011,
         "name": "Boulangerie de la place",
-        "category": "bakery",
+        "category": "foodOthers",
         "mean": 9,
         "regions": [
           "centre",
@@ -441,7 +877,7 @@
       {
         "id": 800012,
         "name": "Marie Blachère",
-        "category": "bakery",
+        "category": "foodOthers",
         "mean": 8.5,
         "regions": [
           "*"
@@ -481,7 +917,7 @@
       {
         "id": 800016,
         "name": "Péage autoroutier",
-        "category": "transport",
+        "category": "tolls",
         "mean": 8,
         "regions": [
           "*"
@@ -491,7 +927,7 @@
       {
         "id": 800017,
         "name": "Réseau urbain · Tours",
-        "category": "transport",
+        "category": "publicTransport",
         "mean": 3.5,
         "regions": [
           "centre"
@@ -502,7 +938,7 @@
       {
         "id": 800018,
         "name": "Réseau urbain · Paris",
-        "category": "transport",
+        "category": "publicTransport",
         "mean": 5,
         "regions": [
           "idf"
@@ -513,7 +949,7 @@
       {
         "id": 800019,
         "name": "Réseau urbain · Nantes",
-        "category": "transport",
+        "category": "publicTransport",
         "mean": 3.8,
         "regions": [
           "pays-loire"
@@ -524,7 +960,7 @@
       {
         "id": 800020,
         "name": "Réseau urbain · Lille",
-        "category": "transport",
+        "category": "publicTransport",
         "mean": 3.6,
         "regions": [
           "hauts-france"
@@ -535,7 +971,7 @@
       {
         "id": 800021,
         "name": "Réseau urbain local",
-        "category": "transport",
+        "category": "publicTransport",
         "mean": 3.5,
         "regions": [
           "*"
@@ -546,7 +982,7 @@
       {
         "id": 800022,
         "name": "Pharmacie du centre",
-        "category": "health",
+        "category": "pharmacy",
         "mean": 17,
         "regions": [
           "*"
@@ -556,7 +992,7 @@
       {
         "id": 800023,
         "name": "Cabinet médical fictif",
-        "category": "health",
+        "category": "healthOthers",
         "mean": 30,
         "regions": [
           "*"
@@ -698,7 +1134,7 @@
       {
         "id": 800036,
         "name": "Amazon",
-        "category": "shopping",
+        "category": "shoppingOthers",
         "mean": 33,
         "regions": [
           "*"
@@ -708,7 +1144,7 @@
       {
         "id": 800037,
         "name": "Decathlon",
-        "category": "shopping",
+        "category": "sportingGoods",
         "mean": 42,
         "regions": [
           "*"
@@ -718,7 +1154,7 @@
       {
         "id": 800038,
         "name": "Kiabi",
-        "category": "shopping",
+        "category": "clothing",
         "mean": 35,
         "regions": [
           "*"
@@ -728,7 +1164,7 @@
       {
         "id": 800039,
         "name": "H&M",
-        "category": "shopping",
+        "category": "clothing",
         "mean": 39,
         "regions": [
           "*"
@@ -738,7 +1174,7 @@
       {
         "id": 800040,
         "name": "Librairie du centre",
-        "category": "shopping",
+        "category": "books",
         "mean": 21,
         "regions": [
           "*"
@@ -748,7 +1184,7 @@
       {
         "id": 800041,
         "name": "Cinéma local",
-        "category": "leisure",
+        "category": "arts",
         "mean": 23,
         "regions": [
           "*"
@@ -758,7 +1194,7 @@
       {
         "id": 800042,
         "name": "Piscine municipale",
-        "category": "leisure",
+        "category": "sports",
         "mean": 12,
         "regions": [
           "*"
@@ -768,7 +1204,7 @@
       {
         "id": 800043,
         "name": "Activité de loisirs",
-        "category": "leisure",
+        "category": "amusements",
         "mean": 28,
         "regions": [
           "*"
@@ -778,7 +1214,7 @@
       {
         "id": 800044,
         "name": "Leroy Merlin",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 57,
         "regions": [
           "*"
@@ -788,7 +1224,7 @@
       {
         "id": 800045,
         "name": "Castorama",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 52,
         "regions": [
           "*"
@@ -798,7 +1234,7 @@
       {
         "id": 800046,
         "name": "Bricomarché",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 38,
         "regions": [
           "*"
@@ -808,7 +1244,7 @@
       {
         "id": 800047,
         "name": "IKEA",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 79,
         "regions": [
           "*"
@@ -818,7 +1254,7 @@
       {
         "id": 800048,
         "name": "Weldom",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 34,
         "regions": [
           "*"
@@ -828,7 +1264,7 @@
       {
         "id": 800049,
         "name": "Boulanger",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 130,
         "regions": [
           "*"
@@ -838,7 +1274,7 @@
       {
         "id": 800050,
         "name": "Darty",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 145,
         "regions": [
           "*"
@@ -848,7 +1284,7 @@
       {
         "id": 800051,
         "name": "App Store",
-        "category": "digital",
+        "category": "subscriptionOthers",
         "mean": 3.99,
         "regions": [
           "*"
@@ -858,7 +1294,7 @@
       {
         "id": 800052,
         "name": "Google Play",
-        "category": "digital",
+        "category": "subscriptionOthers",
         "mean": 3.49,
         "regions": [
           "*"
@@ -868,7 +1304,7 @@
       {
         "id": 800053,
         "name": "SNCF Connect",
-        "category": "travel",
+        "category": "trainTicket",
         "mean": 68,
         "regions": [
           "*"
@@ -928,7 +1364,7 @@
       {
         "id": 800059,
         "name": "Caviste fictif",
-        "category": "alcohol",
+        "category": "foodOthers",
         "mean": 28,
         "regions": [
           "*"
@@ -938,7 +1374,7 @@
       {
         "id": 800060,
         "name": "Atelier vélo fictif",
-        "category": "cycling",
+        "category": "sportingGoods",
         "mean": 35,
         "regions": [
           "*"
@@ -1019,7 +1455,7 @@
       {
         "id": 800068,
         "name": "Action",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 23,
         "regions": [
           "*"
@@ -1029,7 +1465,7 @@
       {
         "id": 800069,
         "name": "NOZ",
-        "category": "shopping",
+        "category": "shoppingOthers",
         "mean": 21,
         "regions": [
           "*"
@@ -1039,7 +1475,7 @@
       {
         "id": 800070,
         "name": "Vinted",
-        "category": "shopping",
+        "category": "clothing",
         "mean": 19,
         "regions": [
           "*"
@@ -1049,7 +1485,7 @@
       {
         "id": 800071,
         "name": "Ressourcerie locale fictive",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 25,
         "regions": [
           "*"
@@ -1059,7 +1495,7 @@
       {
         "id": 800072,
         "name": "Friperie de quartier fictive",
-        "category": "shopping",
+        "category": "shoppingOthers",
         "mean": 22,
         "regions": [
           "*"
@@ -1069,7 +1505,7 @@
       {
         "id": 800073,
         "name": "Galeries Lafayette",
-        "category": "shopping",
+        "category": "shoppingOthers",
         "mean": 115,
         "regions": [
           "*"
@@ -1080,7 +1516,7 @@
       {
         "id": 800074,
         "name": "Printemps",
-        "category": "shopping",
+        "category": "shoppingOthers",
         "mean": 145,
         "regions": [
           "idf",
@@ -1094,7 +1530,7 @@
       {
         "id": 800075,
         "name": "Boutique premium fictive",
-        "category": "shopping",
+        "category": "shoppingOthers",
         "mean": 130,
         "regions": [
           "*"
@@ -1105,7 +1541,7 @@
       {
         "id": 800076,
         "name": "Boutique de créateurs fictive",
-        "category": "luxury",
+        "category": "clothing",
         "mean": 320,
         "regions": [
           "*"
@@ -1116,7 +1552,7 @@
       {
         "id": 800077,
         "name": "Maroquinerie de luxe fictive",
-        "category": "luxury",
+        "category": "clothing",
         "mean": 650,
         "regions": [
           "*"
@@ -1127,7 +1563,7 @@
       {
         "id": 800078,
         "name": "Joaillerie de luxe fictive",
-        "category": "luxury",
+        "category": "clothing",
         "mean": 850,
         "regions": [
           "*"
@@ -1180,7 +1616,7 @@
       {
         "id": 800083,
         "name": "Uber",
-        "category": "ridehailing",
+        "category": "autoOthers",
         "mean": 24,
         "regions": [
           "idf",
@@ -1200,7 +1636,7 @@
       {
         "id": 800084,
         "name": "Bolt",
-        "category": "ridehailing",
+        "category": "autoOthers",
         "mean": 21,
         "regions": [
           "idf",
@@ -1213,7 +1649,7 @@
       {
         "id": 800085,
         "name": "Chauffeur VTC local fictif",
-        "category": "ridehailing",
+        "category": "autoOthers",
         "mean": 29,
         "regions": [
           "*"
@@ -1224,7 +1660,7 @@
       {
         "id": 800086,
         "name": "Chauffeur premium fictif",
-        "category": "ridehailing",
+        "category": "autoOthers",
         "mean": 58,
         "regions": [
           "idf",
@@ -1237,7 +1673,7 @@
       {
         "id": 800087,
         "name": "Opticien fictif · reste à charge",
-        "category": "health",
+        "category": "optician",
         "mean": 95,
         "regions": [
           "*"
@@ -1247,7 +1683,7 @@
       {
         "id": 800088,
         "name": "Cabinet dentaire fictif · reste à charge",
-        "category": "health",
+        "category": "dentist",
         "mean": 65,
         "regions": [
           "*"
@@ -1257,7 +1693,7 @@
       {
         "id": 800089,
         "name": "Pédicure-podologue fictif",
-        "category": "health",
+        "category": "healthOthers",
         "mean": 32,
         "regions": [
           "*"
@@ -1267,7 +1703,7 @@
       {
         "id": 800090,
         "name": "Audioprothésiste fictif · reste à charge",
-        "category": "health",
+        "category": "healthOthers",
         "mean": 180,
         "regions": [
           "*"
@@ -1277,7 +1713,7 @@
       {
         "id": 800091,
         "name": "Matériel médical fictif",
-        "category": "health",
+        "category": "healthOthers",
         "mean": 42,
         "regions": [
           "*"
@@ -1287,7 +1723,7 @@
       {
         "id": 800092,
         "name": "Club sportif enfants fictif",
-        "category": "childrenActivities",
+        "category": "educationOthers",
         "mean": 32,
         "regions": [
           "*"
@@ -1297,7 +1733,7 @@
       {
         "id": 800093,
         "name": "École de musique associative fictive",
-        "category": "childrenActivities",
+        "category": "educationOthers",
         "mean": 48,
         "regions": [
           "*"
@@ -1307,7 +1743,7 @@
       {
         "id": 800094,
         "name": "Atelier arts et danse enfants fictif",
-        "category": "childrenActivities",
+        "category": "educationOthers",
         "mean": 35,
         "regions": [
           "*"
@@ -1317,7 +1753,7 @@
       {
         "id": 800095,
         "name": "Stage sportif enfants fictif",
-        "category": "childrenActivities",
+        "category": "educationOthers",
         "mean": 85,
         "regions": [
           "*"
@@ -1327,7 +1763,7 @@
       {
         "id": 800096,
         "name": "Musée local fictif",
-        "category": "leisure",
+        "category": "arts",
         "mean": 14,
         "regions": [
           "*"
@@ -1337,7 +1773,7 @@
       {
         "id": 800097,
         "name": "Association culturelle fictive",
-        "category": "leisure",
+        "category": "arts",
         "mean": 24,
         "regions": [
           "*"
@@ -1347,7 +1783,7 @@
       {
         "id": 800098,
         "name": "Jardinerie de quartier fictive",
-        "category": "home",
+        "category": "homeImprovement",
         "mean": 38,
         "regions": [
           "*"
@@ -1389,8 +1825,14 @@
         "title": "OVE · Conditions de vie étudiantes 2023",
         "url": "https://www.ove-national.education.fr/publication/ove-infos-n48-la-crise-dans-le-retroviseur/",
         "note": "Student budgets and food constraints inform the student scenario."
+      },
+      {
+        "title": "Bridge · Transaction categories",
+        "url": "https://www.bridgeapi.io/",
+        "note": "Category hierarchy and identifiers: https://docs.bridgeapi.io/docs/transactions-categories"
       }
-    ]
+    ],
+    "categorySystem": "bridge"
   },
   "assumptions": {
     "bankingCountry": "FR",
@@ -1456,24 +1898,24 @@
           "description": "Petits paniers, discount, seconde main et repas universitaires. Sorties et achats plus contenus.",
           "budgets": {
             "groceries": 0.75,
-            "bakery": 0.7,
-            "health": 0.9,
-            "transport": 1.1,
+            "foodOthers": 0.7,
+            "healthOthers": 0.9,
+            "publicTransport": 1.1,
             "fuel": 0.6,
             "restaurants": 0.6,
             "coffee": 0.8,
-            "shopping": 0.5,
-            "leisure": 0.7,
-            "home": 0.4,
-            "digital": 1,
+            "shoppingOthers": 0.5,
+            "amusements": 0.7,
+            "homeImprovement": 0.4,
+            "subscriptionOthers": 1,
             "travel": 0.4,
-            "ridehailing": 0.15,
-            "childrenActivities": 0.65,
-            "luxury": 0
+            "autoOthers": 0.15,
+            "educationOthers": 0.65,
+            "clothing": 0
           },
           "basket": 0.75,
           "basketOverrides": {
-            "health": 0.9,
+            "healthOthers": 0.9,
             "fuel": 0.9
           },
           "affinity": {
@@ -1494,25 +1936,25 @@
           "description": "Priorité aux dépenses essentielles, enseignes discount et achats d’occasion. Loisirs et restauration réduits.",
           "budgets": {
             "groceries": 0.7956521739130434,
-            "bakery": 0.7956521739130434,
-            "transport": 0.5804878048780489,
+            "foodOthers": 0.7956521739130434,
+            "publicTransport": 0.5804878048780489,
             "fuel": 0.5804878048780489,
-            "leisure": 0.5361702127659574,
+            "amusements": 0.5361702127659574,
             "restaurants": 0.5055555555555555,
             "coffee": 0.5055555555555555,
             "hotels": 0.5055555555555555,
             "travel": 0.5055555555555555,
-            "home": 0.49122807017543857,
-            "shopping": 0.7699999999999999,
-            "digital": 0.985185185185185,
-            "health": 1,
-            "ridehailing": 0.2,
-            "childrenActivities": 0.8,
-            "luxury": 0
+            "homeImprovement": 0.49122807017543857,
+            "shoppingOthers": 0.7699999999999999,
+            "subscriptionOthers": 0.985185185185185,
+            "healthOthers": 1,
+            "autoOthers": 0.2,
+            "educationOthers": 0.8,
+            "clothing": 0
           },
           "basket": 0.88,
           "basketOverrides": {
-            "health": 1,
+            "healthOthers": 1,
             "fuel": 0.95
           },
           "affinity": {
@@ -1533,19 +1975,19 @@
           "description": "Alimentation et équipements du foyer renforcés. Une enveloppe spécifique finance les activités des enfants.",
           "budgets": {
             "groceries": 1.18,
-            "bakery": 1.1,
-            "health": 1,
-            "shopping": 1.2,
-            "leisure": 1.25,
-            "home": 1.25,
-            "ridehailing": 0.5,
-            "childrenActivities": 1.3,
-            "luxury": 0
+            "foodOthers": 1.1,
+            "healthOthers": 1,
+            "shoppingOthers": 1.2,
+            "amusements": 1.25,
+            "homeImprovement": 1.25,
+            "autoOthers": 0.5,
+            "educationOthers": 1.3,
+            "clothing": 0
           },
           "basket": 1,
           "basketOverrides": {
             "groceries": 1.08,
-            "shopping": 1.08
+            "shoppingOthers": 1.08
           },
           "affinity": {
             "everyday": 1.5,
@@ -1565,28 +2007,28 @@
           "description": "Plus de loisirs, restauration, services VTC et achats premium. Une réserve permet des achats de luxe occasionnels.",
           "budgets": {
             "groceries": 1.6052173913043477,
-            "bakery": 1.6052173913043477,
-            "transport": 1.9531707317073175,
+            "foodOthers": 1.6052173913043477,
+            "publicTransport": 1.9531707317073175,
             "fuel": 1.9531707317073175,
-            "leisure": 2.1878723404255322,
+            "amusements": 2.1878723404255322,
             "restaurants": 2.3761111111111113,
             "coffee": 2.3761111111111113,
             "hotels": 2.3761111111111113,
             "travel": 2.3761111111111113,
-            "home": 2.330877192982456,
-            "shopping": 1.8928,
-            "digital": 1.4155555555555557,
-            "health": 1.2,
-            "ridehailing": 6,
-            "childrenActivities": 2.2,
-            "luxury": 4
+            "homeImprovement": 2.330877192982456,
+            "shoppingOthers": 1.8928,
+            "subscriptionOthers": 1.4155555555555557,
+            "healthOthers": 1.2,
+            "autoOthers": 6,
+            "educationOthers": 2.2,
+            "clothing": 4
           },
           "basket": 1.4,
           "basketOverrides": {
             "groceries": 1.28,
             "fuel": 1.1,
-            "health": 1.05,
-            "luxury": 1
+            "healthOthers": 1.05,
+            "clothing": 1
           },
           "affinity": {
             "everyday": 1,
@@ -1606,24 +2048,24 @@
           "description": "Plus de soins et d’équipements de santé, commerces de proximité, loisirs culturels et moins de déplacements.",
           "budgets": {
             "groceries": 1.05,
-            "bakery": 1.15,
-            "health": 2.150485436893204,
+            "foodOthers": 1.15,
+            "healthOthers": 2.150485436893204,
             "fuel": 0.7,
-            "transport": 0.65,
+            "publicTransport": 0.65,
             "restaurants": 0.8,
             "coffee": 0.8,
-            "shopping": 0.75,
-            "leisure": 1.2,
-            "home": 1.1,
-            "digital": 0.55,
+            "shoppingOthers": 0.75,
+            "amusements": 1.2,
+            "homeImprovement": 1.1,
+            "subscriptionOthers": 0.55,
             "travel": 0.9,
-            "ridehailing": 0.7,
-            "childrenActivities": 1,
-            "luxury": 0
+            "autoOthers": 0.7,
+            "educationOthers": 1,
+            "clothing": 0
           },
           "basket": 1,
           "basketOverrides": {
-            "health": 1.1,
+            "healthOthers": 1.1,
             "groceries": 1.05
           },
           "affinity": {
@@ -1640,165 +2082,893 @@
       ],
       "categoryBases": [
         {
-          "key": "groceries",
-          "id": 14,
-          "name": "Alimentation",
-          "protected": true,
-          "monthly": 430
+          "key": "autoOthers",
+          "id": 84,
+          "name": "Auto & Transport - Others",
+          "protected": false,
+          "monthly": 0
         },
         {
-          "key": "bakery",
-          "id": 116,
-          "name": "Boulangerie & proximité",
+          "key": "autoInsurance",
+          "id": 247,
+          "name": "Auto insurance",
           "protected": true,
-          "monthly": 40
+          "monthly": 0
+        },
+        {
+          "key": "carMaintenance",
+          "id": 288,
+          "name": "Car maintenance",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "carRental",
+          "id": 264,
+          "name": "Car rental",
+          "protected": false,
+          "monthly": 0
         },
         {
           "key": "fuel",
-          "id": 36,
-          "name": "Carburant",
+          "id": 87,
+          "name": "Gas & Fuel",
           "protected": true,
-          "monthly": 110
+          "monthly": 0
         },
         {
-          "key": "transport",
-          "id": 115,
-          "name": "Transports & péages",
+          "key": "parking",
+          "id": 251,
+          "name": "Parking",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "planeTicket",
+          "id": 198,
+          "name": "Plane ticket",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "publicTransport",
+          "id": 196,
+          "name": "Public transportation",
           "protected": true,
-          "monthly": 25
+          "monthly": 0
         },
         {
-          "key": "health",
-          "id": 49,
-          "name": "Santé",
-          "protected": true,
-          "monthly": 25
-        },
-        {
-          "key": "restaurants",
-          "id": 84,
-          "name": "Restaurants & livraison",
-          "protected": false,
-          "monthly": 65
-        },
-        {
-          "key": "coffee",
-          "id": 79,
-          "name": "Cafés",
-          "protected": false,
-          "monthly": 15
-        },
-        {
-          "key": "shopping",
-          "id": 64,
-          "name": "Achats & habillement",
-          "protected": false,
-          "monthly": 55
-        },
-        {
-          "key": "leisure",
-          "id": 75,
-          "name": "Loisirs",
-          "protected": false,
-          "monthly": 30
-        },
-        {
-          "key": "home",
-          "id": 29,
-          "name": "Maison & bricolage",
-          "protected": false,
-          "monthly": 35
-        },
-        {
-          "key": "digital",
-          "id": 18,
-          "name": "Numérique & télécoms",
-          "protected": false,
-          "monthly": 8
-        },
-        {
-          "key": "travel",
-          "id": 339,
-          "name": "Voyages",
-          "protected": false,
-          "monthly": 35
-        },
-        {
-          "key": "hotels",
-          "id": 98,
-          "name": "Hôtels & campings",
+          "key": "tolls",
+          "id": 309,
+          "name": "Tolls",
           "protected": false,
           "monthly": 0
         },
         {
-          "key": "fastfood",
-          "id": 71,
-          "name": "Restauration rapide",
+          "key": "trainTicket",
+          "id": 197,
+          "name": "Train ticket",
           "protected": false,
           "monthly": 0
         },
         {
-          "key": "bars",
-          "id": 9010,
-          "name": "Bars & sorties",
-          "protected": false,
-          "monthly": 0
-        },
-        {
-          "key": "alcohol",
-          "id": 9011,
-          "name": "Alcool",
-          "protected": false,
-          "monthly": 0
-        },
-        {
-          "key": "cycling",
-          "id": 9012,
-          "name": "Vélo",
-          "protected": false,
-          "monthly": 0
-        },
-        {
-          "key": "taxes",
-          "id": 837,
-          "name": "Impôts & taxes",
+          "key": "bankOthers",
+          "id": 195,
+          "name": "Bank - Others",
           "protected": true,
           "monthly": 0
         },
         {
           "key": "bankfees",
-          "id": 59,
-          "name": "Frais bancaires variables",
+          "id": 79,
+          "name": "Banking fees and charges",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "bankingServices",
+          "id": 306,
+          "name": "Banking services",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "monthlyDebit",
+          "id": 191,
+          "name": "Monthly Debit",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "mortgage",
+          "id": 194,
+          "name": "Mortgage",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "mortgageRefund",
+          "id": 89,
+          "name": "Mortgage refund",
           "protected": true,
           "monthly": 0
         },
         {
           "key": "incidentfees",
-          "id": 9013,
-          "name": "Frais d’incidents simulés",
+          "id": 756587,
+          "name": "Payment incidents",
           "protected": true,
           "monthly": 0
         },
         {
-          "key": "ridehailing",
-          "id": 9014,
-          "name": "VTC & chauffeurs",
-          "protected": false,
-          "monthly": 20
+          "key": "bankSavings",
+          "id": 192,
+          "name": "Savings",
+          "protected": true,
+          "monthly": 0
         },
         {
-          "key": "childrenActivities",
-          "id": 9015,
-          "name": "Activités extrascolaires",
+          "key": "cableTV",
+          "id": 219,
+          "name": "Cable TV",
           "protected": false,
-          "monthly": 50
+          "monthly": 0
         },
         {
-          "key": "luxury",
-          "id": 9016,
-          "name": "Luxe & créateurs",
+          "key": "homePhone",
+          "id": 258,
+          "name": "Home phone",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "internet",
+          "id": 180,
+          "name": "Internet",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "mobilePhone",
+          "id": 277,
+          "name": "Mobile phone",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "subscriptionOthers",
+          "id": 280,
+          "name": "Subscription - Others",
           "protected": false,
-          "monthly": 40
+          "monthly": 0
+        },
+        {
+          "key": "accounting",
+          "id": 441889,
+          "name": "Accounting",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "advertising",
+          "id": 202,
+          "name": "Advertising",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "businessExpenses",
+          "id": 265,
+          "name": "Business expenses",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "businessOthers",
+          "id": 90,
+          "name": "Business services - Others",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "consulting",
+          "id": 441895,
+          "name": "Consulting",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "disabilityInsurance",
+          "id": 441897,
+          "name": "Disability Insurance",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "employerContributions",
+          "id": 441886,
+          "name": "Employer contributions",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "hiringFees",
+          "id": 441892,
+          "name": "Hiring fees",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "legalFees",
+          "id": 441899,
+          "name": "Legal Fees",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "marketing",
+          "id": 441900,
+          "name": "Marketing",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "officeServices",
+          "id": 203,
+          "name": "Office services",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "officeSupplies",
+          "id": 274,
+          "name": "Office supplies",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "onlineServices",
+          "id": 270,
+          "name": "Online services",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "outsourcing",
+          "id": 441896,
+          "name": "Outsourcing",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "printing",
+          "id": 205,
+          "name": "Printing",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "businessSalaries",
+          "id": 441890,
+          "name": "Salaries",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "executiveSalary",
+          "id": 441891,
+          "name": "Salary of executives",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "shipping",
+          "id": 204,
+          "name": "Shipping",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "trainingTaxes",
+          "id": 441898,
+          "name": "Training taxes",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "daycare",
+          "id": 267,
+          "name": "Baby-sitter & Daycare",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "educationOthers",
+          "id": 237,
+          "name": "Education & Children - Others",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "educationPension",
+          "id": 240,
+          "name": "Pension",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "schoolSupplies",
+          "id": 238,
+          "name": "School supplies",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "studentHousing",
+          "id": 241,
+          "name": "Student housing",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "studentLoan",
+          "id": 259,
+          "name": "Student loan",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "toys",
+          "id": 266,
+          "name": "Toys",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "tuition",
+          "id": 239,
+          "name": "Tuition",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "amusements",
+          "id": 269,
+          "name": "Amusements",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "arts",
+          "id": 244,
+          "name": "Arts & Amusement",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "bars",
+          "id": 227,
+          "name": "Bars & Clubs",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "eatingOut",
+          "id": 320,
+          "name": "Eating out",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "entertainmentOthers",
+          "id": 223,
+          "name": "Entertainment - Others",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "hobbies",
+          "id": 226,
+          "name": "Hobbies",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "hotels",
+          "id": 263,
+          "name": "Hotels",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "pets",
+          "id": 224,
+          "name": "Pets",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "sports",
+          "id": 242,
+          "name": "Sports",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "travel",
+          "id": 249,
+          "name": "Travels / Vacation",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "winterSports",
+          "id": 310,
+          "name": "Winter sports",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "coffee",
+          "id": 313,
+          "name": "Coffee shop",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "fastfood",
+          "id": 260,
+          "name": "Fast foods",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "foodOthers",
+          "id": 188,
+          "name": "Food - Others",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "restaurants",
+          "id": 83,
+          "name": "Restaurants",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "groceries",
+          "id": 273,
+          "name": "Supermarkets / Groceries",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "dentist",
+          "id": 325,
+          "name": "Dentist",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "doctor",
+          "id": 261,
+          "name": "Doctor",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "healthOthers",
+          "id": 268,
+          "name": "Health - Others",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "healthInsurance",
+          "id": 245,
+          "name": "Health insurance",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "optician",
+          "id": 322,
+          "name": "Optician / Eyecare",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "pharmacy",
+          "id": 236,
+          "name": "Pharmacy",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "electricity",
+          "id": 217,
+          "name": "Electricity",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "gas",
+          "id": 218,
+          "name": "Gas",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "homeOthers",
+          "id": 220,
+          "name": "Home - Others",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "homeImprovement",
+          "id": 221,
+          "name": "Home improvement",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "homeInsurance",
+          "id": 246,
+          "name": "Home insurance",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "garden",
+          "id": 323,
+          "name": "Lawn & Garden",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "maintenance",
+          "id": 222,
+          "name": "Maintenance",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "utilitiesOthers",
+          "id": 328,
+          "name": "Misc. utilities",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "rent",
+          "id": 216,
+          "name": "Rent",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "water",
+          "id": 293,
+          "name": "Water",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "deposit",
+          "id": 271,
+          "name": "Deposit",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "extraIncome",
+          "id": 233,
+          "name": "Extra incomes",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "grants",
+          "id": 441893,
+          "name": "Grants",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "interestIncome",
+          "id": 80,
+          "name": "Interest incomes",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "incomeTransfer",
+          "id": 282,
+          "name": "Internal transfer",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "loanIncome",
+          "id": 441894,
+          "name": "Loans",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "otherIncome",
+          "id": 3,
+          "name": "Other incomes",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "incomePension",
+          "id": 327,
+          "name": "Pension",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "refunds",
+          "id": 283,
+          "name": "Refunds",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "rentalIncome",
+          "id": 314,
+          "name": "Rent",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "retirement",
+          "id": 279,
+          "name": "Retirement",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "salary",
+          "id": 230,
+          "name": "Salaries",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "sales",
+          "id": 231,
+          "name": "Sales",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "incomeSavings",
+          "id": 289,
+          "name": "Savings",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "servicesIncome",
+          "id": 232,
+          "name": "Services",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "charity",
+          "id": 294,
+          "name": "Charity",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "insurance",
+          "id": 278,
+          "name": "Insurance",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "laundry",
+          "id": 324,
+          "name": "Laundry / Dry cleaning",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "otherSpending",
+          "id": 276,
+          "name": "Others spending",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "tobacco",
+          "id": 308,
+          "name": "Tobacco",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "uncategorized",
+          "id": 1,
+          "name": "Uncategorized",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "beauty",
+          "id": 321,
+          "name": "Beauty care",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "cosmetics",
+          "id": 248,
+          "name": "Cosmetics",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "hairdresser",
+          "id": 235,
+          "name": "Hairdresser",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "personalCareOthers",
+          "id": 317,
+          "name": "Personal care - Others",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "spa",
+          "id": 316,
+          "name": "Spa & Massage",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "books",
+          "id": 243,
+          "name": "Books",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "clothing",
+          "id": 272,
+          "name": "Clothing & Shoes",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "gifts",
+          "id": 183,
+          "name": "Gifts",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "highTech",
+          "id": 184,
+          "name": "High Tech",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "licences",
+          "id": 441888,
+          "name": "Licences",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "movies",
+          "id": 319,
+          "name": "Movies",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "music",
+          "id": 318,
+          "name": "Music",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "shoppingOthers",
+          "id": 186,
+          "name": "Shopping - Others",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "sportingGoods",
+          "id": 262,
+          "name": "Sporting goods",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "fine",
+          "id": 207,
+          "name": "Fine",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "incomeTaxes",
+          "id": 208,
+          "name": "Incomes taxes",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "propertyTaxes",
+          "id": 209,
+          "name": "Property taxes",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "taxes",
+          "id": 302,
+          "name": "Taxes",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "taxOthers",
+          "id": 206,
+          "name": "Taxes - Others",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "vat",
+          "id": 441988,
+          "name": "VAT",
+          "protected": true,
+          "monthly": 0
+        },
+        {
+          "key": "checks",
+          "id": 88,
+          "name": "Checks",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "internalTransfer",
+          "id": 326,
+          "name": "Internal transfer",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "transfer",
+          "id": 78,
+          "name": "Transfer",
+          "protected": false,
+          "monthly": 0
+        },
+        {
+          "key": "withdrawals",
+          "id": 85,
+          "name": "Withdrawals",
+          "protected": false,
+          "monthly": 0
         }
       ],
       "observedBudgetShares": {
@@ -1807,12 +2977,12 @@
           "comfort": 14.2,
           "all": 16.1
         },
-        "bakery": {
+        "foodOthers": {
           "modest": 18.3,
           "comfort": 14.2,
           "all": 16.1
         },
-        "transport": {
+        "publicTransport": {
           "modest": 13.6,
           "comfort": 17.6,
           "all": 16.4
@@ -1822,7 +2992,7 @@
           "comfort": 17.6,
           "all": 16.4
         },
-        "leisure": {
+        "amusements": {
           "modest": 7.2,
           "comfort": 11.3,
           "all": 9.4
@@ -1847,17 +3017,17 @@
           "comfort": 9.4,
           "all": 7.2
         },
-        "home": {
+        "homeImprovement": {
           "modest": 4,
           "comfort": 7.3,
           "all": 5.7
         },
-        "shopping": {
+        "shoppingOthers": {
           "modest": 5.5,
           "comfort": 5.2,
           "all": 5
         },
-        "digital": {
+        "subscriptionOthers": {
           "modest": 3.8,
           "comfort": 2.1,
           "all": 2.7
@@ -2488,14 +3658,14 @@
         "groceries": {
           "series": "groceries"
         },
-        "bakery": {
+        "foodOthers": {
           "series": "groceries",
           "proxy": true
         },
         "fuel": {
           "series": "fuel"
         },
-        "transport": {
+        "tolls": {
           "series": "fuel",
           "proxy": true
         },
@@ -2506,15 +3676,34 @@
           "series": "bars",
           "proxy": true
         },
-        "shopping": {
+        "shoppingOthers": {
           "series": "shopping"
         },
-        "home": {
+        "sportingGoods": {
+          "series": "shopping"
+        },
+        "clothing": {
+          "series": "shopping"
+        },
+        "books": {
+          "series": "shopping"
+        },
+        "homeImprovement": {
           "series": "shopping",
           "proxy": true
         },
-        "leisure": {
+        "arts": {
           "series": "culture"
+        },
+        "sports": {
+          "series": "culture"
+        },
+        "amusements": {
+          "series": "culture"
+        },
+        "trainTicket": {
+          "series": "hotels",
+          "proxy": true
         },
         "travel": {
           "series": "hotels",
@@ -2528,12 +3717,6 @@
         },
         "bars": {
           "series": "bars"
-        },
-        "alcohol": {
-          "series": "alcohol"
-        },
-        "cycling": {
-          "series": "cycling"
         },
         "taxes": {
           "series": "taxes"
@@ -2656,5 +3839,5 @@
       "policy": "France scenario fee policy"
     }
   },
-  "referenceHash": "4338ca0c5b68703bcf926eb19602bd3964ce973d7d29f17472453d61639adacd"
+  "referenceHash": "61436406403b4e3cff9a57b30b2143a9358359b8ae81ab692e5e2b55c4327a5e"
 }

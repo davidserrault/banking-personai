@@ -163,7 +163,7 @@
         "fxFeePercent": 0,
         "incomeRemainingPercent": 0,
         "incomeScope": "main",
-        "category": "home",
+        "category": "homeImprovement",
         "monthlyImpact": 0,
         "replaceHousingCharge": false,
         "mortgageEnabled": false,

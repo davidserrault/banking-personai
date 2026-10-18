@@ -26,13 +26,18 @@ import {
   exportHistory,
 } from "./config";
 import { Configuration, type ConfigTab } from "./ui/Configuration";
-import { Reference, mergeReference, type ReferenceDraft } from "./ui/Reference";
+import {
+  Reference,
+  mergeReference,
+  type ReferenceDraft,
+  type ReferenceTab,
+} from "./ui/Reference";
 import { ServiceIntro } from "./ui/ServiceIntro";
 import { referenceHash } from "./config/canonical";
 import { modernizeScenario } from "./config/profile";
 import { taxEstimate } from "./engine/taxes";
 import { facilityLoan, replacesHousing } from "./engine/loans";
-import { History } from "./ui/History";
+import { History, type HistoryTab } from "./ui/History";
 import { BalanceChart } from "./ui/Charts";
 import { ledgerAccounts } from "./config/payment-cards";
 import { combinedBalance, isAllAccounts } from "./ui/balance-data";
@@ -47,6 +52,8 @@ export default function App() {
   const [tab, setTab] = useState("configuration");
   const [configTab, setConfigTab] = useState<ConfigTab>("profile");
   const [account, setAccount] = useState("all");
+  const [referenceTab, setReferenceTab] = useState<ReferenceTab>("merchants");
+  const [historyTab, setHistoryTab] = useState<HistoryTab>("summary");
   const applyReference = (patch: ReferenceDraft) =>
     setFile((previous) => {
       const next = mergeReference(previous, patch);
@@ -231,8 +238,8 @@ export default function App() {
           }}
         >
           <span>
-            Person<span className="brand-ai">AI</span>
-            <sup>STUDIO</sup>
+            Persona <span className="brand-ai">Ledger</span>
+            <sup>STUDIO 2</sup>
           </span>
         </a>
         <div className="header-divider" />
@@ -509,7 +516,10 @@ export default function App() {
                     <button
                       className="chart-link"
                       aria-label={t("actions.viewHistory")}
-                      onClick={() => setTab("history")}
+                      onClick={() => {
+                        setHistoryTab("summary");
+                        setTab("history");
+                      }}
                     >
                       {sim.result ? (
                         <BalanceChart
@@ -571,14 +581,11 @@ export default function App() {
         )}
         {tab === "reference" && (
           <>
-            <ServiceIntro section="reference" />
             <Reference
               file={file}
               onApply={applyReference}
-              onNavigate={(section) => {
-                setTab("configuration");
-                setConfigTab(section);
-              }}
+              tab={referenceTab}
+              onTab={setReferenceTab}
               onReference={(reference) =>
                 setFile((previous) => {
                   const next = modernizeScenario({ ...previous, reference });
@@ -610,6 +617,8 @@ export default function App() {
             file={displayedFile}
             account={account}
             onAccount={setAccount}
+            tab={historyTab}
+            onTab={setHistoryTab}
             current={sim.current}
             onExport={() => saveHistory()}
           />
@@ -617,7 +626,7 @@ export default function App() {
       </main>
       <footer className="app-footer">
         <span>
-          <span className="footer-brand">PersonAI</span> /{" "}
+          <span className="footer-brand">Persona Ledger Studio 2</span> /{" "}
           {t("studio.workshop")}
         </span>
         <span>

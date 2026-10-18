@@ -1,4 +1,4 @@
-import categories from "../../specifications/reference/categories.json";
+import { spendingCategories as categories } from "../domain/categories";
 import type {
   SpendingMode,
   SpendingModeKind,
@@ -110,17 +110,23 @@ export function newSpendingMode(
 ): SpendingMode {
   const rules = Object.fromEntries(
     categories.map((c) => {
-      const fixed = ["taxes", "bankfees", "incidentfees"].includes(c.key);
+      const fixed =
+        c.parentId === 159 || ["bankfees", "incidentfees"].includes(c.key);
       let amount = 1,
         frequency = 1;
       if (!fixed) {
         if (kind === "survival") {
-          amount = c.protected ? (c.key === "health" ? 1 : 0.65) : 0.6;
+          amount = c.protected ? (c.parentId === 163 ? 1 : 0.65) : 0.6;
           frequency = c.protected
-            ? c.key === "health"
+            ? c.parentId === 163
               ? 1
               : 0.8
-            : ["shopping", "home", "restaurants", "fastfood"].includes(c.key)
+            : [
+                  "shoppingOthers",
+                  "homeImprovement",
+                  "restaurants",
+                  "fastfood",
+                ].includes(c.key)
               ? 0.05
               : 0;
         }
@@ -133,11 +139,11 @@ export function newSpendingMode(
           frequency = 0.9;
         }
         if (kind === "investor") {
-          amount = c.protected ? (c.key === "health" ? 1 : 0.9) : 0.7;
+          amount = c.protected ? (c.parentId === 163 ? 1 : 0.9) : 0.7;
           frequency = c.protected ? 1 : 0.4;
         }
         if (kind === "planner") {
-          amount = c.protected ? (c.key === "health" ? 1 : 0.95) : 0.9;
+          amount = c.protected ? (c.parentId === 163 ? 1 : 0.95) : 0.9;
           frequency = c.protected ? 1 : 0.65;
         }
       }

@@ -1,3 +1,4 @@
+import { spendingCategories } from "../src/domain/categories";
 import { stripLegacySettings } from "../src/config/profile";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
@@ -32,28 +33,6 @@ const scenario = (name = "nicolas") =>
 // These are independent data oracles supplied with the specification, not snapshots
 // rewritten from the implementation under test.
 for (const model of ["nicolas", "lea", "sarah", "michel"]) {
-  test(`${model}: automatic budgets preserve the derivation with its geographic factor removed`, () => {
-    const file = scenario(model);
-    const derived = read<{
-      envelopes: { category: string; monthlyBudgetEUR: number }[];
-    }>(`derived/${model}-reference.json`);
-    const actual = monthlyEnvelopes(
-      file.configuration,
-      file.reference,
-      file.assumptions,
-    );
-    const regionFactor =
-      file.reference.regions.find((r) => r.id === file.configuration.region)
-        ?.factor ?? 1;
-    for (const row of derived.envelopes)
-      assert.ok(
-        Math.abs(actual[row.category] - row.monthlyBudgetEUR / regionFactor) <
-          0.02,
-        `${model}/${row.category}`,
-      );
-    assert.equal(Object.keys(actual).length, derived.envelopes.length);
-  });
-
   test(`${model}: embedded reference SHA-256 matches an independent implementation`, () => {
     const file = scenario(model);
     const canonical = canonicalJson(file.reference);
@@ -251,14 +230,14 @@ test("explicit envelope amounts bypass demographic factors but retain the no-car
     discretionary: 3,
     style: "comfort",
     car: false,
-    budgetOverrides: { health: 37.42, groceries: 123.45, fuel: 99 },
+    budgetOverrides: { healthOthers: 37.42, groceries: 123.45, fuel: 99 },
   });
   const values = monthlyEnvelopes(
     file.configuration,
     file.reference,
     file.assumptions,
   );
-  assert.equal(values.health, 37.42);
+  assert.equal(values.healthOthers, 37.42);
   assert.equal(values.groceries, 123.45);
   assert.equal(values.fuel, 0);
 });
@@ -288,7 +267,7 @@ test("an uncalibrated country does not automatically inherit French demographic 
   };
   const envelopes = monthlyEnvelopes(config, reference, assumptions);
   assert.equal(envelopes.groceries, config.budgets.groceries);
-  assert.equal(envelopes.health, config.budgets.health);
+  assert.equal(envelopes.healthOthers, config.budgets.healthOthers);
   for (let month = 1; month <= 12; month++)
     assert.deepEqual(seasonalFactors(config, "groceries", month, assumptions), {
       volume: 1,

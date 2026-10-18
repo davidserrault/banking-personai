@@ -1,3 +1,4 @@
+import { categoryByKey } from "../domain/categories";
 import type { ModeTrigger, SpendingMode, TriggerGroup } from "../domain/modes";
 import type { Income } from "../domain/types";
 import {
@@ -247,7 +248,11 @@ export function categoryEffect(
   seed: string,
   date: string,
 ): { amount: number; frequency: number; budget: number } {
-  if (!effect || ["taxes", "bankfees", "incidentfees"].includes(category))
+  if (
+    !effect ||
+    categoryByKey[category]?.parentId === 159 ||
+    ["bankfees", "incidentfees"].includes(category)
+  )
     return { amount: 1, frequency: 1, budget: 1 };
   const rule = effect.mode.categoryRules[category] ?? {
     amount: 1,

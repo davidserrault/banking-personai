@@ -58,6 +58,8 @@ function clean() {
   c.charges = [];
   c.events = Object.fromEntries(Object.keys(c.events).map((k) => [k, false]));
   c.budgets = Object.fromEntries(Object.keys(c.budgets).map((k) => [k, 0]));
+  c.budgetOverrides = {};
+  c.merchantOverrides = {};
   c.autoSavings = false;
   c.autoTopup = false;
   c.financing.consumerEnabled = false;

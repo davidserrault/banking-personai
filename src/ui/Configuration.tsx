@@ -1,3 +1,8 @@
+import { CategoryField } from "./CategoryField";
+import {
+  expenseCategories as bridgeExpenses,
+  categoryPath,
+} from "../domain/categories";
 import { Modes } from "./Modes";
 import { Taxes } from "./Taxes";
 import { useState } from "react";
@@ -34,7 +39,7 @@ import {
 } from "./controls";
 import { t, messages, options, enumLabel, categoryLabel } from "./messages";
 import { money, monthlyIncome, newId, dateLabel, endDate } from "./format";
-import categories from "../../specifications/reference/categories.json";
+import { spendingCategories as categories } from "../domain/categories";
 import eventTemplates from "../../specifications/reference/event-templates.json";
 import destinations from "../../specifications/reference/travel-destinations.json";
 import products from "../../specifications/reference/savings-products.json";
@@ -313,7 +318,7 @@ export function Configuration({ file, tab, update, onReferenceChange }: Props) {
                     name: t("studio.genericCharge"),
                     amount: 50,
                     day: 5,
-                    categoryId: 29,
+                    categoryId: 276,
                     enabled: true,
                   }),
                 )
@@ -377,25 +382,17 @@ export function Configuration({ file, tab, update, onReferenceChange }: Props) {
                   31,
                   1,
                 )}
-                <Field
+                <CategoryField
                   label={t("studio.category")}
                   value={charge.categoryId}
+                  numeric
+                  scope="expense"
+                  path={`charges.${index}.categoryId`}
                   onChange={(v) =>
                     update((d) => {
                       d.charges[index].categoryId = Number(v);
                     })
                   }
-                  options={[
-                    ...categories.map(
-                      (x) =>
-                        [String(x.id), categoryLabel(x.key)] as [
-                          string,
-                          string,
-                        ],
-                    ),
-                    ["800", t("profile.housing")],
-                    ["54", t("studio.insurance")],
-                  ]}
                 />
               </div>
             </div>
@@ -704,6 +701,23 @@ function IncomeCard({
           value={i.label}
           path={`${path}.label`}
           onChange={(v) => change({ label: v })}
+        />
+        <CategoryField
+          label="Income category"
+          scope="income"
+          numeric
+          value={
+            i.categoryId ??
+            (i.kind === "refund"
+              ? 283
+              : i.kind === "bonus"
+                ? 233
+                : i.main || i.kind === "salary"
+                  ? 230
+                  : 3)
+          }
+          path={`${path}.categoryId`}
+          onChange={(v) => change({ categoryId: Number(v) })}
         />
         {numberField(
           `${t("incomes.amount")} · ${currency}`,
@@ -1179,13 +1193,10 @@ function Events({
                   </>
                 )}
                 {e.type === "exceptional" && (
-                  <Field
+                  <CategoryField
                     label={t("studio.category")}
                     value={e.category}
-                    options={categories.map((x) => [
-                      x.key,
-                      categoryLabel(x.key),
-                    ])}
+                    scope="expense"
                     onChange={(v) => set({ category: v })}
                   />
                 )}
@@ -1284,7 +1295,7 @@ function Events({
                                 })
                               }
                             />
-                            {categoryLabel(cat.key)}
+                            {categoryPath(cat.key)}
                           </label>
                         ))}
                       </div>

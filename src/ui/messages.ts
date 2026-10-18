@@ -1,3 +1,4 @@
+import { categoryByKey } from "../domain/categories";
 import supplied from "../../specifications/i18n/en-GB.json";
 export const messages = {
   ...supplied,
@@ -245,7 +246,7 @@ export function options(group: keyof typeof supplied.options) {
   return Object.entries(supplied.options[group]);
 }
 export const categoryLabel = (key: string) =>
-  (supplied.categories as Record<string, string>)[key] ??
+  categoryByKey[key]?.name ??
   (
     {
       fixed: t("studio.fixed"),

@@ -10,7 +10,10 @@ import { Field, Section } from "./controls";
 import { BudgetRow } from "./BudgetRows";
 import { ReferenceAdjustment } from "./ReferenceAdjustment";
 import { categoryLabel } from "./messages";
-import categories from "../../specifications/reference/categories.json";
+import {
+  spendingCategories as categories,
+  categoryGroups,
+} from "../domain/categories";
 
 export function BudgetSettings({
   file,
@@ -21,6 +24,7 @@ export function BudgetSettings({
 }) {
   const [edit, setEdit] = useState<ReferenceEdit>();
   const [revision, setRevision] = useState(0);
+  const [showAll, setShowAll] = useState(false);
   const c = file.configuration;
   const budgets = safeEnvelopes(c, file.reference, file.assumptions);
   const total = Object.values(budgets).reduce((s, n) => s + n, 0);
@@ -46,27 +50,55 @@ export function BudgetSettings({
           </strong>
         }
       >
-        <div className="budget-list">
-          {categories
-            .filter(
-              (cat) =>
-                cat.key !== "taxes" && c.budgetOverrides?.[cat.key] !== 0,
-            )
-            .map((cat) => (
-              <BudgetRow
-                key={cat.key}
-                category={cat.key}
-                amount={budgets[cat.key] ?? 0}
-                total={total}
-                config={c}
-                revision={revision}
-                onChange={(value) =>
-                  setEdit({ kind: "budget", category: cat.key, value })
-                }
-                onReset={() => patch(resetBudget(file, cat.key))}
-              />
-            ))}
-        </div>
+        <label className="toggle-row">
+          <span>Show all spending subcategories</span>
+          <input
+            type="checkbox"
+            checked={showAll}
+            onChange={(e) => setShowAll(e.target.checked)}
+          />
+        </label>
+        {categoryGroups.map((group) => {
+          const active = categories.filter(
+            (cat) =>
+              cat.parentId === group.id &&
+              cat.parentId !== 159 &&
+              c.budgetOverrides?.[cat.key] !== 0 &&
+              (showAll || (budgets[cat.key] ?? 0) > 0),
+          );
+          const groupTotal = active.reduce(
+            (sum, cat) => sum + (budgets[cat.key] ?? 0),
+            0,
+          );
+          return active.length ? (
+            <details
+              className="budget-category-group"
+              key={group.id}
+              open={groupTotal > 0}
+            >
+              <summary>
+                <span>{group.name}</span>
+                <span>{money(groupTotal, c)} / month</span>
+              </summary>
+              <div className="budget-list">
+                {active.map((cat) => (
+                  <BudgetRow
+                    key={cat.key}
+                    category={cat.key}
+                    amount={budgets[cat.key] ?? 0}
+                    total={total}
+                    config={c}
+                    revision={revision}
+                    onChange={(value) =>
+                      setEdit({ kind: "budget", category: cat.key, value })
+                    }
+                    onReset={() => patch(resetBudget(file, cat.key))}
+                  />
+                ))}
+              </div>
+            </details>
+          ) : null;
+        })}
         {!!removed.length && (
           <div className="restore-budgets">
             <Field

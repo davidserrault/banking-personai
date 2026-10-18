@@ -1,0 +1,61 @@
+{
+  "groceries": {
+    "series": "groceries"
+  },
+  "bakery": {
+    "series": "groceries",
+    "proxy": true
+  },
+  "fuel": {
+    "series": "fuel"
+  },
+  "transport": {
+    "series": "fuel",
+    "proxy": true
+  },
+  "restaurants": {
+    "series": "restaurants"
+  },
+  "coffee": {
+    "series": "bars",
+    "proxy": true
+  },
+  "shopping": {
+    "series": "shopping"
+  },
+  "home": {
+    "series": "shopping",
+    "proxy": true
+  },
+  "leisure": {
+    "series": "culture"
+  },
+  "travel": {
+    "series": "hotels",
+    "proxy": true
+  },
+  "hotels": {
+    "series": "hotels"
+  },
+  "fastfood": {
+    "series": "fastfood"
+  },
+  "bars": {
+    "series": "bars"
+  },
+  "alcohol": {
+    "series": "alcohol"
+  },
+  "cycling": {
+    "series": "cycling"
+  },
+  "taxes": {
+    "series": "taxes"
+  },
+  "bankfees": {
+    "series": "bankfees"
+  },
+  "incidentfees": {
+    "series": "incidentfees"
+  }
+}

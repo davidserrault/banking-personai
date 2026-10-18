@@ -1,163 +1,1145 @@
 [
   {
-    "key": "groceries",
-    "id": 14,
-    "name": "Alimentation",
-    "protected": true,
-    "monthly": 430
+    "key": "autoOthers",
+    "id": 84,
+    "name": "Auto & Transport - Others",
+    "parentId": 165,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
   },
   {
-    "key": "bakery",
-    "id": 116,
-    "name": "Boulangerie & proximité",
+    "key": "autoInsurance",
+    "id": 247,
+    "name": "Auto insurance",
+    "parentId": 165,
     "protected": true,
-    "monthly": 40
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "carMaintenance",
+    "id": 288,
+    "name": "Car maintenance",
+    "parentId": 165,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "carRental",
+    "id": 264,
+    "name": "Car rental",
+    "parentId": 165,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
   },
   {
     "key": "fuel",
-    "id": 36,
-    "name": "Carburant",
+    "id": 87,
+    "name": "Gas & Fuel",
+    "parentId": 165,
     "protected": true,
-    "monthly": 110
+    "monthly": 0,
+    "budgetable": true
   },
   {
-    "key": "transport",
-    "id": 115,
-    "name": "Transports & péages",
+    "key": "parking",
+    "id": 251,
+    "name": "Parking",
+    "parentId": 165,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "planeTicket",
+    "id": 198,
+    "name": "Plane ticket",
+    "parentId": 165,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "publicTransport",
+    "id": 196,
+    "name": "Public transportation",
+    "parentId": 165,
     "protected": true,
-    "monthly": 25
+    "monthly": 0,
+    "budgetable": true
   },
   {
-    "key": "health",
-    "id": 49,
-    "name": "Santé",
+    "key": "tolls",
+    "id": 309,
+    "name": "Tolls",
+    "parentId": 165,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "trainTicket",
+    "id": 197,
+    "name": "Train ticket",
+    "parentId": 165,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "bankOthers",
+    "id": 195,
+    "name": "Bank - Others",
+    "parentId": 164,
     "protected": true,
-    "monthly": 25
-  },
-  {
-    "key": "restaurants",
-    "id": 84,
-    "name": "Restaurants & livraison",
-    "protected": false,
-    "monthly": 65
-  },
-  {
-    "key": "coffee",
-    "id": 79,
-    "name": "Cafés",
-    "protected": false,
-    "monthly": 15
-  },
-  {
-    "key": "shopping",
-    "id": 64,
-    "name": "Achats & habillement",
-    "protected": false,
-    "monthly": 55
-  },
-  {
-    "key": "leisure",
-    "id": 75,
-    "name": "Loisirs",
-    "protected": false,
-    "monthly": 30
-  },
-  {
-    "key": "home",
-    "id": 29,
-    "name": "Maison & bricolage",
-    "protected": false,
-    "monthly": 35
-  },
-  {
-    "key": "digital",
-    "id": 18,
-    "name": "Numérique & télécoms",
-    "protected": false,
-    "monthly": 8
-  },
-  {
-    "key": "travel",
-    "id": 339,
-    "name": "Voyages",
-    "protected": false,
-    "monthly": 35
-  },
-  {
-    "key": "hotels",
-    "id": 98,
-    "name": "Hôtels & campings",
-    "protected": false,
-    "monthly": 0
-  },
-  {
-    "key": "fastfood",
-    "id": 71,
-    "name": "Restauration rapide",
-    "protected": false,
-    "monthly": 0
-  },
-  {
-    "key": "bars",
-    "id": 9010,
-    "name": "Bars & sorties",
-    "protected": false,
-    "monthly": 0
-  },
-  {
-    "key": "alcohol",
-    "id": 9011,
-    "name": "Alcool",
-    "protected": false,
-    "monthly": 0
-  },
-  {
-    "key": "cycling",
-    "id": 9012,
-    "name": "Vélo",
-    "protected": false,
-    "monthly": 0
-  },
-  {
-    "key": "taxes",
-    "id": 837,
-    "name": "Impôts & taxes",
-    "protected": true,
-    "monthly": 0
+    "monthly": 0,
+    "budgetable": true
   },
   {
     "key": "bankfees",
-    "id": 59,
-    "name": "Frais bancaires variables",
+    "id": 79,
+    "name": "Banking fees and charges",
+    "parentId": 164,
     "protected": true,
-    "monthly": 0
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "bankingServices",
+    "id": 306,
+    "name": "Banking services",
+    "parentId": 164,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "monthlyDebit",
+    "id": 191,
+    "name": "Monthly Debit",
+    "parentId": 164,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "mortgage",
+    "id": 194,
+    "name": "Mortgage",
+    "parentId": 164,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "mortgageRefund",
+    "id": 89,
+    "name": "Mortgage refund",
+    "parentId": 164,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": false
   },
   {
     "key": "incidentfees",
-    "id": 9013,
-    "name": "Frais d’incidents simulés",
+    "id": 756587,
+    "name": "Payment incidents",
+    "parentId": 164,
     "protected": true,
-    "monthly": 0
+    "monthly": 0,
+    "budgetable": true
   },
   {
-    "key": "ridehailing",
-    "id": 9014,
-    "name": "VTC & chauffeurs",
-    "protected": false,
-    "monthly": 20
+    "key": "bankSavings",
+    "id": 192,
+    "name": "Savings",
+    "parentId": 164,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": false
   },
   {
-    "key": "childrenActivities",
-    "id": 9015,
-    "name": "Activités extrascolaires",
+    "key": "cableTV",
+    "id": 219,
+    "name": "Cable TV",
+    "parentId": 171,
     "protected": false,
-    "monthly": 50
+    "monthly": 0,
+    "budgetable": true
   },
   {
-    "key": "luxury",
-    "id": 9016,
-    "name": "Luxe & créateurs",
+    "key": "homePhone",
+    "id": 258,
+    "name": "Home phone",
+    "parentId": 171,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "internet",
+    "id": 180,
+    "name": "Internet",
+    "parentId": 171,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "mobilePhone",
+    "id": 277,
+    "name": "Mobile phone",
+    "parentId": 171,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "subscriptionOthers",
+    "id": 280,
+    "name": "Subscription - Others",
+    "parentId": 171,
     "protected": false,
-    "monthly": 40
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "accounting",
+    "id": 441889,
+    "name": "Accounting",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "advertising",
+    "id": 202,
+    "name": "Advertising",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "businessExpenses",
+    "id": 265,
+    "name": "Business expenses",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "businessOthers",
+    "id": 90,
+    "name": "Business services - Others",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "consulting",
+    "id": 441895,
+    "name": "Consulting",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "disabilityInsurance",
+    "id": 441897,
+    "name": "Disability Insurance",
+    "parentId": 166,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "employerContributions",
+    "id": 441886,
+    "name": "Employer contributions",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "hiringFees",
+    "id": 441892,
+    "name": "Hiring fees",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "legalFees",
+    "id": 441899,
+    "name": "Legal Fees",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "marketing",
+    "id": 441900,
+    "name": "Marketing",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "officeServices",
+    "id": 203,
+    "name": "Office services",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "officeSupplies",
+    "id": 274,
+    "name": "Office supplies",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "onlineServices",
+    "id": 270,
+    "name": "Online services",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "outsourcing",
+    "id": 441896,
+    "name": "Outsourcing",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "printing",
+    "id": 205,
+    "name": "Printing",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "businessSalaries",
+    "id": 441890,
+    "name": "Salaries",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "executiveSalary",
+    "id": 441891,
+    "name": "Salary of executives",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "shipping",
+    "id": 204,
+    "name": "Shipping",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "trainingTaxes",
+    "id": 441898,
+    "name": "Training taxes",
+    "parentId": 166,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "daycare",
+    "id": 267,
+    "name": "Baby-sitter & Daycare",
+    "parentId": 167,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "educationOthers",
+    "id": 237,
+    "name": "Education & Children - Others",
+    "parentId": 167,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "educationPension",
+    "id": 240,
+    "name": "Pension",
+    "parentId": 167,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "schoolSupplies",
+    "id": 238,
+    "name": "School supplies",
+    "parentId": 167,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "studentHousing",
+    "id": 241,
+    "name": "Student housing",
+    "parentId": 167,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "studentLoan",
+    "id": 259,
+    "name": "Student loan",
+    "parentId": 167,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "toys",
+    "id": 266,
+    "name": "Toys",
+    "parentId": 167,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "tuition",
+    "id": 239,
+    "name": "Tuition",
+    "parentId": 167,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "amusements",
+    "id": 269,
+    "name": "Amusements",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "arts",
+    "id": 244,
+    "name": "Arts & Amusement",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "bars",
+    "id": 227,
+    "name": "Bars & Clubs",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "eatingOut",
+    "id": 320,
+    "name": "Eating out",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "entertainmentOthers",
+    "id": 223,
+    "name": "Entertainment - Others",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "hobbies",
+    "id": 226,
+    "name": "Hobbies",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "hotels",
+    "id": 263,
+    "name": "Hotels",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "pets",
+    "id": 224,
+    "name": "Pets",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "sports",
+    "id": 242,
+    "name": "Sports",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "travel",
+    "id": 249,
+    "name": "Travels / Vacation",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "winterSports",
+    "id": 310,
+    "name": "Winter sports",
+    "parentId": 170,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "coffee",
+    "id": 313,
+    "name": "Coffee shop",
+    "parentId": 168,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "fastfood",
+    "id": 260,
+    "name": "Fast foods",
+    "parentId": 168,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "foodOthers",
+    "id": 188,
+    "name": "Food - Others",
+    "parentId": 168,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "restaurants",
+    "id": 83,
+    "name": "Restaurants",
+    "parentId": 168,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "groceries",
+    "id": 273,
+    "name": "Supermarkets / Groceries",
+    "parentId": 168,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "dentist",
+    "id": 325,
+    "name": "Dentist",
+    "parentId": 163,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "doctor",
+    "id": 261,
+    "name": "Doctor",
+    "parentId": 163,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "healthOthers",
+    "id": 268,
+    "name": "Health - Others",
+    "parentId": 163,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "healthInsurance",
+    "id": 245,
+    "name": "Health insurance",
+    "parentId": 163,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "optician",
+    "id": 322,
+    "name": "Optician / Eyecare",
+    "parentId": 163,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "pharmacy",
+    "id": 236,
+    "name": "Pharmacy",
+    "parentId": 163,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "electricity",
+    "id": 217,
+    "name": "Electricity",
+    "parentId": 161,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "gas",
+    "id": 218,
+    "name": "Gas",
+    "parentId": 161,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "homeOthers",
+    "id": 220,
+    "name": "Home - Others",
+    "parentId": 161,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "homeImprovement",
+    "id": 221,
+    "name": "Home improvement",
+    "parentId": 161,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "homeInsurance",
+    "id": 246,
+    "name": "Home insurance",
+    "parentId": 161,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "garden",
+    "id": 323,
+    "name": "Lawn & Garden",
+    "parentId": 161,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "maintenance",
+    "id": 222,
+    "name": "Maintenance",
+    "parentId": 161,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "utilitiesOthers",
+    "id": 328,
+    "name": "Misc. utilities",
+    "parentId": 161,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "rent",
+    "id": 216,
+    "name": "Rent",
+    "parentId": 161,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "water",
+    "id": 293,
+    "name": "Water",
+    "parentId": 161,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "deposit",
+    "id": 271,
+    "name": "Deposit",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "extraIncome",
+    "id": 233,
+    "name": "Extra incomes",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "grants",
+    "id": 441893,
+    "name": "Grants",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "interestIncome",
+    "id": 80,
+    "name": "Interest incomes",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "incomeTransfer",
+    "id": 282,
+    "name": "Internal transfer",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "loanIncome",
+    "id": 441894,
+    "name": "Loans",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "otherIncome",
+    "id": 3,
+    "name": "Other incomes",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "incomePension",
+    "id": 327,
+    "name": "Pension",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "refunds",
+    "id": 283,
+    "name": "Refunds",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "rentalIncome",
+    "id": 314,
+    "name": "Rent",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "retirement",
+    "id": 279,
+    "name": "Retirement",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "salary",
+    "id": 230,
+    "name": "Salaries",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "sales",
+    "id": 231,
+    "name": "Sales",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "incomeSavings",
+    "id": 289,
+    "name": "Savings",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "servicesIncome",
+    "id": 232,
+    "name": "Services",
+    "parentId": 2,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "charity",
+    "id": 294,
+    "name": "Charity",
+    "parentId": 160,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "insurance",
+    "id": 278,
+    "name": "Insurance",
+    "parentId": 160,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "laundry",
+    "id": 324,
+    "name": "Laundry / Dry cleaning",
+    "parentId": 160,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "otherSpending",
+    "id": 276,
+    "name": "Others spending",
+    "parentId": 160,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "tobacco",
+    "id": 308,
+    "name": "Tobacco",
+    "parentId": 160,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "uncategorized",
+    "id": 1,
+    "name": "Uncategorized",
+    "parentId": 160,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "beauty",
+    "id": 321,
+    "name": "Beauty care",
+    "parentId": 315,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "cosmetics",
+    "id": 248,
+    "name": "Cosmetics",
+    "parentId": 315,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "hairdresser",
+    "id": 235,
+    "name": "Hairdresser",
+    "parentId": 315,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "personalCareOthers",
+    "id": 317,
+    "name": "Personal care - Others",
+    "parentId": 315,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "spa",
+    "id": 316,
+    "name": "Spa & Massage",
+    "parentId": 315,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "books",
+    "id": 243,
+    "name": "Books",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "clothing",
+    "id": 272,
+    "name": "Clothing & Shoes",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "gifts",
+    "id": 183,
+    "name": "Gifts",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "highTech",
+    "id": 184,
+    "name": "High Tech",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "licences",
+    "id": 441888,
+    "name": "Licences",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "movies",
+    "id": 319,
+    "name": "Movies",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "music",
+    "id": 318,
+    "name": "Music",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "shoppingOthers",
+    "id": 186,
+    "name": "Shopping - Others",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "sportingGoods",
+    "id": 262,
+    "name": "Sporting goods",
+    "parentId": 162,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "fine",
+    "id": 207,
+    "name": "Fine",
+    "parentId": 159,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "incomeTaxes",
+    "id": 208,
+    "name": "Incomes taxes",
+    "parentId": 159,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "propertyTaxes",
+    "id": 209,
+    "name": "Property taxes",
+    "parentId": 159,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "taxes",
+    "id": 302,
+    "name": "Taxes",
+    "parentId": 159,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "taxOthers",
+    "id": 206,
+    "name": "Taxes - Others",
+    "parentId": 159,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "vat",
+    "id": 441988,
+    "name": "VAT",
+    "parentId": 159,
+    "protected": true,
+    "monthly": 0,
+    "budgetable": true
+  },
+  {
+    "key": "checks",
+    "id": 88,
+    "name": "Checks",
+    "parentId": 303,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "internalTransfer",
+    "id": 326,
+    "name": "Internal transfer",
+    "parentId": 303,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "transfer",
+    "id": 78,
+    "name": "Transfer",
+    "parentId": 303,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
+  },
+  {
+    "key": "withdrawals",
+    "id": 85,
+    "name": "Withdrawals",
+    "parentId": 303,
+    "protected": false,
+    "monthly": 0,
+    "budgetable": false
   }
 ]

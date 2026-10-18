@@ -45,6 +45,8 @@ function clean(): PersonaConfig {
   config.budgets = Object.fromEntries(
     Object.keys(config.budgets).map((key) => [key, 0]),
   );
+  config.budgetOverrides = {};
+  config.merchantOverrides = {};
   config.autoSavings = false;
   config.paymentCards = [newPaymentCard()];
   config.paymentCards[0].authorizedOverdraft = 1000000;
@@ -174,7 +176,7 @@ test("mortgages replace housing only from their start date and retain separate i
       name: "Housing",
       amount: 500,
       day: 5,
-      categoryId: 800,
+      categoryId: 89,
       enabled: true,
     },
     {
@@ -182,13 +184,13 @@ test("mortgages replace housing only from their start date and retain separate i
       name: "Insurance",
       amount: 20,
       day: 5,
-      categoryId: 54,
+      categoryId: 278,
       enabled: true,
     },
   ];
   c.creditFacilities = [
     {
-      ...newCreditFacility("mortgage", "home", "2025-02-15"),
+      ...newCreditFacility("mortgage", "homeImprovement", "2025-02-15"),
       amount: 1200,
       annualRate: 0,
       months: 12,
@@ -709,7 +711,7 @@ test("durable rent replaces only subsequent charges and births create costs next
       name: "Rent",
       amount: 100,
       day: 5,
-      categoryId: 800,
+      categoryId: 89,
       enabled: true,
     },
   ];

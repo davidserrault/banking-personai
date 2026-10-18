@@ -2,7 +2,7 @@
   {
     "id": 900000,
     "name": "SNCF Connect",
-    "category": "travel",
+    "category": "trainTicket",
     "mean": 65,
     "destinationId": "france",
     "currency": "EUR"
@@ -34,7 +34,7 @@
   {
     "id": 900004,
     "name": "Musée local fictif",
-    "category": "leisure",
+    "category": "arts",
     "mean": 14,
     "destinationId": "france",
     "currency": "EUR"
@@ -42,7 +42,7 @@
   {
     "id": 900100,
     "name": "Train / vol · Royaume-Uni",
-    "category": "travel",
+    "category": "trainTicket",
     "mean": 100,
     "destinationId": "uk",
     "currency": "GBP"
@@ -82,7 +82,7 @@
   {
     "id": 900105,
     "name": "Musée local fictif",
-    "category": "leisure",
+    "category": "arts",
     "mean": 19,
     "destinationId": "uk",
     "currency": "GBP"
@@ -130,7 +130,7 @@
   {
     "id": 900205,
     "name": "Attraction locale fictive",
-    "category": "leisure",
+    "category": "amusements",
     "mean": 35,
     "destinationId": "usa",
     "currency": "USD"
@@ -178,7 +178,7 @@
   {
     "id": 900305,
     "name": "Musée local fictif",
-    "category": "leisure",
+    "category": "arts",
     "mean": 1500,
     "destinationId": "japan",
     "currency": "JPY"
@@ -186,7 +186,7 @@
   {
     "id": 900400,
     "name": "Train · Suisse",
-    "category": "travel",
+    "category": "trainTicket",
     "mean": 85,
     "destinationId": "switzerland",
     "currency": "CHF"
@@ -226,7 +226,7 @@
   {
     "id": 900405,
     "name": "Musée local fictif",
-    "category": "leisure",
+    "category": "arts",
     "mean": 22,
     "destinationId": "switzerland",
     "currency": "CHF"
@@ -274,7 +274,7 @@
   {
     "id": 900505,
     "name": "Visite culturelle fictive",
-    "category": "leisure",
+    "category": "arts",
     "mean": 100,
     "destinationId": "morocco",
     "currency": "MAD"
@@ -282,7 +282,7 @@
   {
     "id": 900600,
     "name": "Train / vol · Espagne",
-    "category": "travel",
+    "category": "trainTicket",
     "mean": 95,
     "destinationId": "spain",
     "currency": "EUR"
@@ -322,7 +322,7 @@
   {
     "id": 900605,
     "name": "Musée local fictif",
-    "category": "leisure",
+    "category": "arts",
     "mean": 15,
     "destinationId": "spain",
     "currency": "EUR"

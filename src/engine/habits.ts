@@ -67,7 +67,7 @@ export function planHabits(
       config.events.school && config.children > 0,
       9,
       55 * config.children,
-      "shopping",
+      "schoolSupplies",
       "School start",
       true,
     );
@@ -75,7 +75,7 @@ export function planHabits(
       config.events.schoolTrip && config.children > 0 && rng() < 0.7,
       5,
       55 * config.children,
-      "leisure",
+      "educationOthers",
       "School trip",
       true,
     );
@@ -90,28 +90,28 @@ export function planHabits(
       config.events.appliance && rng() < 0.45,
       randomMonth(),
       170,
-      "home",
+      "maintenance",
       "Appliance repair",
     );
     schedule(
       config.events.gifts,
       12,
       40 * config.household,
-      "shopping",
+      "gifts",
       "Year-end gifts",
     );
     schedule(
       config.events.equipment && rng() < 0.65,
       randomMonth(),
       160,
-      "home",
+      "homeOthers",
       "Home equipment",
     );
     schedule(
       config.events.homeRepair && rng() < 0.65,
       4 + Math.floor(rng() * 6),
       210,
-      "home",
+      "maintenance",
       "Home maintenance",
       false,
       true,

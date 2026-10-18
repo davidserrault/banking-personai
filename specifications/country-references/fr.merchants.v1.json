@@ -181,7 +181,7 @@
     {
       "id": 800010,
       "name": "Boulangerie du quartier",
-      "category": "bakery",
+      "category": "foodOthers",
       "mean": 7.5,
       "regions": [
         "*"
@@ -191,7 +191,7 @@
     {
       "id": 800011,
       "name": "Boulangerie de la place",
-      "category": "bakery",
+      "category": "foodOthers",
       "mean": 9,
       "regions": [
         "centre",
@@ -203,7 +203,7 @@
     {
       "id": 800012,
       "name": "Marie Blachère",
-      "category": "bakery",
+      "category": "foodOthers",
       "mean": 8.5,
       "regions": [
         "*"
@@ -243,7 +243,7 @@
     {
       "id": 800016,
       "name": "Péage autoroutier",
-      "category": "transport",
+      "category": "tolls",
       "mean": 8,
       "regions": [
         "*"
@@ -253,7 +253,7 @@
     {
       "id": 800017,
       "name": "Réseau urbain · Tours",
-      "category": "transport",
+      "category": "publicTransport",
       "mean": 3.5,
       "regions": [
         "centre"
@@ -264,7 +264,7 @@
     {
       "id": 800018,
       "name": "Réseau urbain · Paris",
-      "category": "transport",
+      "category": "publicTransport",
       "mean": 5,
       "regions": [
         "idf"
@@ -275,7 +275,7 @@
     {
       "id": 800019,
       "name": "Réseau urbain · Nantes",
-      "category": "transport",
+      "category": "publicTransport",
       "mean": 3.8,
       "regions": [
         "pays-loire"
@@ -286,7 +286,7 @@
     {
       "id": 800020,
       "name": "Réseau urbain · Lille",
-      "category": "transport",
+      "category": "publicTransport",
       "mean": 3.6,
       "regions": [
         "hauts-france"
@@ -297,7 +297,7 @@
     {
       "id": 800021,
       "name": "Réseau urbain local",
-      "category": "transport",
+      "category": "publicTransport",
       "mean": 3.5,
       "regions": [
         "*"
@@ -308,7 +308,7 @@
     {
       "id": 800022,
       "name": "Pharmacie du centre",
-      "category": "health",
+      "category": "pharmacy",
       "mean": 17,
       "regions": [
         "*"
@@ -318,7 +318,7 @@
     {
       "id": 800023,
       "name": "Cabinet médical fictif",
-      "category": "health",
+      "category": "healthOthers",
       "mean": 30,
       "regions": [
         "*"
@@ -460,7 +460,7 @@
     {
       "id": 800036,
       "name": "Amazon",
-      "category": "shopping",
+      "category": "shoppingOthers",
       "mean": 33,
       "regions": [
         "*"
@@ -470,7 +470,7 @@
     {
       "id": 800037,
       "name": "Decathlon",
-      "category": "shopping",
+      "category": "sportingGoods",
       "mean": 42,
       "regions": [
         "*"
@@ -480,7 +480,7 @@
     {
       "id": 800038,
       "name": "Kiabi",
-      "category": "shopping",
+      "category": "clothing",
       "mean": 35,
       "regions": [
         "*"
@@ -490,7 +490,7 @@
     {
       "id": 800039,
       "name": "H&M",
-      "category": "shopping",
+      "category": "clothing",
       "mean": 39,
       "regions": [
         "*"
@@ -500,7 +500,7 @@
     {
       "id": 800040,
       "name": "Librairie du centre",
-      "category": "shopping",
+      "category": "books",
       "mean": 21,
       "regions": [
         "*"
@@ -510,7 +510,7 @@
     {
       "id": 800041,
       "name": "Cinéma local",
-      "category": "leisure",
+      "category": "arts",
       "mean": 23,
       "regions": [
         "*"
@@ -520,7 +520,7 @@
     {
       "id": 800042,
       "name": "Piscine municipale",
-      "category": "leisure",
+      "category": "sports",
       "mean": 12,
       "regions": [
         "*"
@@ -530,7 +530,7 @@
     {
       "id": 800043,
       "name": "Activité de loisirs",
-      "category": "leisure",
+      "category": "amusements",
       "mean": 28,
       "regions": [
         "*"
@@ -540,7 +540,7 @@
     {
       "id": 800044,
       "name": "Leroy Merlin",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 57,
       "regions": [
         "*"
@@ -550,7 +550,7 @@
     {
       "id": 800045,
       "name": "Castorama",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 52,
       "regions": [
         "*"
@@ -560,7 +560,7 @@
     {
       "id": 800046,
       "name": "Bricomarché",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 38,
       "regions": [
         "*"
@@ -570,7 +570,7 @@
     {
       "id": 800047,
       "name": "IKEA",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 79,
       "regions": [
         "*"
@@ -580,7 +580,7 @@
     {
       "id": 800048,
       "name": "Weldom",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 34,
       "regions": [
         "*"
@@ -590,7 +590,7 @@
     {
       "id": 800049,
       "name": "Boulanger",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 130,
       "regions": [
         "*"
@@ -600,7 +600,7 @@
     {
       "id": 800050,
       "name": "Darty",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 145,
       "regions": [
         "*"
@@ -610,7 +610,7 @@
     {
       "id": 800051,
       "name": "App Store",
-      "category": "digital",
+      "category": "subscriptionOthers",
       "mean": 3.99,
       "regions": [
         "*"
@@ -620,7 +620,7 @@
     {
       "id": 800052,
       "name": "Google Play",
-      "category": "digital",
+      "category": "subscriptionOthers",
       "mean": 3.49,
       "regions": [
         "*"
@@ -630,7 +630,7 @@
     {
       "id": 800053,
       "name": "SNCF Connect",
-      "category": "travel",
+      "category": "trainTicket",
       "mean": 68,
       "regions": [
         "*"
@@ -690,7 +690,7 @@
     {
       "id": 800059,
       "name": "Caviste fictif",
-      "category": "alcohol",
+      "category": "foodOthers",
       "mean": 28,
       "regions": [
         "*"
@@ -700,7 +700,7 @@
     {
       "id": 800060,
       "name": "Atelier vélo fictif",
-      "category": "cycling",
+      "category": "sportingGoods",
       "mean": 35,
       "regions": [
         "*"
@@ -781,7 +781,7 @@
     {
       "id": 800068,
       "name": "Action",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 23,
       "regions": [
         "*"
@@ -791,7 +791,7 @@
     {
       "id": 800069,
       "name": "NOZ",
-      "category": "shopping",
+      "category": "shoppingOthers",
       "mean": 21,
       "regions": [
         "*"
@@ -801,7 +801,7 @@
     {
       "id": 800070,
       "name": "Vinted",
-      "category": "shopping",
+      "category": "clothing",
       "mean": 19,
       "regions": [
         "*"
@@ -811,7 +811,7 @@
     {
       "id": 800071,
       "name": "Ressourcerie locale fictive",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 25,
       "regions": [
         "*"
@@ -821,7 +821,7 @@
     {
       "id": 800072,
       "name": "Friperie de quartier fictive",
-      "category": "shopping",
+      "category": "shoppingOthers",
       "mean": 22,
       "regions": [
         "*"
@@ -831,7 +831,7 @@
     {
       "id": 800073,
       "name": "Galeries Lafayette",
-      "category": "shopping",
+      "category": "shoppingOthers",
       "mean": 115,
       "regions": [
         "*"
@@ -842,7 +842,7 @@
     {
       "id": 800074,
       "name": "Printemps",
-      "category": "shopping",
+      "category": "shoppingOthers",
       "mean": 145,
       "regions": [
         "idf",
@@ -856,7 +856,7 @@
     {
       "id": 800075,
       "name": "Boutique premium fictive",
-      "category": "shopping",
+      "category": "shoppingOthers",
       "mean": 130,
       "regions": [
         "*"
@@ -867,7 +867,7 @@
     {
       "id": 800076,
       "name": "Boutique de créateurs fictive",
-      "category": "luxury",
+      "category": "clothing",
       "mean": 320,
       "regions": [
         "*"
@@ -878,7 +878,7 @@
     {
       "id": 800077,
       "name": "Maroquinerie de luxe fictive",
-      "category": "luxury",
+      "category": "clothing",
       "mean": 650,
       "regions": [
         "*"
@@ -889,7 +889,7 @@
     {
       "id": 800078,
       "name": "Joaillerie de luxe fictive",
-      "category": "luxury",
+      "category": "clothing",
       "mean": 850,
       "regions": [
         "*"
@@ -942,7 +942,7 @@
     {
       "id": 800083,
       "name": "Uber",
-      "category": "ridehailing",
+      "category": "autoOthers",
       "mean": 24,
       "regions": [
         "idf",
@@ -962,7 +962,7 @@
     {
       "id": 800084,
       "name": "Bolt",
-      "category": "ridehailing",
+      "category": "autoOthers",
       "mean": 21,
       "regions": [
         "idf",
@@ -975,7 +975,7 @@
     {
       "id": 800085,
       "name": "Chauffeur VTC local fictif",
-      "category": "ridehailing",
+      "category": "autoOthers",
       "mean": 29,
       "regions": [
         "*"
@@ -986,7 +986,7 @@
     {
       "id": 800086,
       "name": "Chauffeur premium fictif",
-      "category": "ridehailing",
+      "category": "autoOthers",
       "mean": 58,
       "regions": [
         "idf",
@@ -999,7 +999,7 @@
     {
       "id": 800087,
       "name": "Opticien fictif · reste à charge",
-      "category": "health",
+      "category": "optician",
       "mean": 95,
       "regions": [
         "*"
@@ -1009,7 +1009,7 @@
     {
       "id": 800088,
       "name": "Cabinet dentaire fictif · reste à charge",
-      "category": "health",
+      "category": "dentist",
       "mean": 65,
       "regions": [
         "*"
@@ -1019,7 +1019,7 @@
     {
       "id": 800089,
       "name": "Pédicure-podologue fictif",
-      "category": "health",
+      "category": "healthOthers",
       "mean": 32,
       "regions": [
         "*"
@@ -1029,7 +1029,7 @@
     {
       "id": 800090,
       "name": "Audioprothésiste fictif · reste à charge",
-      "category": "health",
+      "category": "healthOthers",
       "mean": 180,
       "regions": [
         "*"
@@ -1039,7 +1039,7 @@
     {
       "id": 800091,
       "name": "Matériel médical fictif",
-      "category": "health",
+      "category": "healthOthers",
       "mean": 42,
       "regions": [
         "*"
@@ -1049,7 +1049,7 @@
     {
       "id": 800092,
       "name": "Club sportif enfants fictif",
-      "category": "childrenActivities",
+      "category": "educationOthers",
       "mean": 32,
       "regions": [
         "*"
@@ -1059,7 +1059,7 @@
     {
       "id": 800093,
       "name": "École de musique associative fictive",
-      "category": "childrenActivities",
+      "category": "educationOthers",
       "mean": 48,
       "regions": [
         "*"
@@ -1069,7 +1069,7 @@
     {
       "id": 800094,
       "name": "Atelier arts et danse enfants fictif",
-      "category": "childrenActivities",
+      "category": "educationOthers",
       "mean": 35,
       "regions": [
         "*"
@@ -1079,7 +1079,7 @@
     {
       "id": 800095,
       "name": "Stage sportif enfants fictif",
-      "category": "childrenActivities",
+      "category": "educationOthers",
       "mean": 85,
       "regions": [
         "*"
@@ -1089,7 +1089,7 @@
     {
       "id": 800096,
       "name": "Musée local fictif",
-      "category": "leisure",
+      "category": "arts",
       "mean": 14,
       "regions": [
         "*"
@@ -1099,7 +1099,7 @@
     {
       "id": 800097,
       "name": "Association culturelle fictive",
-      "category": "leisure",
+      "category": "arts",
       "mean": 24,
       "regions": [
         "*"
@@ -1109,7 +1109,7 @@
     {
       "id": 800098,
       "name": "Jardinerie de quartier fictive",
-      "category": "home",
+      "category": "homeImprovement",
       "mean": 38,
       "regions": [
         "*"
@@ -1152,5 +1152,6 @@
       "url": "https://www.ove-national.education.fr/publication/ove-infos-n48-la-crise-dans-le-retroviseur/",
       "note": "Student budgets and food constraints inform the student scenario."
     }
-  ]
+  ],
+  "categorySystem": "bridge"
 }

@@ -3,33 +3,8 @@ import { RotateCcw } from "lucide-react";
 import type { PersonaConfig } from "../domain/types";
 import { DeleteButton } from "./controls";
 import { ReferenceNumber } from "./ReferenceAdjustment";
+import { categoryByKey, groupById } from "../domain/categories";
 import { categoryLabel } from "./messages";
-
-const descriptions: Record<string, string> = {
-  groceries: "Food and everyday household essentials.",
-  bakery: "Bread, pastries and local convenience shops.",
-  fuel: "Petrol, diesel and vehicle refuelling.",
-  transport: "Public transport, parking and tolls.",
-  health: "Pharmacies, healthcare and personal wellbeing.",
-  restaurants: "Dining out and delivered meals.",
-  coffee: "Coffee shops and small daily treats.",
-  shopping: "Clothing, accessories and everyday purchases.",
-  leisure: "Entertainment, hobbies and cultural activities.",
-  home: "Homeware, repairs and DIY supplies.",
-  digital: "Digital purchases and telecom services.",
-  travel: "Travel bookings and transport for trips.",
-  hotels: "Hotels, campsites and overnight stays.",
-  fastfood: "Quick meals and takeaway food.",
-  bars: "Bars, drinks and evenings out.",
-  alcohol: "Wine, beer and other alcoholic drinks.",
-  cycling: "Bicycles, accessories and maintenance.",
-  taxes: "Variable tax payments and public charges.",
-  bankfees: "Variable banking charges.",
-  incidentfees: "Additional simulated payment incident costs.",
-  ridehailing: "Taxis, private drivers and ride-hailing.",
-  childrenActivities: "Sports, clubs and activities for children.",
-  luxury: "Designer goods and luxury purchases.",
-};
 
 export function BudgetRow({
   category,
@@ -65,7 +40,7 @@ export function BudgetRow({
     <div className="budget-row">
       <div className="budget-description">
         <strong>{name}</strong>
-        <p>{descriptions[category]}</p>
+        <p>{groupById[categoryByKey[category]?.parentId]?.name}</p>
       </div>
       <input
         className="budget-slider"

@@ -1,3 +1,9 @@
+import {
+  categorySystem,
+  categoryMetadata,
+  categoryById,
+} from "../domain/categories";
+import { migrateCategorySystem, migrateReference } from "./category-migration";
 import { stripLegacySettings } from "./profile";
 import { ledgerAccounts } from "./payment-cards";
 import type {
@@ -12,7 +18,12 @@ import { financialFingerprint } from "../engine";
 import travelMerchants from "../../specifications/reference/travel-merchants.json";
 import { referenceHash } from "./canonical";
 import { merchantRates, monthlyEnvelopes } from "../engine/consumption";
-import { checkSchema, fileSchema } from "./schema";
+import {
+  checkSchema,
+  fileSchema,
+  merchantReferenceSchema,
+  legacyCompatibleSchema,
+} from "./schema";
 import {
   ConfigurationError,
   parseJson,
@@ -22,9 +33,24 @@ import {
 
 export function parseConfiguration(text: string): ConfigurationFile {
   const value = parseJson(text);
-  const shapeIssues = checkSchema(value, fileSchema);
+  const shapeIssues = checkSchema(
+    value,
+    (value as ConfigurationFile)?.configuration?.categorySystem === "bridge"
+      ? fileSchema
+      : legacyCompatibleSchema(fileSchema),
+  );
   if (shapeIssues.length) throw new ConfigurationError(shapeIssues);
-  const file = value as ConfigurationFile;
+  const original = value as ConfigurationFile;
+  if (original.referenceHash !== referenceHash(original.reference))
+    throw new ConfigurationError([
+      {
+        path: "referenceHash",
+        message: "The reference content does not match its SHA-256 hash.",
+      },
+    ]);
+  const file = migrateCategorySystem(original);
+  const migratedIssues = checkSchema(file, fileSchema);
+  if (migratedIssues.length) throw new ConfigurationError(migratedIssues);
   const issues = validateScenario(
     file.configuration,
     file.reference,
@@ -44,10 +70,18 @@ export function parseMerchantReference(
   text: string,
   expectedCountry?: string,
 ): CountryMerchantReference {
-  const value = parseJson(text),
-    issues = validateMerchantReference(value, expectedCountry);
+  const value = parseJson(text) as CountryMerchantReference;
+  const shape = checkSchema(
+    value,
+    value?.categorySystem === "bridge"
+      ? merchantReferenceSchema
+      : legacyCompatibleSchema(merchantReferenceSchema),
+  );
+  if (shape.length) throw new ConfigurationError(shape);
+  const reference = migrateReference(value);
+  const issues = validateMerchantReference(reference, expectedCountry);
   if (issues.length) throw new ConfigurationError(issues);
-  return value as CountryMerchantReference;
+  return reference;
 }
 
 export function exportConfiguration(
@@ -170,6 +204,8 @@ export function statementTransaction(
     text: transaction.label,
     comments: [],
     categoryId: transaction.categoryId,
+    category: categoryMetadata(transaction.categoryId),
+    parentCategoryId: categoryById[transaction.categoryId].parentId,
     date: transaction.date,
     dueDate: transaction.accountingDate,
     originalDate: transaction.date,
@@ -191,7 +227,8 @@ export function statementTransaction(
           ? "event-recurring"
           : (kindLabels[transaction.simulationKind] ??
             transaction.simulationKind),
-      categoryLabel: formatLabel(transaction.category),
+      categoryLabel: categoryById[transaction.categoryId].name,
+      parentCategoryLabel: categoryMetadata(transaction.categoryId).parentName,
       balanceAfter: transaction.balanceAfter,
       ...(transaction.modeId ? { modeId: transaction.modeId } : {}),
       ...(transaction.paymentCardId
@@ -362,6 +399,7 @@ export function exportHistory(
       totalAmount: major(totalMinor),
       totalAmountMinor: totalMinor,
       synthetic: true,
+      categorySystem,
       engineVersion: result.engineVersion,
       financialFingerprint: result.fingerprint,
       persona: { id: holder.id, name: holder.name },
@@ -392,6 +430,9 @@ export function exportHistory(
           },
     },
     included: {
+      categories: [...new Set(transactions.map((t) => t.categoryId))]
+        .sort((a, b) => a - b)
+        .map(categoryMetadata),
       accounts: selectedAccounts.map((a) => {
         const configured = ledgerAccounts(context.configuration).find(
           (c) => c.key === a.key,

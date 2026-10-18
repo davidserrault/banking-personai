@@ -14,7 +14,11 @@ import {
   newModeCondition,
   uniqueModeConditions,
 } from "../config/modes";
-import categories from "../../specifications/reference/categories.json";
+import {
+  spendingCategories as categories,
+  categoryPath,
+} from "../domain/categories";
+import { CategoryField } from "./CategoryField";
 import { Section, Field, Toggle, AddButton, DeleteButton } from "./controls";
 import { categoryLabel } from "./messages";
 import { newId } from "./format";
@@ -311,7 +315,7 @@ function ModeEditor({
               };
               return (
                 <div className="mode-category" key={category.key}>
-                  <strong>{categoryLabel(category.key)}</strong>
+                  <strong>{categoryPath(category.key)}</strong>
                   <div className="form-grid">
                     <Field
                       label="Purchase amount · ×"
@@ -343,24 +347,19 @@ function ModeEditor({
                         })
                       }
                     />
-                    <Field
+                    <CategoryField
                       label="Cheaper alternative"
                       value={rule.substituteTo ?? ""}
-                      options={[
-                        ["", "None"],
-                        ...categories
-                          .filter(
-                            (c) =>
-                              c.key !== category.key &&
-                              !["taxes", "bankfees", "incidentfees"].includes(
-                                c.key,
-                              ),
-                          )
-                          .map(
-                            (c) =>
-                              [c.key, categoryLabel(c.key)] as [string, string],
-                          ),
-                      ]}
+                      scope="spending"
+                      emptyLabel="None"
+                      availableKeys={categories
+                        .filter(
+                          (c) =>
+                            c.key !== category.key &&
+                            c.parentId !== 159 &&
+                            !["bankfees", "incidentfees"].includes(c.key),
+                        )
+                        .map((c) => c.key)}
                       onChange={(v) =>
                         change((d) => {
                           const r = (d.categoryRules[category.key] ??= {
@@ -644,16 +643,12 @@ function Triggers({
                 </>
               )}
               {r.metric === "categorySpending" && (
-                <Field
+                <CategoryField
                   label="Category"
                   value={r.category ?? ""}
                   path={`${p}.category`}
-                  options={[
-                    ["", "Select category"],
-                    ...categories.map(
-                      (c) => [c.key, categoryLabel(c.key)] as [string, string],
-                    ),
-                  ]}
+                  scope="spending"
+                  emptyLabel="Select category"
                   onChange={(v) => patch({ category: v })}
                 />
               )}

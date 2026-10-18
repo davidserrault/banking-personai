@@ -2,14 +2,13 @@
   "groceries": {
     "series": "groceries"
   },
-  "bakery": {
-    "series": "groceries",
-    "proxy": true
+  "foodOthers": {
+    "series": "alcohol"
   },
   "fuel": {
     "series": "fuel"
   },
-  "transport": {
+  "publicTransport": {
     "series": "fuel",
     "proxy": true
   },
@@ -20,14 +19,14 @@
     "series": "bars",
     "proxy": true
   },
-  "shopping": {
+  "shoppingOthers": {
     "series": "shopping"
   },
-  "home": {
+  "homeImprovement": {
     "series": "shopping",
     "proxy": true
   },
-  "leisure": {
+  "amusements": {
     "series": "culture"
   },
   "travel": {
@@ -43,10 +42,7 @@
   "bars": {
     "series": "bars"
   },
-  "alcohol": {
-    "series": "alcohol"
-  },
-  "cycling": {
+  "sportingGoods": {
     "series": "cycling"
   },
   "taxes": {

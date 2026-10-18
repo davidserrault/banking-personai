@@ -1,10 +1,22 @@
 # PersonAI validation
 
-Validated implementation: `personai.deterministic.v1.8.0`.
+Validated implementation: `personai.deterministic.v2.0.0`.
+
+## Current release — 18 October 2026
+
+The GitHub source snapshot matches published Persona Ledger Studio 2 version 2 (Site source commit `fe63031accfe4e74971721dc1551aee46508fe01`), with updated repository documentation and self-contained migration tests. The current release passes 188 automated tests, TypeScript validation and the production build.
+
+Bridge migration checks cover all 127 subcategories in 15 groups, stable leaf and parent IDs, legacy numeric-ID collisions, reference-hash validation, configuration and reference imports, workspace restoration, all five supplied personas, cost/frequency/budget preservation in a small synthetic legacy scenario, transfers, and reconciled account exports with category metadata.
+
+Navigation checks cover Reference → Merchants / Taxes / Categories and Accounts → Summary / Transactions / Events. They verify exclusive visible panels, linked accessibility semantics, keyboard selection and wrapping, account-scoped summary totals and balances, transaction scope, disabled stale-history downloads, empty states, and removal of duplicate controls, the JSON preview and the technical history footer. Inactive reference editors remain mounted so tax drafts survive subtab changes.
+
+Live browser QA was unavailable for the Bridge migration and subtab changes; these screens have automated component-rendering checks. The browser checks described later in this document were performed on earlier releases and do not establish live browser coverage of the current release.
+
+The archived legacy persona and category-metrics fixture files are excluded from this GitHub distribution. Their nine full-baseline comparisons are replaced by one focused test with small invented merchant inputs; migration import, collision, workspace and all five current-persona export checks remain covered.
 
 ## Automated checks
 
-All 170 automated tests pass. TypeScript checking and the production build pass.
+All 188 automated tests pass. TypeScript checking and the production build pass.
 
 André is the default model for a new workspace and retains the complete supplied four-year calendar, references and settings; loading a model returns an independent copy. All five models round-trip their configuration and export identified account histories. André's original scenario produces six EUR 1,000 transfer pairs over four years, starting on 15 October 2026. Source balances exceed the EUR 5,000 threshold at activation, the thirty-day interval is respected, both posting legs conserve money and every closing account balance reconciles. Editor checks cover two-account direction changes, exclusion of the source from destinations, and entering/clearing the optional pre-transfer source minimum. The interval is explicitly described as an activation delay rather than a repeat schedule.
 

@@ -1,3 +1,4 @@
+import { CategoryField } from "./CategoryField";
 import type {
   PersonaConfig,
   TaxSystem,
@@ -162,6 +163,13 @@ export function Taxes({
                 value={tax.label}
                 onChange={(label) => change({ label })}
                 hint="For example: local residence tax, property tax or another tax."
+              />
+              <CategoryField
+                label="Tax category"
+                scope="tax"
+                numeric
+                value={tax.categoryId ?? 302}
+                onChange={(v) => change({ categoryId: Number(v) })}
               />
               <Field
                 label={

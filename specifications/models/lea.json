@@ -78,7 +78,7 @@
       "name": "Rent",
       "amount": 420,
       "day": 5,
-      "categoryId": 800,
+      "categoryId": 216,
       "enabled": true
     },
     {
@@ -86,7 +86,7 @@
       "name": "Borrower insurance",
       "amount": 42,
       "day": 5,
-      "categoryId": 54,
+      "categoryId": 278,
       "enabled": false
     },
     {
@@ -94,7 +94,7 @@
       "name": "Home insurance",
       "amount": 33,
       "day": 8,
-      "categoryId": 54,
+      "categoryId": 246,
       "enabled": true
     },
     {
@@ -102,7 +102,7 @@
       "name": "Electricity · EDF",
       "amount": 92,
       "day": 10,
-      "categoryId": 328,
+      "categoryId": 217,
       "enabled": true
     },
     {
@@ -110,7 +110,7 @@
       "name": "Broadband",
       "amount": 41.99,
       "day": 12,
-      "categoryId": 18,
+      "categoryId": 180,
       "enabled": true
     },
     {
@@ -118,7 +118,7 @@
       "name": "Mobile plan",
       "amount": 24.99,
       "day": 15,
-      "categoryId": 18,
+      "categoryId": 277,
       "enabled": true
     },
     {
@@ -126,7 +126,7 @@
       "name": "Bank account fee",
       "amount": 6.4,
       "day": 2,
-      "categoryId": 59,
+      "categoryId": 79,
       "enabled": true
     }
   ],
@@ -147,29 +147,35 @@
     "Restaurant universitaire fictif"
   ],
   "budgets": {
-    "groceries": 430,
-    "bakery": 40,
-    "fuel": 110,
-    "transport": 25,
-    "health": 25,
-    "restaurants": 65,
-    "coffee": 15,
-    "shopping": 55,
-    "leisure": 30,
-    "home": 35,
-    "digital": 8,
-    "travel": 35,
+    "groceries": 157.32,
+    "foodOthers": 13.66,
+    "fuel": 0,
+    "publicTransport": 27.5,
+    "pharmacy": 0.89,
+    "healthOthers": 3.57,
+    "optician": 0.89,
+    "dentist": 0.9,
+    "restaurants": 39,
+    "coffee": 12,
+    "shoppingOthers": 10.63,
+    "sportingGoods": 0.8,
+    "clothing": 15.26,
+    "books": 0.81,
+    "arts": 12.6,
+    "sports": 4.2,
+    "amusements": 4.2,
+    "homeImprovement": 14,
+    "subscriptionOthers": 8,
+    "trainTicket": 4.67,
+    "travel": 9.33,
     "hotels": 0,
     "fastfood": 0,
     "bars": 0,
-    "alcohol": 0,
-    "cycling": 0,
     "taxes": 0,
     "bankfees": 0,
     "incidentfees": 0,
-    "ridehailing": 20,
-    "childrenActivities": 50,
-    "luxury": 40
+    "autoOthers": 3,
+    "educationOthers": 0
   },
   "events": {
     "appstore": true,
@@ -221,7 +227,8 @@
       "frequencyVariation": 0,
       "annualGrowth": 0,
       "main": true,
-      "enabled": true
+      "enabled": true,
+      "categoryId": 441893
     },
     {
       "id": "income_other",
@@ -234,12 +241,442 @@
       "frequencyVariation": 0,
       "annualGrowth": 0,
       "main": false,
-      "enabled": true
+      "enabled": true,
+      "categoryId": 3
     }
   ],
   "countryCode": "FR",
   "currencyDigits": 2,
   "timeZone": "Europe/Paris",
   "referenceId": "fr.merchants.v1",
-  "merchantOverrides": {}
+  "merchantOverrides": {
+    "fr.merchants.v1|student|800000": {
+      "mean": 21,
+      "frequency": 0.20073495636196603
+    },
+    "fr.merchants.v1|student|800001": {
+      "mean": 28.5,
+      "frequency": 0.011832797427652735
+    },
+    "fr.merchants.v1|student|800002": {
+      "mean": 18.75,
+      "frequency": 0.22482315112540197
+    },
+    "fr.merchants.v1|student|800003": {
+      "mean": 39,
+      "frequency": 0.10808805342567403
+    },
+    "fr.merchants.v1|student|800004": {
+      "mean": 32.25,
+      "frequency": 0.1307111343752337
+    },
+    "fr.merchants.v1|student|800005": {
+      "mean": 36,
+      "frequency": 0.11709539121114686
+    },
+    "fr.merchants.v1|student|800006": {
+      "mean": 24.75,
+      "frequency": 2.043846828412745
+    },
+    "fr.merchants.v1|student|800007": {
+      "mean": 38.25,
+      "frequency": 0.11020742702225586
+    },
+    "fr.merchants.v1|student|800008": {
+      "mean": 24,
+      "frequency": 0.014051446945337623
+    },
+    "fr.merchants.v1|student|800009": {
+      "mean": 17.25,
+      "frequency": 0.2443729903536978
+    },
+    "fr.merchants.v1|student|800010": {
+      "mean": 5.63,
+      "frequency": 0.8087625814091179
+    },
+    "fr.merchants.v1|student|800011": {
+      "mean": 6.75,
+      "frequency": 0.674567901234568
+    },
+    "fr.merchants.v1|student|800012": {
+      "mean": 6.38,
+      "frequency": 0.7136886102403345
+    },
+    "fr.merchants.v1|student|800013": {
+      "mean": 52.2,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800014": {
+      "mean": 46.8,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800015": {
+      "mean": 45,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800016": {
+      "mean": 6,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800017": {
+      "mean": 2.63,
+      "frequency": 2.091254752851711
+    },
+    "fr.merchants.v1|student|800018": {
+      "mean": 3.75,
+      "frequency": 1.4666666666666666
+    },
+    "fr.merchants.v1|student|800019": {
+      "mean": 2.85,
+      "frequency": 1.9298245614035088
+    },
+    "fr.merchants.v1|student|800020": {
+      "mean": 2.7,
+      "frequency": 2.0370370370370368
+    },
+    "fr.merchants.v1|student|800021": {
+      "mean": 2.63,
+      "frequency": 2.091254752851711
+    },
+    "fr.merchants.v1|student|800022": {
+      "mean": 15.3,
+      "frequency": 0.05835667600373483
+    },
+    "fr.merchants.v1|student|800023": {
+      "mean": 27,
+      "frequency": 0.033068783068783074
+    },
+    "fr.merchants.v1|student|800024": {
+      "mean": 17.25,
+      "frequency": 0.10202479987443101
+    },
+    "fr.merchants.v1|student|800025": {
+      "mean": 21.75,
+      "frequency": 0.08091622059006598
+    },
+    "fr.merchants.v1|student|800026": {
+      "mean": 24,
+      "frequency": 0.0733303249097473
+    },
+    "fr.merchants.v1|student|800027": {
+      "mean": 18.75,
+      "frequency": 0.09386281588447654
+    },
+    "fr.merchants.v1|student|800028": {
+      "mean": 23.25,
+      "frequency": 0.07569581926167462
+    },
+    "fr.merchants.v1|student|800029": {
+      "mean": 21,
+      "frequency": 0.08380608561113975
+    },
+    "fr.merchants.v1|student|800030": {
+      "mean": 21.75,
+      "frequency": 0.08091622059006598
+    },
+    "fr.merchants.v1|student|800031": {
+      "mean": 25.5,
+      "frequency": 0.0690167763856445
+    },
+    "fr.merchants.v1|student|800032": {
+      "mean": 4.13,
+      "frequency": 0.29055690072639223
+    },
+    "fr.merchants.v1|student|800033": {
+      "mean": 5.25,
+      "frequency": 0.22857142857142856
+    },
+    "fr.merchants.v1|student|800034": {
+      "mean": 8.25,
+      "frequency": 0.14545454545454545
+    },
+    "fr.merchants.v1|student|800035": {
+      "mean": 5.25,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800036": {
+      "mean": 24.75,
+      "frequency": 0.032450674974039466
+    },
+    "fr.merchants.v1|student|800037": {
+      "mean": 31.5,
+      "frequency": 0.025496958908173866
+    },
+    "fr.merchants.v1|student|800038": {
+      "mean": 26.25,
+      "frequency": 0.18357810413885184
+    },
+    "fr.merchants.v1|student|800039": {
+      "mean": 29.25,
+      "frequency": 0.027458263439571855
+    },
+    "fr.merchants.v1|student|800040": {
+      "mean": 15.75,
+      "frequency": 0.05099391781634773
+    },
+    "fr.merchants.v1|student|800041": {
+      "mean": 17.25,
+      "frequency": 0.24347826086956523
+    },
+    "fr.merchants.v1|student|800042": {
+      "mean": 9,
+      "frequency": 0.4666666666666667
+    },
+    "fr.merchants.v1|student|800043": {
+      "mean": 21,
+      "frequency": 0.2
+    },
+    "fr.merchants.v1|student|800044": {
+      "mean": 42.75,
+      "frequency": 0.01637426900584795
+    },
+    "fr.merchants.v1|student|800045": {
+      "mean": 39,
+      "frequency": 0.017948717948717947
+    },
+    "fr.merchants.v1|student|800046": {
+      "mean": 28.5,
+      "frequency": 0.02456140350877193
+    },
+    "fr.merchants.v1|student|800047": {
+      "mean": 59.25,
+      "frequency": 0.01181434599156118
+    },
+    "fr.merchants.v1|student|800048": {
+      "mean": 25.5,
+      "frequency": 0.027450980392156862
+    },
+    "fr.merchants.v1|student|800049": {
+      "mean": 97.5,
+      "frequency": 0.007179487179487179
+    },
+    "fr.merchants.v1|student|800050": {
+      "mean": 108.75,
+      "frequency": 0.0064367816091954015
+    },
+    "fr.merchants.v1|student|800051": {
+      "mean": 2.99,
+      "frequency": 1.3377926421404682
+    },
+    "fr.merchants.v1|student|800052": {
+      "mean": 2.62,
+      "frequency": 1.5267175572519083
+    },
+    "fr.merchants.v1|student|800053": {
+      "mean": 51,
+      "frequency": 0.09150326797385622
+    },
+    "fr.merchants.v1|student|800054": {
+      "mean": 71.25,
+      "frequency": 0.06549707602339182
+    },
+    "fr.merchants.v1|student|800055": {
+      "mean": 131.25,
+      "frequency": 0.035555555555555556
+    },
+    "fr.merchants.v1|student|800056": {
+      "mean": 71.25,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800057": {
+      "mean": 12,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800058": {
+      "mean": 16.5,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800059": {
+      "mean": 21,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800060": {
+      "mean": 26.25,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800061": {
+      "mean": 120,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800062": {
+      "mean": 6.4,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800063": {
+      "mean": 8,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800064": {
+      "mean": 21.75,
+      "frequency": 2.32575673578002
+    },
+    "fr.merchants.v1|student|800065": {
+      "mean": 22.5,
+      "frequency": 1.1241157556270098
+    },
+    "fr.merchants.v1|student|800066": {
+      "mean": 43.5,
+      "frequency": 0.007752522452600068
+    },
+    "fr.merchants.v1|student|800067": {
+      "mean": 54,
+      "frequency": 0.006245087531261166
+    },
+    "fr.merchants.v1|student|800068": {
+      "mean": 17.25,
+      "frequency": 0.24347826086956523
+    },
+    "fr.merchants.v1|student|800069": {
+      "mean": 15.75,
+      "frequency": 0.30596350689808643
+    },
+    "fr.merchants.v1|student|800070": {
+      "mean": 14.25,
+      "frequency": 0.6763403836694541
+    },
+    "fr.merchants.v1|student|800071": {
+      "mean": 18.75,
+      "frequency": 0.224
+    },
+    "fr.merchants.v1|student|800072": {
+      "mean": 16.5,
+      "frequency": 0.2920560747663552
+    },
+    "fr.merchants.v1|student|800073": {
+      "mean": 86.25,
+      "frequency": 0.000744954625490993
+    },
+    "fr.merchants.v1|student|800074": {
+      "mean": 108.75,
+      "frequency": 0.00059082608228596
+    },
+    "fr.merchants.v1|student|800075": {
+      "mean": 97.5,
+      "frequency": 0.0006589983225497246
+    },
+    "fr.merchants.v1|student|800076": {
+      "mean": 240,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800077": {
+      "mean": 487.5,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800078": {
+      "mean": 637.5,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800079": {
+      "mean": 82.5,
+      "frequency": 0.001706596652445028
+    },
+    "fr.merchants.v1|student|800080": {
+      "mean": 48.75,
+      "frequency": 0.002888086642599278
+    },
+    "fr.merchants.v1|student|800081": {
+      "mean": 2.47,
+      "frequency": 9.975299258977769
+    },
+    "fr.merchants.v1|student|800082": {
+      "mean": 2.25,
+      "frequency": 3.7333333333333334
+    },
+    "fr.merchants.v1|student|800083": {
+      "mean": 18,
+      "frequency": 0.05102040816326531
+    },
+    "fr.merchants.v1|student|800084": {
+      "mean": 15.75,
+      "frequency": 0.05830903790087464
+    },
+    "fr.merchants.v1|student|800085": {
+      "mean": 21.75,
+      "frequency": 0.0422237860661506
+    },
+    "fr.merchants.v1|student|800086": {
+      "mean": 43.5,
+      "frequency": 0.005629838142153414
+    },
+    "fr.merchants.v1|student|800087": {
+      "mean": 85.5,
+      "frequency": 0.010442773600668339
+    },
+    "fr.merchants.v1|student|800088": {
+      "mean": 58.5,
+      "frequency": 0.015262515262515264
+    },
+    "fr.merchants.v1|student|800089": {
+      "mean": 28.8,
+      "frequency": 0.031001984126984128
+    },
+    "fr.merchants.v1|student|800090": {
+      "mean": 162,
+      "frequency": 0.005511463844797179
+    },
+    "fr.merchants.v1|student|800091": {
+      "mean": 37.8,
+      "frequency": 0.023620559334845054
+    },
+    "fr.merchants.v1|student|800092": {
+      "mean": 24,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800093": {
+      "mean": 36,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800094": {
+      "mean": 26.25,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800095": {
+      "mean": 63.75,
+      "frequency": 0
+    },
+    "fr.merchants.v1|student|800096": {
+      "mean": 10.5,
+      "frequency": 0.4
+    },
+    "fr.merchants.v1|student|800097": {
+      "mean": 18,
+      "frequency": 0.23333333333333334
+    },
+    "fr.merchants.v1|student|800098": {
+      "mean": 28.5,
+      "frequency": 0.02456140350877193
+    }
+  },
+  "budgetOverrides": {
+    "groceries": 157.32,
+    "foodOthers": 13.66,
+    "fuel": 0,
+    "publicTransport": 27.5,
+    "pharmacy": 0.89,
+    "healthOthers": 3.57,
+    "optician": 0.89,
+    "dentist": 0.9,
+    "restaurants": 39,
+    "coffee": 12,
+    "shoppingOthers": 10.63,
+    "sportingGoods": 0.8,
+    "clothing": 15.26,
+    "books": 0.81,
+    "arts": 12.6,
+    "sports": 4.2,
+    "amusements": 4.2,
+    "homeImprovement": 14,
+    "subscriptionOthers": 8,
+    "trainTicket": 4.67,
+    "travel": 9.33,
+    "hotels": 0,
+    "fastfood": 0,
+    "bars": 0,
+    "taxes": 0,
+    "bankfees": 0,
+    "incidentfees": 0,
+    "autoOthers": 3,
+    "educationOthers": 0
+  },
+  "categorySystem": "bridge"
 }

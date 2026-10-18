@@ -4,12 +4,12 @@
     "comfort": 14.2,
     "all": 16.1
   },
-  "bakery": {
+  "foodOthers": {
     "modest": 18.3,
     "comfort": 14.2,
     "all": 16.1
   },
-  "transport": {
+  "publicTransport": {
     "modest": 13.6,
     "comfort": 17.6,
     "all": 16.4
@@ -19,7 +19,7 @@
     "comfort": 17.6,
     "all": 16.4
   },
-  "leisure": {
+  "amusements": {
     "modest": 7.2,
     "comfort": 11.3,
     "all": 9.4
@@ -44,17 +44,17 @@
     "comfort": 9.4,
     "all": 7.2
   },
-  "home": {
+  "homeImprovement": {
     "modest": 4,
     "comfort": 7.3,
     "all": 5.7
   },
-  "shopping": {
+  "shoppingOthers": {
     "modest": 5.5,
     "comfort": 5.2,
     "all": 5
   },
-  "digital": {
+  "subscriptionOthers": {
     "modest": 3.8,
     "comfort": 2.1,
     "all": 2.7

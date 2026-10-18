@@ -48,6 +48,8 @@ function clean(): PersonaConfig {
   c.events = Object.fromEntries(Object.keys(c.events).map((k) => [k, false]));
   c.budgets = Object.fromEntries(Object.keys(c.budgets).map((k) => [k, 0]));
   c.budgetOverrides = {};
+  c.merchantOverrides = {};
+  c.budgetOverrides = {};
   c.autoSavings = false;
   c.autoTopup = false;
   c.financing.consumerEnabled = false;
@@ -378,11 +380,11 @@ test("Survival preserves unavoidable payments, stops optional spending and uses 
       name: "Rent",
       amount: 1000,
       day: 5,
-      categoryId: 800,
+      categoryId: 89,
       enabled: true,
     },
   ];
-  c.budgetOverrides = { leisure: 500, groceries: 200 };
+  c.budgetOverrides = { amusements: 500, groceries: 200 };
   c.spendingModes = [mode("survival")];
   const result = run(c),
     jan = result.transactions.filter((t) => t.date.startsWith("2025-01"));
@@ -390,7 +392,7 @@ test("Survival preserves unavoidable payments, stops optional spending and uses 
     jan.filter((t) => t.simulationKind === "recurring")[0].amount,
     -1000,
   );
-  assert.equal(jan.filter((t) => t.category === "leisure").length, 0);
+  assert.equal(jan.filter((t) => t.category === "amusements").length, 0);
   assert.equal(jan.filter((t) => t.accountKey === "investment").length, 0);
   assert.equal(
     jan
@@ -409,7 +411,11 @@ test("Survival preserves unavoidable payments, stops optional spending and uses 
 test("YOLO increases spending and respects the configured overdraft limit", () => {
   const c = clean();
   c.accounts[0].openingBalance = 100000;
-  c.budgetOverrides = { restaurants: 1000, leisure: 500, shopping: 700 };
+  c.budgetOverrides = {
+    restaurants: 1000,
+    amusements: 500,
+    shoppingOthers: 700,
+  };
   const baseline = run(c);
   c.spendingModes = [mode("yolo", { duration: 365, liquidityTarget: 0 })];
   const yolo = run(c);
@@ -437,15 +443,15 @@ test("Balanced reduces wants when obligations exceed the target and does not ski
       name: "Rent",
       amount: 1950,
       day: 1,
-      categoryId: 800,
+      categoryId: 89,
       enabled: true,
     },
   ];
-  c.budgetOverrides = { groceries: 200, leisure: 1000 };
+  c.budgetOverrides = { groceries: 200, amusements: 1000 };
   c.spendingModes = [mode("balanced", { duration: 365 })];
   const result = run(c);
   assert.equal(
-    result.transactions.filter((t) => t.category === "leisure").length,
+    result.transactions.filter((t) => t.category === "amusements").length,
     0,
   );
   assert.equal(
@@ -485,7 +491,11 @@ test("Investor routes windfalls to eligible investments while Planner keeps rese
   assert.equal(planner.summary.closingBalance, 10000);
   c.accounts[1].withdrawalRank = 1;
   c.plannedEvents = [
-    event("exceptional", { amount: 3000, mandatory: true, category: "home" }),
+    event("exceptional", {
+      amount: 3000,
+      mandatory: true,
+      category: "homeImprovement",
+    }),
   ];
   const accessible = run(c);
   assert.ok(
@@ -503,7 +513,7 @@ test("investment withdrawals wait for the configured persistence and never overd
       name: "Rent",
       amount: 200,
       day: 1,
-      categoryId: 800,
+      categoryId: 89,
       enabled: true,
     },
   ];

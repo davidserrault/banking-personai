@@ -1,5 +1,6 @@
 import { triggerLabels } from "./modes";
 import referenceSchema from "../../specifications/contracts/local-merchant-reference.schema.json";
+import legacyCategories from "../../specifications/reference/legacy-categories.json";
 import categories from "../../specifications/reference/categories.json";
 import fieldOptions from "../../specifications/reference/field-options.json";
 import habits from "../../specifications/reference/habit-types.json";
@@ -64,6 +65,7 @@ const map = (value: Schema): Schema => ({
   additionalProperties: value,
 });
 const categoryKeys = categories.map((item) => item.key);
+const spendingKeys = categories.filter((c) => c.budgetable).map((c) => c.key);
 const profiles = ["student", "modest", "family", "comfort", "retired"];
 const segments = [
   "everyday",
@@ -105,7 +107,7 @@ const charge = object({
   name: string(),
   amount: number(),
   day: integer(1, 31),
-  categoryId: integer(1, 100000),
+  categoryId: integer(1, 1e9),
   enabled: boolean,
 });
 const inflationRate = {
@@ -114,6 +116,9 @@ const inflationRate = {
 };
 const income = object(
   {
+    categoryId: enumeration(
+      categories.filter((c) => c.parentId === 2).map((c) => c.id),
+    ),
     kind: enumeration(["salary", "bonus", "refund", "other"]),
     expected: boolean,
     cadence: enumeration(["recurring", "exceptional"]),
@@ -141,14 +146,22 @@ const income = object(
     main: boolean,
     enabled: boolean,
   },
-  ["kind", "expected", "cadence", "change", "startDate", "endDate"],
+  [
+    "categoryId",
+    "kind",
+    "expected",
+    "cadence",
+    "change",
+    "startDate",
+    "endDate",
+  ],
 );
 const change = object({
   kind: enumeration(["salary", "rent", "category-prices", "birth"]),
   salary: number(0, 1e6),
   chargeId: string(150, 0),
   rent: number(),
-  categories: { ...array(category, 23), uniqueItems: true },
+  categories: { ...array(category, categories.length), uniqueItems: true },
   priceChangePercent: number(-90, 500),
   childrenAdded: integer(1, 6),
   childMonthlyCost: number(),
@@ -256,7 +269,7 @@ const spendingMode = object(
     cooldown: integer(0, 7300),
     transitionDuration: integer(0, 365),
     categoryRules: dictionary(
-      categoryKeys,
+      spendingKeys,
       object(
         {
           amount: number(0, 5),
@@ -291,6 +304,7 @@ const spendingMode = object(
 );
 export const configurationSchema = object(
   {
+    categorySystem: { const: "bridge" },
     accountTransfers: array(
       object(
         {
@@ -360,19 +374,25 @@ export const configurationSchema = object(
       {
         ...inflationRate,
         chargeOverrides: map(object(inflationRate)),
-        budgetOverrides: dictionary(categoryKeys, object(inflationRate)),
+        budgetOverrides: dictionary(spendingKeys, object(inflationRate)),
       },
       ["chargeOverrides", "budgetOverrides"],
     ),
     displayCurrency: string(3),
     incomeTax: object(taxPayment),
     otherTaxes: array(
-      object({
-        id: string(),
-        label: string(),
-        amount: number(),
-        ...taxPayment,
-      }),
+      object(
+        {
+          id: string(),
+          label: string(),
+          categoryId: enumeration(
+            categories.filter((c) => c.parentId === 159).map((c) => c.id),
+          ),
+          amount: number(),
+          ...taxPayment,
+        },
+        ["categoryId"],
+      ),
       50,
     ),
     id: string(120),
@@ -414,8 +434,8 @@ export const configurationSchema = object(
     topupThreshold: number(-1e9),
     topupAmount: number(),
     preferredMerchants: array(string(), 5000),
-    budgets: dictionary(categoryKeys, number()),
-    budgetOverrides: dictionary(categoryKeys, number()),
+    budgets: dictionary(spendingKeys, number()),
+    budgetOverrides: dictionary(spendingKeys, number()),
     events: dictionary(
       habits.map((h) => h.id),
       boolean,
@@ -473,6 +493,7 @@ export const configurationSchema = object(
     ),
   },
   [
+    "categorySystem",
     "accountTransfers",
     "spendingModes",
     "paymentCards",
@@ -547,9 +568,9 @@ const consumption = object({
       name: string(),
       factor: number(0, 20),
       description: string(10000),
-      budgets: dictionary(categoryKeys, number(0, 100)),
+      budgets: dictionary(spendingKeys, number(0, 100)),
       basket: number(0, 100),
-      basketOverrides: dictionary(categoryKeys, number(0, 100)),
+      basketOverrides: dictionary(spendingKeys, number(0, 100)),
       affinity: dictionary(segments, number(0, 100)),
     }),
     5,
@@ -557,15 +578,15 @@ const consumption = object({
   categoryBases: array(
     object({
       key: category,
-      id: integer(1, 100000),
+      id: integer(1, 1e9),
       name: string(),
       protected: boolean,
       monthly: number(),
     }),
-    23,
+    categories.length,
   ),
   observedBudgetShares: dictionary(
-    categoryKeys,
+    spendingKeys,
     object({
       modest: number(0, 100),
       comfort: number(0, 100),
@@ -584,7 +605,7 @@ const seasonality = object({
     }),
   ),
   mapping: dictionary(
-    categoryKeys,
+    spendingKeys,
     object({ series: enumeration(series), proxy: boolean }, ["proxy"]),
   ),
   source: object({
@@ -783,4 +804,51 @@ export function checkSchema(
   } else if (schema.type === "boolean" && typeof value !== "boolean")
     issue("Expected true or false.");
   return issues;
+}
+
+/** Validate every legacy field before migration; arbitrary properties are still rejected. */
+export function legacyCompatibleSchema(schema: Schema): Schema {
+  const next = structuredClone(schema);
+  const walk = (node: Schema): void => {
+    if (
+      node.enum &&
+      node.enum.includes("groceries") &&
+      node.enum.includes("restaurants")
+    )
+      node.enum = [
+        ...new Set([...node.enum, ...legacyCategories.map((c) => c.key)]),
+      ];
+    if (
+      node.enum &&
+      node.enum.every((v) => typeof v === "number") &&
+      node.enum.includes(273)
+    )
+      node.enum = [
+        ...new Set([
+          ...node.enum,
+          ...legacyCategories.map((c) => c.id),
+          859,
+          54,
+          328,
+          800,
+          212,
+          9000,
+          9002,
+          9004,
+        ]),
+      ];
+    if (node.properties) {
+      if (spendingKeys.every((k) => Object.hasOwn(node.properties!, k)))
+        for (const c of legacyCategories)
+          node.properties[c.key] ??= structuredClone(
+            node.properties[spendingKeys[0]],
+          );
+      Object.values(node.properties).forEach(walk);
+    }
+    if (node.items) walk(node.items);
+    if (typeof node.additionalProperties === "object")
+      walk(node.additionalProperties);
+  };
+  walk(next);
+  return next;
 }

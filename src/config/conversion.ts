@@ -336,7 +336,7 @@ export function previewCountryConversion(
     if (
       budget <= 0 ||
       (category === "fuel" && !config.car) ||
-      (category === "childrenActivities" && config.children === 0)
+      (category === "educationOthers" && config.children === 0)
     )
       continue;
     const eligible = target.merchants.some(

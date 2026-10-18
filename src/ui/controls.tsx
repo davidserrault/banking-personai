@@ -3,7 +3,7 @@ import { Plus, Trash2, ChevronDown } from "lucide-react";
 import type { ValidationIssue } from "../domain/types";
 import { t } from "./messages";
 export const ErrorsContext = createContext<ValidationIssue[]>([]);
-interface FieldProps {
+export interface FieldProps {
   label: string;
   value: string | number;
   onChange: (value: any) => void;
@@ -14,6 +14,7 @@ interface FieldProps {
   path?: string;
   hint?: string;
   options?: [string, string][];
+  optionGroups?: { label: string; options: [string, string][] }[];
   disabled?: boolean;
   span?: boolean;
 }
@@ -28,6 +29,7 @@ export function Field({
   path,
   hint,
   options,
+  optionGroups,
   disabled,
   span,
 }: FieldProps) {
@@ -46,17 +48,26 @@ export function Field({
   return (
     <div className={`field ${span ? "span-2" : ""}`}>
       <label htmlFor={id}>{label}</label>
-      {options ? (
+      {options || optionGroups ? (
         <div className="select-wrap">
           <select
             {...props}
             value={value}
             onChange={(e) => onChange(e.target.value)}
           >
-            {options.map(([key, name]) => (
+            {options?.map(([key, name]) => (
               <option key={key} value={key}>
                 {name}
               </option>
+            ))}
+            {optionGroups?.map((group) => (
+              <optgroup key={group.label} label={group.label}>
+                {group.options.map(([key, name]) => (
+                  <option key={key} value={key}>
+                    {name}
+                  </option>
+                ))}
+              </optgroup>
             ))}
           </select>
           <ChevronDown size={14} />

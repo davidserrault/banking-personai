@@ -4,14 +4,14 @@ import type {
   Merchant,
   PersonaConfig,
 } from "../domain/types";
-import categoryData from "../../specifications/reference/categories.json";
+import { spendingCategories, categoryByKey } from "../domain/categories";
 import profilesData from "../../specifications/reference/consumption-profiles.json";
 import seasonalData from "../../specifications/reference/seasonality-combined.json";
 import mappingData from "../../specifications/reference/seasonality-category-mapping.json";
 import { fromMinor, toMinor } from "./money";
 import { budgetInflationFactor } from "./inflation";
 
-export const categories = categoryData;
+export const categories = spendingCategories;
 interface Profile {
   id: string;
   factor: number;
@@ -56,9 +56,17 @@ export function monthlyEnvelopes(
   return Object.fromEntries(
     categories.map((category) => {
       let profileFactor = profile.budgets[category.key] ?? profile.factor;
-      if (["taxes", "bankfees", "incidentfees"].includes(category.key))
+      if (
+        category.parentId === 159 ||
+        ["bankfees", "incidentfees"].includes(category.key)
+      )
         profileFactor = 1;
-      if (category.key === "health" && calibrated)
+      if (
+        ["healthOthers", "pharmacy", "doctor", "dentist", "optician"].includes(
+          category.key,
+        ) &&
+        calibrated
+      )
         profileFactor = Math.max(
           profileFactor,
           config.age < 40
@@ -71,11 +79,17 @@ export function monthlyEnvelopes(
         );
       const householdFactor = !calibrated
         ? 1
-        : ["groceries", "bakery"].includes(category.key)
+        : ["groceries", "foodOthers"].includes(category.key)
           ? (1 + 0.35 * (household - 1)) / 2.05
-          : category.key === "health"
+          : [
+                "healthOthers",
+                "pharmacy",
+                "doctor",
+                "dentist",
+                "optician",
+              ].includes(category.key)
             ? household / 4
-            : category.key === "childrenActivities"
+            : category.key === "educationOthers"
               ? children / 2
               : 1;
       const override = config.budgetOverrides?.[category.key];
@@ -87,7 +101,7 @@ export function monthlyEnvelopes(
           (category.protected ? 1 : config.discretionary);
       const gated =
         (category.key === "fuel" && !(state?.car ?? config.car)) ||
-        (category.key === "taxes" && config.incomeTax)
+        (category.parentId === 159 && config.incomeTax)
           ? 0
           : base *
             (config.costOfLiving ?? 1) *
@@ -170,17 +184,19 @@ export function merchantRates(
           : 0) * preferred;
     const car = state?.car ?? config.car;
     const transportEligible =
-      merchant.category !== "transport" ||
+      merchant.category !== "publicTransport" ||
       merchant.scenario ||
       (car
         ? !/ratp|tcl|ilévia|bus|métro|metro|tram|urbain/i.test(merchant.name)
         : !/péage|peage|parking|autorout|vinci/i.test(merchant.name));
     const eligible =
       !merchant.travelOnly &&
-      !(merchant.category === "taxes" && config.incomeTax) &&
+      !(
+        categoryByKey[merchant.category]?.parentId === 159 && config.incomeTax
+      ) &&
       transportEligible &&
       (merchant.category !== "fuel" || car) &&
-      (merchant.category !== "childrenActivities" ||
+      (merchant.category !== "educationOthers" ||
         (state?.eligibleChildren ?? config.children) > 0) &&
       weight > 0;
     const basket = ["taxes", "bankfees", "incidentfees"].includes(

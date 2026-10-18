@@ -78,7 +78,7 @@
       "name": "Mortgage payment",
       "amount": 0,
       "day": 5,
-      "categoryId": 800,
+      "categoryId": 89,
       "enabled": false
     },
     {
@@ -86,7 +86,7 @@
       "name": "Borrower insurance",
       "amount": 42,
       "day": 5,
-      "categoryId": 54,
+      "categoryId": 278,
       "enabled": false
     },
     {
@@ -94,7 +94,7 @@
       "name": "Home insurance",
       "amount": 33,
       "day": 8,
-      "categoryId": 54,
+      "categoryId": 246,
       "enabled": true
     },
     {
@@ -102,7 +102,7 @@
       "name": "Electricity · EDF",
       "amount": 92,
       "day": 10,
-      "categoryId": 328,
+      "categoryId": 217,
       "enabled": true
     },
     {
@@ -110,7 +110,7 @@
       "name": "Broadband",
       "amount": 41.99,
       "day": 12,
-      "categoryId": 18,
+      "categoryId": 180,
       "enabled": true
     },
     {
@@ -118,7 +118,7 @@
       "name": "Mobile plan",
       "amount": 24.99,
       "day": 15,
-      "categoryId": 18,
+      "categoryId": 277,
       "enabled": true
     },
     {
@@ -126,7 +126,7 @@
       "name": "Bank account fee",
       "amount": 6.4,
       "day": 2,
-      "categoryId": 59,
+      "categoryId": 79,
       "enabled": true
     }
   ],
@@ -147,29 +147,35 @@
     "Jardinerie de quartier fictive"
   ],
   "budgets": {
-    "groceries": 430,
-    "bakery": 40,
-    "fuel": 110,
-    "transport": 25,
-    "health": 25,
-    "restaurants": 65,
-    "coffee": 15,
-    "shopping": 55,
-    "leisure": 30,
-    "home": 35,
-    "digital": 8,
-    "travel": 35,
+    "groceries": 297.33,
+    "foodOthers": 30.29,
+    "fuel": 77,
+    "tolls": 16.25,
+    "pharmacy": 5.97,
+    "healthOthers": 11.95,
+    "optician": 5.97,
+    "dentist": 2.99,
+    "restaurants": 52,
+    "coffee": 12,
+    "shoppingOthers": 18.61,
+    "sportingGoods": 5.03,
+    "clothing": 12.58,
+    "books": 5.03,
+    "arts": 21.6,
+    "sports": 7.2,
+    "amusements": 7.2,
+    "homeImprovement": 38.5,
+    "subscriptionOthers": 4.4,
+    "trainTicket": 10.5,
+    "travel": 21,
     "hotels": 0,
     "fastfood": 0,
     "bars": 0,
-    "alcohol": 0,
-    "cycling": 0,
     "taxes": 0,
     "bankfees": 0,
     "incidentfees": 0,
-    "ridehailing": 20,
-    "childrenActivities": 50,
-    "luxury": 40
+    "autoOthers": 14,
+    "educationOthers": 0
   },
   "events": {
     "appstore": true,
@@ -221,12 +227,442 @@
       "frequencyVariation": 0,
       "annualGrowth": 0,
       "main": true,
-      "enabled": true
+      "enabled": true,
+      "categoryId": 279
     }
   ],
   "countryCode": "FR",
   "currencyDigits": 2,
   "timeZone": "Europe/Paris",
   "referenceId": "fr.merchants.v1",
-  "merchantOverrides": {}
+  "merchantOverrides": {
+    "fr.merchants.v1|retired|800000": {
+      "mean": 29.4,
+      "frequency": 0.8534401102213036
+    },
+    "fr.merchants.v1|retired|800001": {
+      "mean": 39.9,
+      "frequency": 0.25154024301259476
+    },
+    "fr.merchants.v1|retired|800002": {
+      "mean": 26.25,
+      "frequency": 0.95585292344786
+    },
+    "fr.merchants.v1|retired|800003": {
+      "mean": 54.6,
+      "frequency": 0.4595446747345481
+    },
+    "fr.merchants.v1|retired|800004": {
+      "mean": 45.15,
+      "frequency": 0.555728443865035
+    },
+    "fr.merchants.v1|retired|800005": {
+      "mean": 50.4,
+      "frequency": 0.49784006429576044
+    },
+    "fr.merchants.v1|retired|800006": {
+      "mean": 34.65,
+      "frequency": 0.5430982519590114
+    },
+    "fr.merchants.v1|retired|800007": {
+      "mean": 53.55,
+      "frequency": 0.468555354631304
+    },
+    "fr.merchants.v1|retired|800008": {
+      "mean": 33.6,
+      "frequency": 0.29870403857745625
+    },
+    "fr.merchants.v1|retired|800009": {
+      "mean": 24.15,
+      "frequency": 2.0779411379301305
+    },
+    "fr.merchants.v1|retired|800010": {
+      "mean": 7.5,
+      "frequency": 1.3462222222222222
+    },
+    "fr.merchants.v1|retired|800011": {
+      "mean": 9,
+      "frequency": 1.1218518518518517
+    },
+    "fr.merchants.v1|retired|800012": {
+      "mean": 8.5,
+      "frequency": 1.1878431372549019
+    },
+    "fr.merchants.v1|retired|800013": {
+      "mean": 58,
+      "frequency": 0.5310344827586208
+    },
+    "fr.merchants.v1|retired|800014": {
+      "mean": 52,
+      "frequency": 0.44423076923076926
+    },
+    "fr.merchants.v1|retired|800015": {
+      "mean": 50,
+      "frequency": 0.462
+    },
+    "fr.merchants.v1|retired|800016": {
+      "mean": 8,
+      "frequency": 2.03125
+    },
+    "fr.merchants.v1|retired|800017": {
+      "mean": 3.5,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800018": {
+      "mean": 5,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800019": {
+      "mean": 3.8,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800020": {
+      "mean": 3.6,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800021": {
+      "mean": 3.5,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800022": {
+      "mean": 18.7,
+      "frequency": 0.31942959001782534
+    },
+    "fr.merchants.v1|retired|800023": {
+      "mean": 33,
+      "frequency": 0.0905050505050505
+    },
+    "fr.merchants.v1|retired|800024": {
+      "mean": 23,
+      "frequency": 0.2569169960474308
+    },
+    "fr.merchants.v1|retired|800025": {
+      "mean": 29,
+      "frequency": 0.2037617554858934
+    },
+    "fr.merchants.v1|retired|800026": {
+      "mean": 32,
+      "frequency": 0.18465909090909088
+    },
+    "fr.merchants.v1|retired|800027": {
+      "mean": 25,
+      "frequency": 0.23636363636363633
+    },
+    "fr.merchants.v1|retired|800028": {
+      "mean": 31,
+      "frequency": 0.19061583577712607
+    },
+    "fr.merchants.v1|retired|800029": {
+      "mean": 28,
+      "frequency": 0.211038961038961
+    },
+    "fr.merchants.v1|retired|800030": {
+      "mean": 29,
+      "frequency": 0.2037617554858934
+    },
+    "fr.merchants.v1|retired|800031": {
+      "mean": 34,
+      "frequency": 0.17379679144385024
+    },
+    "fr.merchants.v1|retired|800032": {
+      "mean": 5.5,
+      "frequency": 0.7272727272727273
+    },
+    "fr.merchants.v1|retired|800033": {
+      "mean": 7,
+      "frequency": 0.5714285714285714
+    },
+    "fr.merchants.v1|retired|800034": {
+      "mean": 11,
+      "frequency": 0.36363636363636365
+    },
+    "fr.merchants.v1|retired|800035": {
+      "mean": 7,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800036": {
+      "mean": 33,
+      "frequency": 0.15243902439024387
+    },
+    "fr.merchants.v1|retired|800037": {
+      "mean": 42,
+      "frequency": 0.11977351916376304
+    },
+    "fr.merchants.v1|retired|800038": {
+      "mean": 35,
+      "frequency": 0.10779616724738675
+    },
+    "fr.merchants.v1|retired|800039": {
+      "mean": 39,
+      "frequency": 0.12898686679174481
+    },
+    "fr.merchants.v1|retired|800040": {
+      "mean": 21,
+      "frequency": 0.23954703832752608
+    },
+    "fr.merchants.v1|retired|800041": {
+      "mean": 23,
+      "frequency": 0.3130434782608696
+    },
+    "fr.merchants.v1|retired|800042": {
+      "mean": 12,
+      "frequency": 0.6
+    },
+    "fr.merchants.v1|retired|800043": {
+      "mean": 28,
+      "frequency": 0.2571428571428572
+    },
+    "fr.merchants.v1|retired|800044": {
+      "mean": 57,
+      "frequency": 0.06432748538011696
+    },
+    "fr.merchants.v1|retired|800045": {
+      "mean": 52,
+      "frequency": 0.07051282051282051
+    },
+    "fr.merchants.v1|retired|800046": {
+      "mean": 38,
+      "frequency": 0.09649122807017543
+    },
+    "fr.merchants.v1|retired|800047": {
+      "mean": 79,
+      "frequency": 0.04641350210970464
+    },
+    "fr.merchants.v1|retired|800048": {
+      "mean": 34,
+      "frequency": 0.10784313725490195
+    },
+    "fr.merchants.v1|retired|800049": {
+      "mean": 130,
+      "frequency": 0.028205128205128206
+    },
+    "fr.merchants.v1|retired|800050": {
+      "mean": 145,
+      "frequency": 0.02528735632183908
+    },
+    "fr.merchants.v1|retired|800051": {
+      "mean": 3.99,
+      "frequency": 0.5513784461152882
+    },
+    "fr.merchants.v1|retired|800052": {
+      "mean": 3.49,
+      "frequency": 0.6303724928366762
+    },
+    "fr.merchants.v1|retired|800053": {
+      "mean": 68,
+      "frequency": 0.15441176470588236
+    },
+    "fr.merchants.v1|retired|800054": {
+      "mean": 95,
+      "frequency": 0.11052631578947368
+    },
+    "fr.merchants.v1|retired|800055": {
+      "mean": 175,
+      "frequency": 0.06
+    },
+    "fr.merchants.v1|retired|800056": {
+      "mean": 95,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800057": {
+      "mean": 16,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800058": {
+      "mean": 22,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800059": {
+      "mean": 28,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800060": {
+      "mean": 35,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800061": {
+      "mean": 120,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800062": {
+      "mean": 6.4,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800063": {
+      "mean": 8,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800064": {
+      "mean": 30.45,
+      "frequency": 0.6180083556774958
+    },
+    "fr.merchants.v1|retired|800065": {
+      "mean": 31.5,
+      "frequency": 0.5974080771549125
+    },
+    "fr.merchants.v1|retired|800066": {
+      "mean": 60.9,
+      "frequency": 0.16480222818066553
+    },
+    "fr.merchants.v1|retired|800067": {
+      "mean": 75.6,
+      "frequency": 0.13275735047886947
+    },
+    "fr.merchants.v1|retired|800068": {
+      "mean": 23,
+      "frequency": 0.11956521739130435
+    },
+    "fr.merchants.v1|retired|800069": {
+      "mean": 21,
+      "frequency": 0.17966027874564458
+    },
+    "fr.merchants.v1|retired|800070": {
+      "mean": 19,
+      "frequency": 0.1985718870346598
+    },
+    "fr.merchants.v1|retired|800071": {
+      "mean": 25,
+      "frequency": 0.11
+    },
+    "fr.merchants.v1|retired|800072": {
+      "mean": 22,
+      "frequency": 0.17149390243902438
+    },
+    "fr.merchants.v1|retired|800073": {
+      "mean": 115,
+      "frequency": 0.01749734888653234
+    },
+    "fr.merchants.v1|retired|800074": {
+      "mean": 145,
+      "frequency": 0.013877207737594615
+    },
+    "fr.merchants.v1|retired|800075": {
+      "mean": 130,
+      "frequency": 0.015478424015009377
+    },
+    "fr.merchants.v1|retired|800076": {
+      "mean": 320,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800077": {
+      "mean": 650,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800078": {
+      "mean": 850,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800079": {
+      "mean": 110,
+      "frequency": 0.02148760330578512
+    },
+    "fr.merchants.v1|retired|800080": {
+      "mean": 65,
+      "frequency": 0.03636363636363636
+    },
+    "fr.merchants.v1|retired|800081": {
+      "mean": 3.3,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800082": {
+      "mean": 3,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800083": {
+      "mean": 24,
+      "frequency": 0.15350877192982457
+    },
+    "fr.merchants.v1|retired|800084": {
+      "mean": 21,
+      "frequency": 0.1754385964912281
+    },
+    "fr.merchants.v1|retired|800085": {
+      "mean": 29,
+      "frequency": 0.12704174228675139
+    },
+    "fr.merchants.v1|retired|800086": {
+      "mean": 58,
+      "frequency": 0.050816696914700546
+    },
+    "fr.merchants.v1|retired|800087": {
+      "mean": 104.5,
+      "frequency": 0.057161084529505586
+    },
+    "fr.merchants.v1|retired|800088": {
+      "mean": 71.5,
+      "frequency": 0.04177156177156177
+    },
+    "fr.merchants.v1|retired|800089": {
+      "mean": 35.2,
+      "frequency": 0.08484848484848484
+    },
+    "fr.merchants.v1|retired|800090": {
+      "mean": 198,
+      "frequency": 0.015084175084175085
+    },
+    "fr.merchants.v1|retired|800091": {
+      "mean": 46.2,
+      "frequency": 0.06464646464646465
+    },
+    "fr.merchants.v1|retired|800092": {
+      "mean": 32,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800093": {
+      "mean": 48,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800094": {
+      "mean": 35,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800095": {
+      "mean": 85,
+      "frequency": 0
+    },
+    "fr.merchants.v1|retired|800096": {
+      "mean": 14,
+      "frequency": 0.5142857142857143
+    },
+    "fr.merchants.v1|retired|800097": {
+      "mean": 24,
+      "frequency": 0.3
+    },
+    "fr.merchants.v1|retired|800098": {
+      "mean": 38,
+      "frequency": 0.19298245614035087
+    }
+  },
+  "budgetOverrides": {
+    "groceries": 297.33,
+    "foodOthers": 30.29,
+    "fuel": 77,
+    "tolls": 16.25,
+    "pharmacy": 5.97,
+    "healthOthers": 11.95,
+    "optician": 5.97,
+    "dentist": 2.99,
+    "restaurants": 52,
+    "coffee": 12,
+    "shoppingOthers": 18.61,
+    "sportingGoods": 5.03,
+    "clothing": 12.58,
+    "books": 5.03,
+    "arts": 21.6,
+    "sports": 7.2,
+    "amusements": 7.2,
+    "homeImprovement": 38.5,
+    "subscriptionOthers": 4.4,
+    "trainTicket": 10.5,
+    "travel": 21,
+    "hotels": 0,
+    "fastfood": 0,
+    "bars": 0,
+    "taxes": 0,
+    "bankfees": 0,
+    "incidentfees": 0,
+    "autoOthers": 14,
+    "educationOthers": 0
+  },
+  "categorySystem": "bridge"
 }

@@ -38,6 +38,7 @@ export interface Transaction {
   balanceAfter: number;
   balanceAfterMinor: number;
   categoryId: number;
+  parentCategoryId: number;
   category: string;
   label: string;
   currency: string;
